@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 
-def plot_market_share(market_shares, t, N, filename=None):
+def plot_market_share(market_shares, t, arrival_type, filename=None):
     """ Plots the different market shares w.r.t. to time. 
 
     Keyword arguments:
@@ -11,7 +11,7 @@ def plot_market_share(market_shares, t, N, filename=None):
     
     plt.xlabel('Time (t)')
     plt.ylabel('Market Share')
-    plt.title(f'Market share evaluation for population of size {N}')
+    plt.title(f'Market share evaluation for {arrival_type} arrival')
     plt.legend()
     if filename is not None:
         plt.savefig(f'../figures/{filename}')

@@ -5,22 +5,23 @@ class Platform:
   Will be keeping track of its specific market share and XX
   """
 
-  def __init__(self, platform_name, total_population, initial_size=0):
+  def __init__(self, platform_name, n_platforms):
     """ Keyword arguments:
     initial_size -- Number of users in the platform at creation (Default 0)
     """
     self.name = platform_name
     
-    self.market_share = [initial_size / total_population]
-    self.total_population = total_population
-    self.n_users = initial_size
+    self.population = 2
+    self.users = 1
+    self.market_share = [1/n_platforms]
 
   def update_market_share(self):
-    self.market_share.append(self.n_users / self.total_population)
+    self.market_share.append(self.users / self.population)
 
-  def add_user(self, n):
-    self.n_users += n
+  def add_user(self, n, delta_pop):
+    self.users += n
+    self.population += delta_pop
     self.update_market_share()
 
-  def get_market_share(self, N):
+  def get_market_share(self):
     return (self.market_share, self.name)
