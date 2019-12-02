@@ -11,6 +11,7 @@ class Simulator:
         self.platforms = [Platform(name, len(platform_names)) for name in platform_names]
         self.platform_indices = list(range(len(self.platforms)))
         self.selector = selector
+        self.selector.set_platforms(self.platforms)
 
     def get_market_shares(self):
         """ Returns the market share of each registered platform. """
@@ -30,7 +31,7 @@ class Simulator:
         pbar = tqdm(total=time)
         while time > 0:
             # Choose a platfrom to grow (g), and how long it takes (t)
-            growing_platform, g, t = self.selector.select(self.platform_indices)
+            growing_platform, g, t = self.selector.select()
             # Grow the chosen platform, and not the rest 
             self.growth([growing_platform], g, g)
             self.growth(np.delete(self.platform_indices, growing_platform), 0, g)

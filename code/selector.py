@@ -5,7 +5,7 @@ class Selector:
     def __init__(self, growth=1):
         self.n = growth
 
-    def select(self, indices):
+    def select(self):
         """ Given indices to choose from will return one of them
         w.r.t. the specific method.
         Will always return a tuple:
@@ -13,6 +13,10 @@ class Selector:
         """
         # do nothing
         pass
+
+    def set_platforms(self, platforms):
+        """ Sets the Platform objects that the selector will select from """
+        self.platforms = platforms
 
 class Random(Selector):
     """ Selects an indice at random, w.r.t. given probabilities """
@@ -22,10 +26,10 @@ class Random(Selector):
         self.name = "Random"
         self.ps = probabilities
     
-    def select(self, indices):
-        super().select(indices)
+    def select(self):
+        super().select()
 
-        return np.random.choice(indices, p=self.ps), self.n, 1
+        return np.random.choice(range(len(self.platforms)), p=self.ps), self.n, 1
 
 class Uniform(Selector):
     """ Uniformly selects an indice """
@@ -34,10 +38,10 @@ class Uniform(Selector):
         super().__init__(growth)
         self.name = "Uniform"
 
-    def select(self, indices):
-        super().select(indices)
+    def select(self):
+        super().select()
 
-        return np.random.choice(indices), self.n, 1
+        return np.random.choice(range(len(self.platforms))), self.n, 1
     
 class Poisson(Selector):
     """ Selects an indice w.r.t. Poisson arrival process """
@@ -47,7 +51,7 @@ class Poisson(Selector):
         self.name = "Poisson"
         self.ls = lambdas
 
-    def select(self, indices):
-        super().select(indices)
+    def select(self):
+        super().select()
         arrivals = [np.random.exponential(1/l) for l in self.ls]
         return np.argmin(arrivals), self.n, min(arrivals)
