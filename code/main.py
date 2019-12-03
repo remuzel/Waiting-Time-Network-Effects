@@ -3,7 +3,7 @@ import logging
 
 from utils import plot_market_share
 from simulator import Simulator
-from selector import Random, Uniform, Poisson
+from selector import Random, Uniform, Poisson, Barabasi
 
 if __name__ == "__main__":
 
@@ -16,7 +16,7 @@ if __name__ == "__main__":
   args = parser.parse_args()
 
   names = ['Uber', 'Black Cab']
-  selectors = [Random([0.7, 0.3]), Uniform(), Poisson([7, 3])]
+  selectors = [Random([0.7, 0.3]), Uniform(), Poisson([7, 3]), Barabasi()]
   for selector in selectors:
     print(f"Simulating for {selector.name} selection...")
     sim = Simulator(args.N, names, selector)
