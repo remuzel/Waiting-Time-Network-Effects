@@ -18,6 +18,9 @@ class Selector:
         """ Sets the Platform objects that the selector will select from """
         self.platforms = platforms
         self.p_indices = list(range(len(platforms)))
+        if self.name == "Sheep" and hasattr(self, 'barbasi'):
+            """ In the sheep selector model, we also need to initialise the barbasi selector """
+            self.barbasi.set_platforms(platforms)
 
 class Random(Selector):
     """ Selects an indice at random, w.r.t. given probabilities """
@@ -71,3 +74,48 @@ class Barabasi(Selector):
     def select(self):
         super().select()
         return np.random.choice(self.p_indices, p=self.get_platform_shares()), self.n, 1
+
+class Sheep(Selector):
+    """ Selects a platform with the Barbasi model, but factoring in what the previous arrival did.
+
+    To do this we add bias to the previously selected platform. For the biased probabilities
+    to still add to 1, we need to remove some epsilon from the ther probabilities.
+    This is the formula to do so:
+        Ɛ = p * (b-1) / (n-1) 
+            p = previously chosen market share
+            b = bias factor (>1) for which we choose p
+            n = number of platforms we're choosing from
+    """
+
+
+    def __init__(self, bias, growth=1):
+        super().__init__(growth)
+        if bias < 1:
+            raise ValueError(f"expected bias value > 1, instead got {bias}.")
+        self.name = "Sheep"
+        self.barbasi = Barabasi()
+        self.previous_platform = None
+        self.bias = bias
+
+    def select(self):
+        super().select()
+        if self.previous_platform is None:
+            # Get barbasi selection the very first time
+            choice, n, g = self.barbasi.select()
+        else:
+            # Get market shares from the barbasi model
+            m_shares = self.barbasi.get_platform_shares()
+            biased_shares = []
+            # Set epsilon
+            epsilon = m_shares[self.previous_platform] * (self.bias-1) / self.p_indices[-1]
+            bound = lambda x: min(1, max(0, x)) # Floats might lead to >1 or <0 
+            # Add bias 
+            for i, share in enumerate(m_shares):
+                if i == self.previous_platform:
+                    biased_shares.append(bound(self.bias * share))
+                else:
+                    biased_shares.append(bound(min(1, max(0, share - epsilon))))
+            # Make new choice
+            choice = np.random.choice(self.p_indices, p=biased_shares)
+        self.previous_platform = choice
+        return choice, n, g
