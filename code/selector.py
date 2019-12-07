@@ -101,7 +101,7 @@ class Sheep(Selector):
         super().select()
         if self.previous_platform is None:
             # Get barbasi selection the very first time
-            choice, n, g = self.barbasi.select()
+            choice, self.n, 1 = self.barbasi.select()
         else:
             # Get market shares from the barbasi model
             m_shares = self.barbasi.get_platform_shares()
@@ -118,4 +118,4 @@ class Sheep(Selector):
             # Make new choice
             choice = np.random.choice(self.p_indices, p=biased_shares)
         self.previous_platform = choice
-        return choice, n, g
+        return choice, self.n, 1

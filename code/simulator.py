@@ -28,7 +28,6 @@ class Simulator:
         returns their metrics.
         """
 
-        pbar = tqdm(total=time)
         while time > 0:
             # Choose a platfrom to grow (g), and how long it takes (t)
             growing_platform, g, t = self.selector.select()
@@ -37,6 +36,4 @@ class Simulator:
             self.growth(np.delete(self.platform_indices, growing_platform), 0, g)
             # Progress through time
             time -= t
-            pbar.update(t)
-        pbar.close()
         return self

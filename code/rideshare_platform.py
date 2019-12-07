@@ -24,4 +24,4 @@ class Platform:
     self.update_market_share()
 
   def get_market_share(self):
-    return (self.market_share, self.name)
+    return self.market_share
