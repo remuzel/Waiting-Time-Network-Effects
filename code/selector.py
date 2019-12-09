@@ -101,7 +101,7 @@ class Sheep(Selector):
         super().select()
         if self.previous_platform is None:
             # Get barbasi selection the very first time
-            choice, self.n, 1 = self.barbasi.select()
+            choice, self.n, g = self.barbasi.select()
         else:
             # Get market shares from the barbasi model
             m_shares = self.barbasi.get_platform_shares()
