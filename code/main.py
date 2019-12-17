@@ -12,11 +12,11 @@ if __name__ == "__main__":
   LOGGER = logging.getLogger(__name__)
 
   parser = argparse.ArgumentParser()
-  # parser.add_argument('--N',   help="Population size to consider during the simulation.",     type=int, default=1_000)
+  parser.add_argument('--N',   help="Population size to consider during the simulation.",     type=int, default=1_000)
   parser.add_argument('--P',   help="Number of platforms to consider during the simulation.", type=int, default=2)
   parser.add_argument('--t',   help="Duration of the simulation."         ,                   type=int, default=1_000)
   parser.add_argument('--it',  help="Number of iterations to get average.",                   type=int, default=1_000)
-  parser.add_argument('--plt', help="Filename underwich to save the figure.",                 type=bool, default=False)
+  parser.add_argument('--plt', help="Filename underwich to save the figure.",                 type=str, default=None)
   args = parser.parse_args()
 
   names = ['Uber', 'Black Cab', 'Bolt', 'Kapten', 'Heetch'][:args.P]
@@ -39,6 +39,6 @@ if __name__ == "__main__":
   std = np.array([np.std(np.array(platform), axis=0) for platform in zip(*iter_ms)])
 
   plt = None
-  if args.plt:
-    plt = f"{selector.name}-t{args.t}-it{args.it}-p{len(names)}.png"
+  if args.plt is not None:
+    plt = f"{len(names)}plt-{args.plt}-{selector.name}-{args.t}s-{args.it}it.png"
   plot_market_share(avg, std, selector.name, filename=plt)

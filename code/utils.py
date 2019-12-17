@@ -1,4 +1,5 @@
 from matplotlib import pyplot as plt
+from numpy import linspace
 
 def plot_market_share(market_shares, error, arrival_type, filename=None, ebar_r=10):
     """ Plots the different market shares w.r.t. to time. 
@@ -6,9 +7,8 @@ def plot_market_share(market_shares, error, arrival_type, filename=None, ebar_r=
     Keyword arguments:
     filename -- name of the plot once saved (default None)
     """
-    c = ['Orange'] * len(market_shares)
-    c[0] = 'Red'
-    c[-1] = 'Green'
+    # Define the colors to use while plotting
+    c = plt.cm.RdYlGn(linspace(0, 1, len(market_shares)))
     for i, market_share in enumerate(market_shares):
         # Plot the error bars (and the curve) in 10% opacity
         plt.errorbar(list(range(len(market_share))), market_share, yerr=error[i], alpha=0.1, c=c[i])
