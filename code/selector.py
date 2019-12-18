@@ -1,4 +1,5 @@
 import numpy as np
+from utils import lrange
 
 class Selector:
     """ Parent class for all random selectors """
@@ -17,10 +18,17 @@ class Selector:
     def set_platforms(self, platforms):
         """ Sets the Platform objects that the selector will select from """
         self.platforms = platforms
-        self.p_indices = list(range(len(platforms)))
         if self.name == "Sheep" and hasattr(self, 'barbasi'):
             """ In the sheep selector model, we also need to initialise the barbasi selector """
             self.barbasi.set_platforms(platforms)
+
+    def p_indices(self):
+        """ Wrapper for lrange - self.platforms """
+        indices = lrange(self.platforms)
+        for i,p in enumerate(self.platforms):
+            if not p.isActive():
+                indices.remove(i)
+        return indices
 
 class Random(Selector):
     """ Selects an indice at random, w.r.t. given probabilities """
@@ -28,12 +36,12 @@ class Random(Selector):
     def __init__(self, probabilities, growth=1):
         super().__init__(growth)
         self.name = "Random"
-        self.ps = probabilities
+        self.ps = np.array(probabilities)
     
     def select(self):
         super().select()
-
-        return np.random.choice(self.p_indices, p=self.ps), self.n, 1
+        i = self.p_indices()
+        return np.random.choice(i, p=self.ps[i]), self.n, 1
 
 class Uniform(Selector):
     """ Uniformly selects an indice """
@@ -45,7 +53,7 @@ class Uniform(Selector):
     def select(self):
         super().select()
 
-        return np.random.choice(self.p_indices), self.n, 1
+        return np.random.choice(self.p_indices()), self.n, 1
     
 class Poisson(Selector):
     """ Selects an indice w.r.t. Poisson arrival process """
@@ -53,11 +61,11 @@ class Poisson(Selector):
     def __init__(self, lambdas, growth=1):
         super().__init__(growth)
         self.name = "Poisson"
-        self.ls = lambdas
+        self.ls = np.array(lambdas)
 
     def select(self):
         super().select()
-        arrivals = [np.random.exponential(1/l) for l in self.ls]
+        arrivals = [np.random.exponential(1/l) for l in self.ls[self.p_indices()]]
         return np.argmin(arrivals), self.n, min(arrivals)
 
 class Barabasi(Selector):
@@ -68,12 +76,12 @@ class Barabasi(Selector):
         self.name = "Barabasi"
     
     def get_platform_shares(self):
-        platforms_shares = np.array([p.market_share[-1] for p in self.platforms])
+        platforms_shares = np.array([p.market_share[-1] for p in self.platforms if p.isActive()])
         return platforms_shares / np.sum(platforms_shares)
 
     def select(self):
         super().select()
-        return np.random.choice(self.p_indices, p=self.get_platform_shares()), self.n, 1
+        return np.random.choice(self.p_indices(), p=self.get_platform_shares()), self.n, 1
 
 class Sheep(Selector):
     """ Selects a platform with the Barbasi model, but factoring in what the previous arrival did.
@@ -107,7 +115,7 @@ class Sheep(Selector):
             m_shares = self.barbasi.get_platform_shares()
             biased_shares = []
             # Set epsilon
-            epsilon = m_shares[self.previous_platform] * (self.bias-1) / self.p_indices[-1]
+            epsilon = m_shares[self.previous_platform] * (self.bias-1) / self.p_indices()[-1]
             bound = lambda x: min(1, max(0, x)) # Floats might lead to >1 or <0 
             # Add bias 
             for i, share in enumerate(m_shares):
@@ -116,6 +124,6 @@ class Sheep(Selector):
                 else:
                     biased_shares.append(bound(min(1, max(0, share - epsilon))))
             # Make new choice
-            choice = np.random.choice(self.p_indices, p=biased_shares)
+            choice = np.random.choice(self.p_indices(), p=biased_shares)
         self.previous_platform = choice
         return choice, self.n, 1

@@ -2,16 +2,23 @@ import numpy as np
 from tqdm import tqdm
 
 from rideshare_platform import Platform
+from utils import lrange
 
 class Simulator:
     """ This class is responsible for running individual market share simulations. """
 
-    def __init__(self, population_size, platform_names, selector):
+    def __init__(self, population_size, platform_names, selector, delta_ts):
         self.N = population_size
         self.platforms = [Platform(name, len(platform_names)) for name in platform_names]
-        self.platform_indices = list(range(len(self.platforms)))
+        self.platform_indices = lrange(self.platforms)
         self.selector = selector
         self.selector.set_platforms(self.platforms)
+        self.delay_platforms(delta_ts)
+
+    def delay_platforms(self, delta_ts):
+        """ Turns off a set of platforms until the given timestep is met """
+        for p_index, delta_t in delta_ts:
+            self.platforms[p_index].deactivate(delta_t)
 
     def get_market_shares(self):
         """ Returns the market share of each registered platform. """
