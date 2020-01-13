@@ -7,6 +7,8 @@ from utils import plot_market_share, conf_interval
 from simulator import Simulator
 from selector import Random, Uniform, Poisson, Barabasi, Sheep
 
+VERSION = "v1.4"
+
 if __name__ == "__main__":
 
   LOGGER = logging.getLogger(__name__)
