@@ -5,7 +5,9 @@ import numpy as np
 from tqdm import tqdm
 from utils import plot_market_share, conf_interval
 from simulator import Simulator
-from selector import Random, Uniform, Poisson, Barabasi, Sheep
+from environment import City
+from population import PopulationManager
+from selector import Random, Uniform, Poisson, Barabasi, DensityBarabasi, Sheep
 
 VERSION = "v1.4"
 
@@ -20,6 +22,7 @@ if __name__ == "__main__":
   parser.add_argument('--it',    help="Number of iterations to get average.",                               type=int,   default=1_000)
   parser.add_argument('--plt',   help="Filename underwich to save the figure.",                             type=str,   default=None)
   parser.add_argument('--delta', help="Adds a delay (%% of t) to the market entrance of the 1st platform.", type=float, default=0)
+  parser.add_argument('--city',  help="Flag to show the city as a grid of densities.",                      type=bool,  default=False)
   args = parser.parse_args()
 
   names = ['Uber', 'Black Cab', 'Bolt', 'Kapten', 'Heetch'][:args.P]
@@ -33,8 +36,14 @@ if __name__ == "__main__":
   #   print(f"Delta is {delta_t}") 
   #######################################
 
-  n = len(names)
-  selector= Barabasi()
+  # Setup the selector
+  city = City()
+  pop_manager = PopulationManager(city.density)
+  selector = DensityBarabasi(pop_manager) 
+  # Show the cities density
+  if args.city:
+    city.show()
+  # Define the ∆t of platform start
   delta_t = int(args.delta/100 * args.t)
   # Setup average platform share tracker
   platform_shares = []

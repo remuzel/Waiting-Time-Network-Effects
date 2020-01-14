@@ -1,6 +1,5 @@
 from matplotlib import pyplot as plt
 from numpy import linspace, std, mean, sqrt
-from main import VERSION
 
 def plot_market_share(market_shares, error, arrival_type, filename=None, ebar_r=10):
     """ Plots the different market shares w.r.t. to time. 
@@ -20,7 +19,7 @@ def plot_market_share(market_shares, error, arrival_type, filename=None, ebar_r=
     plt.title(f'Market share evaluation for {arrival_type} arrival')
     plt.legend()
     if filename is not None:
-        plt.savefig(f'../figures/{VERSION}/{filename}', dpi=600)
+        plt.savefig(f'../figures/{"v2.1"}/{filename}', dpi=600)
     else:
         plt.show()
 

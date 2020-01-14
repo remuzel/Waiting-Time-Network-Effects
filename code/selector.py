@@ -83,6 +83,24 @@ class Barabasi(Selector):
         super().select()
         return np.random.choice(self.p_indices(), p=self.get_platform_shares()), self.n, 1
 
+class DensityBarabasi(Barabasi):
+    """ Selects the Platform w.r.t. to it's relative size and population density """
+
+    def __init__(self, population, growth=1):
+        super().__init__(growth)
+        self.name = 'Density ' + self.name
+        self.population = population
+
+    def get_avg_users(self):
+        return np.array([p.average_user for p in self.platforms if p.isActive()])
+
+    def select(self):
+        super().select()
+        # Query the population service for a platform choice from p_indices which takes into account
+        #  the platform shares
+        choice = self.population.sample_user(self.p_indices(), self.get_platform_shares(), self.get_avg_users())
+        return choice, self.n, 1
+    
 class Sheep(Selector):
     """ Selects a platform with the Barbasi model, but factoring in what the previous arrival did.
 
