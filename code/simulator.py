@@ -14,6 +14,7 @@ class Simulator:
         self.selector = selector
         self.selector.set_platforms(self.platforms)
         self.delay_platforms(delta_ts)
+        self.is_density = self.selector.name.startswith('Density')
 
     def delay_platforms(self, delta_ts):
         """ Turns off a set of platforms until the given timestep is met """
@@ -24,11 +25,11 @@ class Simulator:
         """ Returns the market share of each registered platform. """
         return [platform.get_market_share() for platform in self.platforms]
 
-    def growth(self, indices, g, t):
+    def growth(self, indices, g, t, position):
         """ Adds the indicated growth (g) to the flagged platforms.
         """
         for i in indices:
-            self.platforms[i].add_user(g, t)
+            self.platforms[i].add_user(g, t, position)
 
     def run(self, time):
         """ Simulates the change in market share for each platform and
@@ -37,10 +38,14 @@ class Simulator:
 
         while time > 0:
             # Choose a platfrom to grow (g), and how long it takes (t)
-            growing_platform, g, t = self.selector.select()
+            if self.is_density:
+                growing_platform, g, t, p = self.selector.select()
+            else:
+                p = None
+                growing_platform, g, t = self.selector.select()
             # Grow the chosen platform, and not the rest 
-            self.growth([growing_platform], g, g)
-            self.growth(np.delete(self.platform_indices, growing_platform), 0, g)
+            self.growth([growing_platform], g, g, position=p)
+            self.growth(np.delete(self.platform_indices, growing_platform), 0, g, position=p)
             # Progress through time
             time -= t
         return self

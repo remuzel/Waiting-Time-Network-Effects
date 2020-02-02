@@ -7,7 +7,7 @@ from utils import plot_market_share, conf_interval
 from simulator import Simulator
 from environment import City
 from population import PopulationManager
-from selector import Random, Uniform, Poisson, Barabasi, DensityBarabasi, Sheep
+from selector import Random, Uniform, Poisson, Barabasi, Density, DensityBarabasi, Sheep
 
 VERSION = "v1.4"
 
@@ -43,6 +43,7 @@ if __name__ == "__main__":
   # Show the cities density
   if args.city:
     city.show()
+    exit()
   # Define the ∆t of platform start
   delta_t = int(args.delta/100 * args.t)
   # Setup average platform share tracker

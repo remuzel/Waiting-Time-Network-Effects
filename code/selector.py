@@ -21,6 +21,10 @@ class Selector:
         if self.name == "Sheep" and hasattr(self, 'barbasi'):
             """ In the sheep selector model, we also need to initialise the barbasi selector """
             self.barbasi.set_platforms(platforms)
+        if self.name.startswith('Density'):
+            """ For densities we also need to setup the initial location """
+            Y, X = self.population.density.shape
+            [platform.set_avg_user(X, Y) for platform in self.platforms]
 
     def p_indices(self):
         """ Wrapper for lrange - self.platforms """
@@ -83,6 +87,22 @@ class Barabasi(Selector):
         super().select()
         return np.random.choice(self.p_indices(), p=self.get_platform_shares()), self.n, 1
 
+class Density(Selector):
+    """ Selects the Platform w.r.t. topological density only """
+
+    def __init__(self, population, growth=1):
+        super().__init__(growth)
+        self.name = 'Density'
+        self.population = population
+
+    def get_avg_users(self):
+        return np.array([p.average_user for p in self.platforms if p.isActive()])
+    
+    def select(self):
+        super().select()
+        choice, position = self.population.sample_user(self.p_indices(), self.get_avg_users())
+        return choice, self.n, 1, position
+
 class DensityBarabasi(Barabasi):
     """ Selects the Platform w.r.t. to it's relative size and population density """
 
@@ -98,8 +118,8 @@ class DensityBarabasi(Barabasi):
         super().select()
         # Query the population service for a platform choice from p_indices which takes into account
         #  the platform shares
-        choice = self.population.sample_user(self.p_indices(), self.get_platform_shares(), self.get_avg_users())
-        return choice, self.n, 1
+        choice, position = self.population.sample_user(self.p_indices(), self.get_avg_users(), market_shares=self.get_platform_shares())
+        return choice, self.n, 1, position
     
 class Sheep(Selector):
     """ Selects a platform with the Barbasi model, but factoring in what the previous arrival did.

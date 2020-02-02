@@ -19,8 +19,9 @@ class City:
         # Name of the city for image showing and saving
         self.name = city_name
         # Initialise the image as a white square
+        self.density_scheme = density.lower()
         if density.lower() == 'uniform':
-            self.density = np.random.rand(self.H, self.W)
+            self.density = np.ones((self.H, self.W)) / (self.H * self.W)
         else:
             # TODO: Implement alternative for density spread
             raise ValueError(f"Density of '{density}' not supported. Please use 'uniform' instead.")
@@ -60,7 +61,10 @@ class City:
                 br = (x+delta, y+delta)
                 bl = (x, y+delta)
                 # Fetch the appropriate density-to-cmap
-                color = norm(self.density[x, y])
+                if self.density_scheme == 'uniform':
+                    color = 0.5
+                else:
+                    color = norm(self.density[x, y])
                 # Draw the square
                 cv2.fillConvexPoly(self.image, np.array([tl, tr, br, bl]), color)
         # Convert to greyscale and apply a colormapping

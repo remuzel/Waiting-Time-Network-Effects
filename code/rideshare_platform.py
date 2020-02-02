@@ -6,7 +6,7 @@ class Platform:
   Will be keeping track of its specific market share and XX
   """
 
-  def __init__(self, platform_name, n_platforms, average_user=np.array([0,0])):
+  def __init__(self, platform_name, n_platforms):
     """ Keyword arguments:
     initial_size -- Number of users in the platform at creation (Default 0)
     """
@@ -15,7 +15,10 @@ class Platform:
     self.users = 1
     self.market_share = [1/n_platforms]
     self.delta_t = None
-    self.average_user = average_user
+
+  def set_avg_user(self, x, y):
+    """ Sets the initial position of average user """
+    self.average_user = np.array([np.random.randint(y), np.random.randint(x)])
   
   def activate(self):
     """ Activates the ridesharing platform - allowing to receive new users """

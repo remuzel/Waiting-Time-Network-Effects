@@ -11,14 +11,21 @@ class PopulationManager():
         self.X_max = density.shape[1]
         self.Y_max = density.shape[0]
 
-    def sample_user(self, indices, market_shares, average_users):
+    def sample_user(self, indices, average_users, market_shares=None):
         # Sample the position of a new user
         x = np.random.randint(self.X_max)
         y = np.random.randint(self.Y_max)
-        n_user = np.array([x, y])
+        n_user = np.array([y, x])
         # Compute the distance from this user to the average user of platforms
         distances = np.array([np.linalg.norm(avg - n_user) for avg in average_users])
-        # Make them a probability
+        # Make distances probabilities, by making the smallest distance the most likely
+        distances = distances / distances.sum()
+        distances = 1 - distances
         distances = distances / distances.sum()
         # Return the platform choice
-        return np.random.choice(indices, p=np.mean([distances, market_shares], axis=0))
+        if market_shares is None:
+            # With respect to the distances (only)
+            return np.random.choice(indices, p=distances), n_user
+        else:
+            # Taking int account given market shares
+            return np.random.choice(indices, p=np.mean([distances, market_shares], axis=0)), n_user
