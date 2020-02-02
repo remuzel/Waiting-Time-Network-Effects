@@ -45,7 +45,7 @@ class City:
         # Draw right vertical line 
         cv2.line(self.image, (self.W-1, 0), (self.W-1, self.H), 0)
 
-    def update_color(self):
+    def update_color(self, positions=None):
         """ 
         Fills in the squares of the image with it's corresponding color value based on the cmap
         """
@@ -62,7 +62,7 @@ class City:
                 bl = (x, y+delta)
                 # Fetch the appropriate density-to-cmap
                 if self.density_scheme == 'uniform':
-                    color = 0.5
+                    color = 0.9
                 else:
                     color = norm(self.density[x, y])
                 # Draw the square
@@ -70,15 +70,19 @@ class City:
         # Convert to greyscale and apply a colormapping
         self.image = (self.image * 255.0).astype(np.uint8)
         self.image = cv2.applyColorMap(self.image, cv2.COLORMAP_HOT)
+        # # Draw the platforms 
+        # if positions is not None:
+        #     for p, c in positions:
+        #         cv2.circle(self.image, tuple(p.astype(int)), 5, 255*c[:-1], cv2.FILLED)
         # Draw lines again to cover the overlaps
         self.draw_lines()
     
-    def show(self, save=False):
+    def show(self, save=False, positions=None):
         """
         Blocks the program and shows the current image
         If 'q' is pressed then we break and continue
         """
-        self.update_color()
+        self.update_color(positions=positions)
         cv2.imshow(self.name, self.image)
         print("Press 'q' to continue...")
         while (1):

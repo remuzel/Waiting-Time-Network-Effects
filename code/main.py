@@ -23,6 +23,7 @@ if __name__ == "__main__":
   parser.add_argument('--plt',   help="Filename underwich to save the figure.",                             type=str,   default=None)
   parser.add_argument('--delta', help="Adds a delay (%% of t) to the market entrance of the 1st platform.", type=float, default=0)
   parser.add_argument('--city',  help="Flag to show the city as a grid of densities.",                      type=bool,  default=False)
+  parser.add_argument('--wtl',   help="Integer representing the waiting time limit for platforms.",         type=int,   default=100)
   args = parser.parse_args()
 
   names = ['Uber', 'Black Cab', 'Bolt', 'Kapten', 'Heetch'][:args.P]
@@ -38,12 +39,8 @@ if __name__ == "__main__":
 
   # Setup the selector
   city = City()
-  pop_manager = PopulationManager(city.density)
-  selector = DensityBarabasi(pop_manager) 
-  # Show the cities density
-  if args.city:
-    city.show()
-    exit()
+  pop_manager = PopulationManager(city.density, args.wtl)
+  selector = Density(pop_manager) 
   # Define the ∆t of platform start
   delta_t = int(args.delta/100 * args.t)
   # Setup average platform share tracker
@@ -76,6 +73,12 @@ if __name__ == "__main__":
   # plt.title('Impact of late arrival to the market')
   # plt.show()
   #######################################
+  # Show the cities density
+  if args.city:
+    city.show()
+    # from matplotlib import pyplot as plt
+    # c = plt.cm.RdYlGn(np.linspace(0, 1, len(sim.platforms)))
+    # city.show(positions=[(p.average_user, c[i]) for i,p in enumerate(sim.platforms)])
 
   plt = None
   if args.plt is not None:
