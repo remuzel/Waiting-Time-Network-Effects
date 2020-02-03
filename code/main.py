@@ -40,7 +40,7 @@ if __name__ == "__main__":
   # Setup the selector
   city = City()
   pop_manager = PopulationManager(city.density, args.wtl)
-  selector = Density(pop_manager) 
+  selector = DensityBarabasi(pop_manager) 
   # Define the ∆t of platform start
   delta_t = int(args.delta/100 * args.t)
   # Setup average platform share tracker
