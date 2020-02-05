@@ -37,46 +37,46 @@ if __name__ == "__main__":
   #   print(f"Delta is {delta_t}")
   #######################################
   # FOR ∆WTL - ∆MS EVALUATION           #
-  wtls = np.arange(10, 501, step=10)
-  avg_delta = []
-  std_delta = []
-  for wtl in tqdm(wtls):
+  # wtls = np.arange(10, 501, step=10)
+  # avg_delta = []
+  # std_delta = []
+  # for wtl in tqdm(wtls):
   #######################################
 
-    # Setup the selector
-    city = City()
-    pop_manager = PopulationManager(city.density, wtl)
-    selector = Density(pop_manager) 
-    # Define the ∆t of platform start
-    delta_t = int(args.delta/100 * args.t)
-    # Setup average platform share tracker
-    platform_shares = []
-    # print(f"Simulating for {selector.name} selection...")
-    iter_ms = []
-    # Run simulation it times for each t 
-    for i in (range(args.it)):
-      sim = Simulator(args.N, names, selector, [(0, delta_t)] if args.delta else [])
-      # Sort the returned shares (who the winner is doesn't matter)
-      m_shares = sorted(sim.run(args.t).get_market_shares(), key=lambda x: x[-1])
-      # Store the shares
-      iter_ms.append(m_shares)
-    # print(f"...done", end='\n\n')
-    # Get means of winner / looser over the runs
-    avg = np.array([conf_interval(np.array(platform), axis=0)[0] for platform in zip(*iter_ms)])
-    std = np.array([conf_interval(np.array(platform), axis=0)[1] for platform in zip(*iter_ms)])
+  # Setup the selector
+  city = City()
+  pop_manager = PopulationManager(city.density, wtl)
+  selector = Density(pop_manager) 
+  # Define the ∆t of platform start
+  delta_t = int(args.delta/100 * args.t)
+  # Setup average platform share tracker
+  platform_shares = []
+  # print(f"Simulating for {selector.name} selection...")
+  iter_ms = []
+  # Run simulation it times for each t 
+  for i in (range(args.it)):
+    sim = Simulator(args.N, names, selector, [(0, delta_t)] if args.delta else [])
+    # Sort the returned shares (who the winner is doesn't matter)
+    m_shares = sorted(sim.run(args.t).get_market_shares(), key=lambda x: x[-1])
+    # Store the shares
+    iter_ms.append(m_shares)
+  # print(f"...done", end='\n\n')
+  # Get means of winner / looser over the runs
+  avg = np.array([conf_interval(np.array(platform), axis=0)[0] for platform in zip(*iter_ms)])
+  std = np.array([conf_interval(np.array(platform), axis=0)[1] for platform in zip(*iter_ms)])
 
 
   #######################################
   # FOR ∆WTL - ∆MS EVALUATION
-    # Append the average diff between the largest and smallest platform
-    avg_delta.append(np.mean(avg[-1] - avg[0]))
-    std_delta.append(np.mean(avg[-1] - avg[0]))
-  from matplotlib import pyplot as plt
-  plt.errorbar(wtls, avg_delta, yerr=std_delta, c='black')
-  plt.xlabel('∆wtl')
-  plt.ylabel('∆market-share')
-  plt.title('Impact of waiting time limit on the market')
-  plt.show()
+  #   # Append the average diff between the largest and smallest platform
+  #   avg_delta.append(np.mean(avg[-1] - avg[0]))
+  #   std_delta.append(np.mean(avg[-1] - avg[0]))
+  # from matplotlib import pyplot as plt
+  # plt.errorbar(wtls, avg_delta, yerr=std_delta, c='black')
+  # plt.xlabel('∆wtl')
+  # plt.ylabel('∆market-share')
+  # plt.title('Impact of waiting time limit on the market')
+  # plt.show()
   #######################################
   # FOR ∆TIME - ∆MS EVALUATION     
   #   # Compute the average and errors in time      
