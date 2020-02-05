@@ -23,7 +23,7 @@ if __name__ == "__main__":
   parser.add_argument('--plt',   help="Filename underwich to save the figure.",                             type=str,   default=None)
   parser.add_argument('--delta', help="Adds a delay (%% of t) to the market entrance of the 1st platform.", type=float, default=0)
   parser.add_argument('--city',  help="Flag to show the city as a grid of densities.",                      type=bool,  default=False)
-  parser.add_argument('--wtl',   help="Integer representing the waiting time limit for platforms.",         type=int,   default=100)
+  parser.add_argument('--wtl',   help="Integer representing the waiting time limit for platforms.",         type=int,   default=0)
   args = parser.parse_args()
 
   names = ['Uber', 'Black Cab', 'Bolt', 'Kapten', 'Heetch'][:args.P]
@@ -45,8 +45,8 @@ if __name__ == "__main__":
 
   # Setup the selector
   city = City()
-  pop_manager = PopulationManager(city.density, wtl)
-  selector = Density(pop_manager) 
+  pop_manager = PopulationManager(city.density, args.wtl)
+  selector = DensityBarabasi(pop_manager)
   # Define the ∆t of platform start
   delta_t = int(args.delta/100 * args.t)
   # Setup average platform share tracker
@@ -54,7 +54,7 @@ if __name__ == "__main__":
   # print(f"Simulating for {selector.name} selection...")
   iter_ms = []
   # Run simulation it times for each t 
-  for i in (range(args.it)):
+  for i in tqdm(range(args.it)):
     sim = Simulator(args.N, names, selector, [(0, delta_t)] if args.delta else [])
     # Sort the returned shares (who the winner is doesn't matter)
     m_shares = sorted(sim.run(args.t).get_market_shares(), key=lambda x: x[-1])
