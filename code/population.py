@@ -5,11 +5,19 @@ class PopulationManager():
     (with given a platform market share) when yielding a new user
     """
 
-    def __init__(self, density, waiting_time_limit):
+    def __init__(self, density, factor, waiting_time_limit):
         # Map each value to its fraction of the total density
         self.density = density / density.sum()
         self.X_max = density.shape[1]
         self.Y_max = density.shape[0]
+        self.m_d = np.sqrt(np.square(self.X_max) + np.square(self.Y_max))
+        # Taking int account given market shares using the lorenz factor
+        self.factor = {
+            'lorenz': lambda ms: np.sqrt(1 - np.square(ms)),
+            'exp': lambda ms: np.exp(1) - np.exp(ms), 
+            'tanh': lambda ms: 1/np.tanh(ms),
+            'linear': lambda ms: 1 - ms
+        }[factor]
         self.wtl = waiting_time_limit
 
     def sample_user(self, indices, average_users, market_shares=None):
@@ -18,18 +26,17 @@ class PopulationManager():
         y = np.random.randint(self.Y_max)
         n_user = np.array([y, x])
         # Compute the distance from this user to the average user of platforms
-        # distances = np.array([max(self.wtl, np.linalg.norm(avg - n_user)) for avg in average_users])
-        distances = np.array([np.linalg.norm(avg - n_user) for avg in average_users])
-        # Make distances probabilities, by making the smallest distance the most likely
-        distances = distances / distances.sum()
-        distances = 1 - distances
+        distances = np.array([(1/np.linalg.norm(avg - n_user) if np.linalg.norm(avg - n_user) else self.m_d) for avg in average_users])
+        # Normalise the distances (for them to be akin to probabilities)
         distances = distances / distances.sum()
         # Return the platform choice
         if market_shares is None:
             # With respect to the distances (only)
             return np.random.choice(indices, p=distances), n_user
         else:
-            # Taking int account given market shares using the lorenz factor
-            lorenz_factor = 1 / np.power(1/(1-np.square(market_shares)), 1/3)
-            factor_eq = lorenz_factor * market_shares + (1-lorenz_factor) * distances
+            # Factor the market shares and normalise them
+            factor = self.factor(market_shares)
+            factor = factor / factor.sum()
+            # Get the probability of joining each platform w.r.t. the factoring
+            factor_eq = factor * market_shares + (1-factor) * distances
             return np.random.choice(indices, p=factor_eq/factor_eq.sum()), n_user
