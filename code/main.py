@@ -48,33 +48,33 @@ if __name__ == "__main__":
   #  FOR SCALING COMPARISON
   # a_avg = []
   # a_std = []
-  a_data = [[],[],[],[]]
-  for k,f in enumerate(['lorenz', 'exp', 'tanh', 'linear']):
+  # a_data = [[],[],[],[]]
+  # for k,f in enumerate(['lorenz', 'exp', 'tanh', 'linear']):
+      # a_data[k].append(m_shares[1][-1]-m_shares[0][-1])
   #######################################
 
 
-    # Setup the selector
-    city = City()
-    pop_manager = PopulationManager(city.density, f, args.wtl)
-    selector = DensityBarabasi(pop_manager)
-    # Define the ∆t of platform start
-    delta_t = int(args.delta/100 * args.t)
-    # Setup average platform share tracker
-    platform_shares = []
-    # print(f"Simulating for {selector.name} selection...")
-    iter_ms = []
-    # Run simulation it times for each t 
-    for i in tqdm(range(args.it)):
-      sim = Simulator(args.N, names, selector, [(0, delta_t)] if args.delta else [])
-      # Sort the returned shares (who the winner is doesn't matter)
-      m_shares = sorted(sim.run(args.t).get_market_shares(), key=lambda x: x[-1])
-      # Store the shares
-      iter_ms.append(m_shares)
-      a_data[k].append(m_shares[1][-1]-m_shares[0][-1])
-    # print(f"...done", end='\n\n')
-    # Get means of winner / looser over the runs
-    avg = np.array([conf_interval(np.array(platform), axis=0)[0] for platform in zip(*iter_ms)])
-    std = np.array([conf_interval(np.array(platform), axis=0)[1] for platform in zip(*iter_ms)])
+  # Setup the selector
+  city = City()
+  pop_manager = PopulationManager(city.density, args.f, args.wtl)
+  selector = DensityBarabasi(pop_manager)
+  # Define the ∆t of platform start
+  delta_t = int(args.delta/100 * args.t)
+  # Setup average platform share tracker
+  platform_shares = []
+  # print(f"Simulating for {selector.name} selection...")
+  iter_ms = []
+  # Run simulation it times for each t 
+  for i in tqdm(range(args.it)):
+    sim = Simulator(args.N, names, selector, [(0, delta_t)] if args.delta else [])
+    # Sort the returned shares (who the winner is doesn't matter)
+    m_shares = sorted(sim.run(args.t).get_market_shares(), key=lambda x: x[-1])
+    # Store the shares
+    iter_ms.append(m_shares)
+  # print(f"...done", end='\n\n')
+  # Get means of winner / looser over the runs
+  avg = np.array([conf_interval(np.array(platform), axis=0)[0] for platform in zip(*iter_ms)])
+  std = np.array([conf_interval(np.array(platform), axis=0)[1] for platform in zip(*iter_ms)])
     
     
   #######################################
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     # a_avg.append(avg)
     # a_std.append(std)
 
-  from matplotlib import pyplot as plt
+  # from matplotlib import pyplot as plt
   # c = plt.cm.RdYlGn(np.linspace(0, 1, len(a_avg[0])))
   # fig, axes = plt.subplots(2, 2, figsize=(12, 8))
   # for i,ax in enumerate(axes.flat):
@@ -94,11 +94,10 @@ if __name__ == "__main__":
       # ax.set_ylim(0, 1)
   # plt.legend()
   # FOR BOX PLOTS
-  plt.boxplot(a_data, labels=["Lorenz: √(1-x^2)", "e - e^x", "tanh(x)", "1 - x"])
-  plt.ylabel("Average difference in market share")
-  plt.tight_layout()
-  plt.show()
-  exit()
+  # plt.boxplot(a_data, labels=["Lorenz: √(1-x^2)", "e - e^x", "tanh(x)", "1 - x"])
+  # plt.ylabel("Average difference in market share")
+  # plt.tight_layout()
+  # plt.show()
   #######################################
   # FOR ∆WTL - ∆MS EVALUATION
   #   # Append the average diff between the largest and smallest platform
