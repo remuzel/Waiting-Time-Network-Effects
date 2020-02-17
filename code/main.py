@@ -48,8 +48,8 @@ if __name__ == "__main__":
   #  FOR SCALING COMPARISON
   # a_avg = []
   # a_std = []
-  # a_data = [[],[],[],[]]
-  # for k,f in enumerate(['lorenz', 'exp', 'tanh', 'linear']):
+  # a_data = [[],[],[],[],[],[]]
+  # for k,f in enumerate(['lorenz', 'cosh', 'exp', 'linear', 'i_lorenz', 'tanh']):
       # a_data[k].append(m_shares[1][-1]-m_shares[0][-1])
   #######################################
 
@@ -84,20 +84,24 @@ if __name__ == "__main__":
 
   # from matplotlib import pyplot as plt
   # c = plt.cm.RdYlGn(np.linspace(0, 1, len(a_avg[0])))
-  # fig, axes = plt.subplots(2, 2, figsize=(12, 8))
+  # corr = ["Lorenz: √(1-m^2)", "sech(m)", "e - e^m", "1 - m", "i_Lorenz: (1-√m)^2", "coth(m)"]
+  # fig, axes = plt.subplots(2, 3, figsize=(15, 8))
   # for i,ax in enumerate(axes.flat):
-      # for j, market_share in enumerate(a_avg[i]):
-      #   ax.errorbar(list(range(len(market_share))), market_share, yerr=a_std[i][j], errorevery=50, c=c[j], label=f"Platform {j+1}")
-      # ax.set_title('Market share evaluation for Density Barabasi arrival')
-      # ax.set_xlabel('Time (t)')
-      # ax.set_ylabel('Market Share')
-      # ax.set_ylim(0, 1)
+  #     for j, market_share in enumerate(a_avg[i]):
+  #       ax.errorbar(list(range(len(market_share))), market_share, yerr=a_std[i][j], errorevery=50, c=c[j], label=f"Platform {j+1}")
+  #     ax.set_title(f'Market share evolution with {corr[i]} correction')
+  #     ax.set_xlabel('Time (t)')
+  #     ax.set_ylabel('Market Share')
+  #     ax.set_ylim(0, 1)
   # plt.legend()
+  # plt.tight_layout()
+  # plt.show()
   # FOR BOX PLOTS
-  # plt.boxplot(a_data, labels=["Lorenz: √(1-x^2)", "e - e^x", "tanh(x)", "1 - x"])
+  # plt.boxplot(a_data, labels=["Lorenz: √(1-m^2)", "sech(m)", "e - e^m", "1 - m", "i_Lorenz: (1-√m)^2", "coth(m)"])
   # plt.ylabel("Average difference in market share")
   # plt.tight_layout()
   # plt.show()
+  # exit()
   #######################################
   # FOR ∆WTL - ∆MS EVALUATION
   #   # Append the average diff between the largest and smallest platform

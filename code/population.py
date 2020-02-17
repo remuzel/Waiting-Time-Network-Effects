@@ -11,11 +11,13 @@ class PopulationManager():
         self.X_max = density.shape[1]
         self.Y_max = density.shape[0]
         self.m_d = np.sqrt(np.square(self.X_max) + np.square(self.Y_max))
-        # Taking int account given market shares using the lorenz factor
+        # Taking int account given market shares using the a scaled factor
         self.factor = {
             'lorenz': lambda ms: np.sqrt(1 - np.square(ms)),
-            'exp': lambda ms: np.exp(1) - np.exp(ms), 
-            'tanh': lambda ms: 1/np.tanh(ms),
+            'exp': lambda ms: (np.exp(1) - np.exp(ms)) / (np.exp(1) - 1), 
+            'tanh': lambda ms: (1/np.tanh(ms)) / (1/np.tanh(0.01)),
+            'i_lorenz': lambda ms: np.square(1-np.sqrt(ms)),
+            'cosh': lambda ms: 1/np.cosh(ms),
             'linear': lambda ms: 1 - ms
         }[factor]
         self.wtl = waiting_time_limit
@@ -36,7 +38,6 @@ class PopulationManager():
         else:
             # Factor the market shares and normalise them
             factor = self.factor(market_shares)
-            factor = factor / factor.sum()
             # Get the probability of joining each platform w.r.t. the factoring
             factor_eq = factor * market_shares + (1-factor) * distances
             return np.random.choice(indices, p=factor_eq/factor_eq.sum()), n_user
