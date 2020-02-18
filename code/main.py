@@ -17,16 +17,21 @@ if __name__ == "__main__":
 
   LOGGER = logging.getLogger(__name__)
 
+  arguments = {
+    '--N': ["Population size to consider during the simulation.", int, 1_000],
+    '--P': ["Number of platforms to consider during the simulation.", int, 2],
+    '--t': ["Duration of the simulation.", int, 1_000],
+    '--it': ["Number of iterations to get average.", int, 1_000],
+    '--plt': ["Filename underwich to save the figure.", str, None],
+    '--delta': ["Adds a delay (%% of t) to the market entrance of the 1st platform.", float, 0],
+    '--city': ["Flag to show the city as a grid of densities.", bool, False],
+    '--f': ["Attenuating factor to be used in size vs distance equation.", str, "lorenz"],
+    '--wtl': ["Integer representing the waiting time limit for platforms.", int, 0]
+  }
+
   parser = argparse.ArgumentParser()
-  parser.add_argument('--N',     help="Population size to consider during the simulation.",                 type=int,   default=1_000)
-  parser.add_argument('--P',     help="Number of platforms to consider during the simulation.",             type=int,   default=2)
-  parser.add_argument('--t',     help="Duration of the simulation."         ,                               type=int,   default=1_000)
-  parser.add_argument('--it',    help="Number of iterations to get average.",                               type=int,   default=1_000)
-  parser.add_argument('--plt',   help="Filename underwich to save the figure.",                             type=str,   default=None)
-  parser.add_argument('--delta', help="Adds a delay (%% of t) to the market entrance of the 1st platform.", type=float, default=0)
-  parser.add_argument('--city',  help="Flag to show the city as a grid of densities.",                      type=bool,  default=False)
-  parser.add_argument('--f',     help="Attenuating factor to be used in size vs distance equation.",        type=str,   default="lorenz")
-  parser.add_argument('--wtl',   help="Integer representing the waiting time limit for platforms.",         type=int,   default=0)
+  for arg, (_help, _type, _default) in arguments.items():
+    parser.add_argument(arg, help=_help, type=_type, default=_default)
   args = parser.parse_args()
 
   names = ['Uber', 'Black Cab', 'Bolt', 'Kapten', 'Heetch'][:args.P]
