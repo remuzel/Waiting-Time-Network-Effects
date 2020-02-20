@@ -19,14 +19,14 @@ if __name__ == "__main__":
     LOGGER = logging.getLogger(__name__)
 
     arguments = {
-    '--N': ["Population size to consider during the simulation.", int, 1_000],
-    '--P': ["Number of platforms to consider during the simulation.", int, 2],
-    '--t': ["Duration of the simulation.", int, 1_000],
-    '--it': ["Number of iterations to get average.", int, 1_000],
-    '--plt': ["Filename underwich to save the figure.", str, None],
-    '--city': ["Flag to show the city as a grid of densities.", bool, False],
-    '--f': ["Attenuating factor to be used in size vs distance equation.", str, "lorenz"],
-    '--c': ["Alpha factor for the lorenz scaling", float, 2]
+        '--N': ["Population size to consider during the simulation.", int, 1_000],
+        '--P': ["Number of platforms to consider during the simulation.", int, 2],
+        '--t': ["Duration of the simulation.", int, 1_000],
+        '--it': ["Number of iterations to get average.", int, 1_000],
+        '--plt': ["Filename underwich to save the figure.", str, None],
+        '--city': ["Flag to show the city as a grid of densities.", bool, False],
+        '--f': ["Attenuating factor to be used in size vs distance equation.", str, "lorenz"],
+        '--c': ["Alpha factor for the lorenz scaling", float, 2]
     }
 
     parser = argparse.ArgumentParser()
