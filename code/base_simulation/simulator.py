@@ -1,8 +1,8 @@
 import numpy as np
 from tqdm import tqdm
 
-from rideshare_platform import Platform
-from utils import lrange
+from .rideshare_platform import Platform
+from .utils import lrange
 
 class Simulator:
     """ This class is responsible for running individual market share simulations. """
@@ -14,11 +14,12 @@ class Simulator:
         self.platforms = [Platform(name, len(platform_names)) for name in platform_names]
         self.platform_indices = lrange(self.platforms)
         # Initialise the selector with the platforms
-        self.selector = selector
-        self.selector.set_platforms(self.platforms)
+        if selector is not None:
+            self.selector = selector
+            self.selector.set_platforms(self.platforms)
+            self.is_density = self.selector.name.startswith('Density')
         # If a stary delay is present, apply it 
         self.delay_platforms(delta_ts)
-        self.is_density = self.selector.name.startswith('Density')
 
     def delay_platforms(self, delta_ts):
         """ Turns off a set of platforms until the given timestep is met """
