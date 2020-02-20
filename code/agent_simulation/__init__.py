@@ -2,6 +2,9 @@
 import sys
 sys.path.append("..")
 
+# Import the usual simulator
+from base_simulation.simulator import Simulator
+
 # Import the city
 from base_simulation.environment import City
 
@@ -13,4 +16,4 @@ from base_simulation.selector import *
 from base_simulation.population import PopulationManager
 
 # Import the utils
-from base_simulation.utils import plot_market_share
+from base_simulation.utils import plot_market_share, lrange
