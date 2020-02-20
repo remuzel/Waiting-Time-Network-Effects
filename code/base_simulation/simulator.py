@@ -8,11 +8,15 @@ class Simulator:
     """ This class is responsible for running individual market share simulations. """
 
     def __init__(self, population_size, platform_names, selector, delta_ts):
+        # Set the population size
         self.N = population_size
+        # Create the platforms and index them
         self.platforms = [Platform(name, len(platform_names)) for name in platform_names]
         self.platform_indices = lrange(self.platforms)
+        # Initialise the selector with the platforms
         self.selector = selector
         self.selector.set_platforms(self.platforms)
+        # If a stary delay is present, apply it 
         self.delay_platforms(delta_ts)
         self.is_density = self.selector.name.startswith('Density')
 
