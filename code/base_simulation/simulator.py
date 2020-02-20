@@ -27,7 +27,7 @@ class Simulator:
 
     def get_market_shares(self):
         """ Returns the market share of each registered platform. """
-        return [platform.get_market_share() for platform in self.platforms]
+        return [platform.get_market_share() for platform in self.platforms if platform.isActive()]
 
     def growth(self, indices, g, t, position):
         """ Adds the indicated growth (g) to the flagged platforms.
