@@ -40,7 +40,7 @@ class Platform:
     n = self.users
     self.average_user = ((n-1) * self.average_user + xy) / n
 
-  def add_user(self, n, delta_pop, position=None):
+  def add_user(self, n=1, delta_pop=1, position=None):
     self.users += n
     self.population += delta_pop
     # Decrese the remaining time until activation
