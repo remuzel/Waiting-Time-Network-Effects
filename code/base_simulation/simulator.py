@@ -25,11 +25,15 @@ class Simulator:
         for p_index, delta_t in delta_ts:
             self.platforms[p_index].deactivate(delta_t)
 
+    def get_recent_market_shares(self):
+        """ Returns the most recent markete share of each platform """
+        return [platform.get_market_share()[-1] for platform in self.platforms if platform.isActive()]
+
     def get_market_shares(self):
         """ Returns the market share of each registered platform. """
         return [platform.get_market_share() for platform in self.platforms if platform.isActive()]
 
-    def growth(self, indices, g, t, position):
+    def growth(self, indices, g=1, t=1, position=None):
         """ Adds the indicated growth (g) to the flagged platforms.
         """
         for i in indices:
