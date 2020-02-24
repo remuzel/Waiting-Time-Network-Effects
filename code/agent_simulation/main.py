@@ -26,7 +26,8 @@ if __name__ == "__main__":
         '--plt': ["Filename underwich to save the figure.", str, None],
         '--city': ["Flag to show the city as a grid of densities.", bool, False],
         '--f': ["Attenuating factor to be used in size vs distance equation.", str, "lorenz"],
-        '--c': ["Alpha factor for the lorenz scaling", float, 2]
+        '--c': ["Alpha factor for the lorenz scaling", float, 2],
+        '--u': ["Proportion of users generated in the simulation.", float, 0.5]
     }
 
     parser = argparse.ArgumentParser()
@@ -40,7 +41,8 @@ if __name__ == "__main__":
     city = City()
     # Run the simulation it times
     for i in tqdm(range(args.it)):
-        sim = AgentSimulator(args.N, names, city_shape=city.density.shape, lorenz=args.c)
+        sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
+                            user_proportion=args.u, lorenz=args.c)
         # Sort the returned shares (who the winner is doesn't matter)
         m_shares = sorted(sim.run().get_market_shares(), key=lambda x: x[-1])
         # Store the shares

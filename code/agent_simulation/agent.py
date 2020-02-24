@@ -20,9 +20,13 @@ class Agent():
         indices = data['platform_indices']
         u, d = data['users'], data['drivers']
         ms = data['market_shares']
+        # Get the distances to each platforms' users and drivers
+        u = 1 / np.linalg.norm(self.position - u, axis=1)
+        d = 1 / np.linalg.norm(self.position - d, axis=1)
         # Apply the decision function and make the decision
-        size_factor = self.lorenz(ms)
-        p = (1 - size_factor) * (self.u_factor * u + self.d_factor * d) + size_factor * ms
+        p = self.lorenz(ms) * ms + self.u * u/u.sum() + self.d * d/d.sum()
+        if p.min() < 0:
+            p -= 2* p.min()
         choice = np.random.choice(indices, p=p/p.sum())
         self.rhp = choice
         return choice
@@ -31,12 +35,12 @@ class User(Agent):
     """ user agent """
     def __init__(self, grid_shape, lorenz_coef=2, geograph_mode="uniform"):
         super().__init__(grid_shape, lorenz_coef, geograph_mode)
-        self.u_factor = 0.6
-        self.d_factor = 0.4
+        self.d = 1
+        self.u = -1
 
 class Driver(Agent):
     """ driver agent """
     def __init__(self, grid_shape, lorenz_coef=2, geograph_mode="uniform"):
         super().__init__(grid_shape, lorenz_coef, geograph_mode)
-        self.u_factor = 0.9
-        self.d_factor = 0.1
+        self.d = -1
+        self.u = 1
