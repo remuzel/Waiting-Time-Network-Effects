@@ -14,10 +14,9 @@ class Simulator:
         self.platforms = [Platform(name, len(platform_names)) for name in platform_names]
         self.platform_indices = lrange(self.platforms)
         # Initialise the selector with the platforms
-        if selector is not None:
-            self.selector = selector
-            self.selector.set_platforms(self.platforms)
-            self.is_density = self.selector.name.startswith('Density')
+        self.selector = selector
+        self.selector.set_platforms(self.platforms)
+        self.is_density = self.selector.name.startswith('Density')
         # If a stary delay is present, apply it 
         self.delay_platforms(delta_ts)
 
