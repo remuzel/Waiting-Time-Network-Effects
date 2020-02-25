@@ -19,12 +19,13 @@ class Agent():
         # Unpack the given data
         indices = data['platform_indices']
         u, d = data['users'], data['drivers']
+        n_u, n_d = data['n_users'], data['n_drivers']
         ms = data['market_shares']
         # Get the distances to each platforms' users and drivers
         u = 1 / np.linalg.norm(self.position - u, axis=1)
         d = 1 / np.linalg.norm(self.position - d, axis=1)
         # Apply the decision function and make the decision
-        p = self.lorenz(ms) * ms + self.u * u/u.sum() + self.d * d/d.sum()
+        p = n_u * self.u * u/u.sum() + n_d * self.d * d/d.sum()
         if p.min() < 0:
             p -= 2* p.min()
         choice = np.random.choice(indices, p=p/p.sum())

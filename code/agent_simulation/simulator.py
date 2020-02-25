@@ -80,7 +80,9 @@ class AgentSimulator():
             data = {
                 'platform_indices': self.get_platform_indices(),
                 'users': self.get_average_users(),
+                'n_users': np.array([p.users for p in self.platforms]),
                 'drivers': self.get_average_drivers(),
+                'n_drivers': np.array([p.drivers for p in self.platforms]),
                 'market_shares': self.get_recent_market_shares()
             }
             # Make the agent chose a platform
