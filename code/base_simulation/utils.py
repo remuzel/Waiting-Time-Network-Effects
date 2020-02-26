@@ -19,7 +19,7 @@ def plot_market_share(market_shares, error, arrival_type, filename=None, ebar_r=
     plt.title(f'Market share evaluation for {arrival_type} arrival')
     plt.legend()
     if filename is not None:
-        plt.savefig(f'../figures/v3.1/{filename}', dpi=600)
+        plt.savefig(f'../../figures/v4.1/{filename}', dpi=600)
     else:
         plt.show()
 
