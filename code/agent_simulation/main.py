@@ -52,4 +52,4 @@ if __name__ == "__main__":
     std = np.array([conf_interval(np.array(platform), axis=0)[1] for platform in zip(*iter_ms)])
 
     # Plot the results
-    plot_market_share(avg, std, "agent", filename=None)
+    plot_market_share(avg, std, "agent", filename=args.plt)
