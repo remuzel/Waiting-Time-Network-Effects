@@ -37,19 +37,35 @@ if __name__ == "__main__":
 
     names = ['Uber', 'Black Cab', 'Bolt', 'Kapten', 'Heetch'][:args.P]
 
-    iter_ms = []
-    city = City()
-    # Run the simulation it times
-    for i in tqdm(range(args.it)):
-        sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
-                            user_proportion=args.u, lorenz=args.c)
-        # Sort the returned shares (who the winner is doesn't matter)
-        m_shares = sorted(sim.run().get_market_shares(), key=lambda x: x[-1])
-        # Store the shares
-        iter_ms.append(m_shares)
-    # Get means of winner / looser over the runs
-    avg = np.array([conf_interval(np.array(platform), axis=0)[0] for platform in zip(*iter_ms)])
-    std = np.array([conf_interval(np.array(platform), axis=0)[1] for platform in zip(*iter_ms)])
+    a_avg = []
+    a_std = []
+    diff = [u/100 for u in list(range(0, 101, 5)) if u not in [0, 100]]
+    for u in diff:
+
+        iter_ms = []
+        city = City()
+        # Run the simulation it times
+        for i in tqdm(range(args.it)):
+            sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
+                                user_proportion=u, lorenz=args.c)
+            # Sort the returned shares (who the winner is doesn't matter)
+            m_shares = sorted(sim.run().get_market_shares(), key=lambda x: x[-1])
+            # Store the shares
+            iter_ms.append(m_shares)
+        # Get means of winner / looser over the runs
+        avg = np.array([conf_interval(np.array(platform), axis=0)[0] for platform in zip(*iter_ms)])
+        std = np.array([conf_interval(np.array(platform), axis=0)[1] for platform in zip(*iter_ms)])
+
+        a_avg.append(avg[1][-1] - avg[0][-1])
+        a_std.append(std[1][-1] - std[0][-1])
+    from matplotlib import pyplot as plt
+    plt.title('Impact on market share of population difference')
+    plt.xticks([d for i,d in enumerate(diff) if i % 2])
+    plt.xlabel('Fraction of rider agents')
+    plt.ylabel('∆ in market share')
+    plt.errorbar(diff, a_avg, yerr=a_std)
+    plt.show()
+
 
     # Plot the results
-    plot_market_share(avg, std, "agent", filename=args.plt)
+    # plot_market_share(avg, std, "agent", filename=args.plt)
