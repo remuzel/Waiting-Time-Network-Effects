@@ -25,6 +25,8 @@ class Agent():
         u = 1 / np.linalg.norm(self.position - u, axis=1)
         d = 1 / np.linalg.norm(self.position - d, axis=1)
         # Apply the decision function and make the decision
+        # n_u = n_u/n_u.sum() if n_u.sum() else n_u
+        # n_d = n_d/n_d.sum() if n_d.sum() else n_d
         p = n_u * self.u * u/u.sum() + n_d * self.d * d/d.sum()
         if p.min() < 0:
             p -= 2* p.min()
