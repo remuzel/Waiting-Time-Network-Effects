@@ -42,7 +42,7 @@ if __name__ == "__main__":
     # Run the simulation it times
     for i in tqdm(range(args.it)):
         sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
-                            user_proportion=args.u, lorenz=args.c)
+                            rider_proportion=args.u, lorenz=args.c)
         # Sort the returned shares (who the winner is doesn't matter)
         m_shares = sorted(sim.run().get_market_shares(), key=lambda x: x[-1])
         # Store the shares
@@ -50,6 +50,6 @@ if __name__ == "__main__":
     # Get means of winner / looser over the runs
     avg = np.array([conf_interval(np.array(platform), axis=0)[0] for platform in zip(*iter_ms)])
     std = np.array([conf_interval(np.array(platform), axis=0)[1] for platform in zip(*iter_ms)])
-
+    
     # Plot the results
     plot_market_share(avg, std, "agent", filename=args.plt)
