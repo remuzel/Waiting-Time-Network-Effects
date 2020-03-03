@@ -19,7 +19,7 @@ def plot_market_share(market_shares, error, arrival_type, filename=None, ebar_r=
     plt.title(f'Market share evaluation for {arrival_type} arrival')
     plt.legend()
     if filename is not None:
-        plt.savefig(f'../../figures/v4.1/{filename}', dpi=600)
+        plt.savefig(f'../../figures/v4.2/{filename}', dpi=600)
     else:
         plt.show()
 
@@ -35,3 +35,9 @@ def conf_interval(data, axis=None):
     else:
         dev = 1.960 * std(data, axis=axis) / sqrt(len(data))
         return mean(data, axis=axis), dev
+
+def shift(values):
+    """ Shifts values from [-a, b] to [a, b+2a] """
+    if values.min() < 0:
+        values -= 2*values.min()
+    return values
