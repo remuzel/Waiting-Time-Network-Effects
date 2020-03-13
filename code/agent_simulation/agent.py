@@ -25,14 +25,22 @@ class Agent():
         pos_r, pos_d = data['riders'], data['drivers']
         n_r, n_d = data['n_riders'], data['n_drivers']
         ms = data['market_shares']
+        ########################
+        # Simplistic Modelling #
+        ########################
+        # Compute the driver / rider (or inverse) ratio for each platform
+        p = n_d / n_r if self.is_rider else n_r / n_d
+        ########################
+        # Original Modelling #
+        ########################
         # Get the distances to each platforms' riders and drivers
-        dist_r = 1 / np.linalg.norm(self.position - pos_r, axis=1)
-        dist_d = 1 / np.linalg.norm(self.position - pos_d, axis=1)
-        # The agent count is weighed w.r.t. other platforms to introduce barabasi
-        # Platform value is reduced if the agent is surrounded by same-typed agents
-        rider_component = shift(n_r/n_r.sum() + self.r * dist_r/dist_r.sum())
-        driver_component = shift(n_d/n_d.sum() + self.d * dist_d/dist_d.sum())
-        p = self.lorenz(ms) * (rider_component + driver_component)
+        # dist_r = 1 / np.linalg.norm(self.position - pos_r, axis=1)
+        # dist_d = 1 / np.linalg.norm(self.position - pos_d, axis=1)
+        # # The agent count is weighed w.r.t. other platforms to introduce barabasi
+        # # Platform value is reduced if the agent is surrounded by same-typed agents
+        # rider_component = shift(n_r/n_r.sum() + self.r * dist_r/dist_r.sum())
+        # driver_component = shift(n_d/n_d.sum() + self.d * dist_d/dist_d.sum())
+        # p = self.lorenz(ms) * (rider_component + driver_component)
         choice = np.random.choice(indices, p=p/p.sum())
         self.rhp = choice
         return choice

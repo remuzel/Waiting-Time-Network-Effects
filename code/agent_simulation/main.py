@@ -27,7 +27,7 @@ if __name__ == "__main__":
         '--city': ["Flag to show the city as a grid of densities.", bool, False],
         '--f': ["Attenuating factor to be used in size vs distance equation.", str, "lorenz"],
         '--c': ["Alpha factor for the lorenz scaling", float, 2],
-        '--u': ["Proportion of users generated in the simulation.", float, 0.5]
+        '--u': ["Proportion of users generated in the simulation.", float, 0.95]
     }
 
     parser = argparse.ArgumentParser()
