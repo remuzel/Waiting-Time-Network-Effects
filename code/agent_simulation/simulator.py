@@ -41,16 +41,24 @@ class AgentSimulator():
         for p_index, delta_t in delta_ts:
             self.platforms[p_index].deactivate(delta_t)
 
-    def growth(self, indices, is_rider, g=1, t=1, position=None):
+    def growth(self, indices, is_driver, g=1, t=1, position=None):
         """ Adds the indicated growth (g) to the flagged platforms.
         """
         for i in indices:
-            self.platforms[i].add_user(position, n=g, delta_pop=t, user=is_rider)
+            self.platforms[i].add_user(position, n=g, delta_pop=t, driver=is_driver)
 
     def sample_agent(self):
         """ Randomly generate either a user or a driver """
         is_diver = np.random.choice([0, 1], p=self.rider_proportion)
         return is_diver, Driver(self.xy, lorenz_coef=self.c) if is_diver else Rider(self.xy, lorenz_coef=self.c)
+
+    def get_drivers(self):
+        """ Returns the number of drivers of each registered platform. """
+        return [platform.get_driver_history() for platform in self.platforms if platform.isActive()]
+
+    def get_riders(self):
+        """ Returns the number of riders of each registered platform. """
+        return [platform.get_rider_history() for platform in self.platforms if platform.isActive()]
 
     def get_market_shares(self):
         """ Returns the market share of each registered platform. """
@@ -74,7 +82,7 @@ class AgentSimulator():
         """ Overwritting the simulators' run method - generating from total pop instead. """
         for _ in range(self.N):
             # Generate an agent
-            is_rider, agent = self.sample_agent()
+            is_driver, agent = self.sample_agent()
             pos = agent.position
             # Gather data about the simulation to pass onto the agent
             data = {
@@ -88,6 +96,6 @@ class AgentSimulator():
             # Make the agent chose a platform
             growing_platform = agent.decide(data)
             # Grow them accordingly
-            self.growth([growing_platform], is_rider, position=pos)
-            self.growth(np.delete(self.platform_indices, growing_platform), is_rider, g=0, position=pos)
+            self.growth([growing_platform], is_driver, position=pos)
+            self.growth(np.delete(self.platform_indices, growing_platform), is_driver, g=0, position=pos)
         return self

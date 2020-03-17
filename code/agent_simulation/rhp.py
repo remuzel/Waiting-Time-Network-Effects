@@ -14,6 +14,8 @@ class Platform:
         self.population = 2 * n_platforms
         self.users = 1
         self.drivers = 1
+        self.rider_history = [1]
+        self.driver_history = [1]
         self.market_share = [1/n_platforms]
         self.delta_t = None
 
@@ -24,6 +26,14 @@ class Platform:
     def set_avg_driver(self, x, y):
         """ Sets the initial position of average user """
         self.average_driver = np.array([np.random.randint(y), np.random.randint(x)])
+
+    def get_driver_history(self):
+        """ Returns the driver history """
+        return self.driver_history
+
+    def get_rider_history(self):
+        """ Returns the rider history """
+        return self.rider_history
 
     def activate(self):
         """ Activates the ridesharing platform - allowing to receive new users """
@@ -50,14 +60,16 @@ class Platform:
         n = self.drivers
         self.average_driver = ((n-1) * self.average_driver + xy) / n
 
-    def add_user(self, position, n=1, delta_pop=1, user=True):
+    def add_user(self, position, n=1, delta_pop=1, driver=True):
         # Increment the corresponding user/driver count 
-        if user:
-            self.users += n
-            self.update_avg_user(position)
-        else:
+        if driver:
             self.drivers += n
             self.update_avg_driver(position)
+        else:
+            self.users += n
+            self.update_avg_user(position)
+        self.driver_history.append(self.drivers)
+        self.rider_history.append(self.users)
         # Update the population & market shares
         self.population += delta_pop
         self.update_market_share()
