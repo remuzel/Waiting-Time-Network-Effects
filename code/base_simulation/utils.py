@@ -1,4 +1,5 @@
 from matplotlib import pyplot as plt
+from matplotlib. lines import Line2D
 from numpy import linspace, std, mean, sqrt
 
 def plot_market_share(data, arrival_type, filename=None, ebar_r=10):
@@ -35,19 +36,25 @@ def plot_market_share(data, arrival_type, filename=None, ebar_r=10):
     fig, r_ax = plt.subplots()
     r_ax.set_xlabel('Time (t)')
     r_ax.set_ylabel('Riders')
+    r_ax.set_yscale('log')
     plots = []
     # Plot the rider population evolution
     for i, r in enumerate(n_riders):
-        plots.append(r_ax.errorbar(lrange(r), r, yerr=r_error[i], errorevery=100, c=c[i], label=f"Riders (P{i+1})"))
+        plots.append(r_ax.errorbar(lrange(r), r, yerr=r_error[i], errorevery=100, c=c[i]))
 
     d_ax = r_ax.twinx()
     d_ax.set_ylabel('Drivers')
+    d_ax.set_yscale('log')
     # Plot the driver population evolution
     for i, d in enumerate(n_drivers):
-        plots.append(d_ax.errorbar(lrange(d), d, fmt='--', yerr=d_error[i], errorevery=100, c=c[i], label=f"Drivers (P{i+1})"))
+        plots.append(d_ax.errorbar(lrange(d), d, fmt='--', yerr=d_error[i], errorevery=100, c=c[i]))
     
-    labels = [p.get_label() for p in plots]
-    r_ax.legend(plots, labels, loc=0)
+    lines = [
+        Line2D([0], [0], color='black'),
+        Line2D([0], [0], color='black', linestyle='--')
+    ]
+    labels = ["Riders", "Drivers"]
+    plt.legend(lines, labels)
     plt.title(f'Agent population evolution for {arrival_type} arrival')
     if filename is not None:
         plt.savefig(f'../../figures/{version}/population_{filename}', dpi=600)
