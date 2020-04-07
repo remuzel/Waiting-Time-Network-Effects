@@ -11,12 +11,16 @@ class Platform:
         initial_size -- Number of users in the platform at creation (Default 0)
         """
         self.name = platform_name
+        self.r_population = n_platforms
+        self.d_population = n_platforms
         self.population = 2 * n_platforms
         self.users = 1
         self.drivers = 1
         self.rider_history = [1]
         self.driver_history = [1]
         self.market_share = [1/n_platforms]
+        self.d_market_share = [1/n_platforms]
+        self.r_market_share = [1/n_platforms]
         self.delta_t = None
 
     def set_avg_user(self, x, y):
@@ -49,6 +53,8 @@ class Platform:
 
     def update_market_share(self):
         self.market_share.append((self.users + self.drivers) / self.population)
+        self.d_market_share.append(self.drivers/self.d_population)
+        self.r_market_share.append(self.users/self.r_population)
 
     def update_avg_user(self, xy):
         """ Updates the location in space of the average user """
@@ -64,9 +70,11 @@ class Platform:
         # Increment the corresponding user/driver count 
         if driver:
             self.drivers += n
+            self.d_population += delta_pop
             self.update_avg_driver(position)
         else:
             self.users += n
+            self.r_population += delta_pop
             self.update_avg_user(position)
         self.driver_history.append(self.drivers)
         self.rider_history.append(self.users)
@@ -82,3 +90,9 @@ class Platform:
 
     def get_market_share(self):
         return self.market_share
+
+    def get_r_market_share(self):
+        return self.r_market_share
+
+    def get_d_market_share(self):
+        return self.d_market_share

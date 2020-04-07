@@ -16,7 +16,7 @@ class AgentSimulator():
     """
     def __init__(self, population_size, platform_names,
                 city_shape=(500,500), delta_ts=[], rider_proportion=0.8,
-                agent_vision=None, lorenz=2):
+                agent_vision=None, lorenz=2, mu_R=0.5, mu_D=0.5):
                 
         # Set the population size
         self.N = population_size
@@ -35,6 +35,9 @@ class AgentSimulator():
         [p.set_avg_driver(self.xy[1], self.xy[0]) for p in self.platforms]
         # Set the lorenz coef
         self.c = lorenz
+        # Set the death coefficients
+        self.mu_R = mu_R
+        self.mu_D = mu_D
 
     def delay_platforms(self, delta_ts):
         """ Turns off a set of platforms until the given timestep is met """
@@ -49,8 +52,11 @@ class AgentSimulator():
 
     def sample_agent(self):
         """ Randomly generate either a user or a driver """
-        is_diver = np.random.choice([0, 1], p=self.rider_proportion)
-        return is_diver, Driver(self.xy, lorenz_coef=self.c) if is_diver else Rider(self.xy, lorenz_coef=self.c)
+        is_driver = np.random.choice([0, 1], p=self.rider_proportion)
+        if is_driver:
+            return is_driver, Driver(self.xy, lorenz_coef=self.c, mu=self.mu_R)
+        else:
+            return is_driver, Rider(self.xy, lorenz_coef=self.c, mu=self.mu_R)
 
     def get_drivers(self):
         """ Returns the number of drivers of each registered platform. """
@@ -65,8 +71,16 @@ class AgentSimulator():
         return [platform.get_market_share() for platform in self.platforms if platform.isActive()]
 
     def get_recent_market_shares(self):
-        """ Returns the most recent markete share of each platform """
+        """ Returns the most recent market share of each platform """
         return [platform.get_market_share()[-1] for platform in self.platforms if platform.isActive()]
+
+    def get_recent_r_market_shares(self):
+        """ Returns the most recent RIDER market share of each platform """
+        return [platform.get_r_market_share()[-1] for platform in self.platforms if platform.isActive()]
+
+    def get_recent_d_market_shares(self):
+        """ Returns the most recent DRIVER market share of each platform """
+        return [platform.get_d_market_share()[-1] for platform in self.platforms if platform.isActive()]
 
     def get_platform_indices(self):
         """ Returns the indices of active platforms """
@@ -91,7 +105,9 @@ class AgentSimulator():
                 'n_riders': np.array([p.users for p in self.platforms]),
                 'drivers': self.get_average_drivers(),
                 'n_drivers': np.array([p.drivers for p in self.platforms]),
-                'market_shares': self.get_recent_market_shares()
+                'market_shares': self.get_recent_market_shares(),
+                'r_market_shares': self.get_recent_r_market_shares(),
+                'd_market_shares': self.get_recent_d_market_shares()
             }
             # Make the agent chose a platform
             growing_platform = agent.decide(data)
