@@ -54,9 +54,9 @@ class AgentSimulator():
         """ Randomly generate either a user or a driver """
         is_driver = np.random.choice([0, 1], p=self.rider_proportion)
         if is_driver:
-            return is_driver, Driver(self.xy, lorenz_coef=self.c, mu=self.mu_R)
+            return is_driver, Driver(self.xy, lorenz_coef=self.c, mu_R=self.mu_R, mu_D=self.mu_D)
         else:
-            return is_driver, Rider(self.xy, lorenz_coef=self.c, mu=self.mu_R)
+            return is_driver, Rider(self.xy, lorenz_coef=self.c, mu_R=self.mu_R, mu_D=self.mu_D)
 
     def get_drivers(self):
         """ Returns the number of drivers of each registered platform. """
