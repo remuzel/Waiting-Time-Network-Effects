@@ -1,3 +1,4 @@
+import seaborn as sb; sb.set()
 from matplotlib import pyplot as plt
 from matplotlib. lines import Line2D
 from numpy import linspace, std, mean, sqrt
@@ -79,3 +80,77 @@ def shift(values):
     if values.min() < 0:
         values -= 2*values.min()
     return values
+
+
+
+def plot_heatmaps(data, n=100):
+    
+    # Retrieve the data 
+    delta_total = data['delta_t']
+    delta_drivers = data['delta_d']
+    delta_riders = data['delta_r']
+    delta_market_share = data['delta_ms']
+    delta_inner_1 = data['delta_i1']
+    delta_inner_2 = data['delta_i2']
+
+    # Setting up the figure size
+    fig = plt.figure(figsize=(24, 12))
+    # Writing the ticks for the mu's
+    ticks = [str(i/100) if i%10==0 else '' for i in range(0, n+1)]
+
+    ax = fig.add_subplot(2, 3, 1)
+    # Plot the delta totals
+    ax = sb.heatmap(delta_total[::-1][:n, -n:], robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    # Set labels and title
+    ax.set_xlabel('mu_R', size=12)
+    ax.set_ylabel('mu_D', size=12)
+    plt.tight_layout()
+    plt.title('Absolute difference between platform sizes (N=2)', size=15)
+
+    ax = fig.add_subplot(2, 3, 2)
+    # Plot the delta drivers
+    ax = sb.heatmap(delta_drivers[::-1][:n, -n:], robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    # Set labels and title
+    ax.set_xlabel('mu_R', size=12)
+    ax.set_ylabel('mu_D', size=12)
+    plt.tight_layout()
+    plt.title('Absolute difference between number of drivers', size=15)
+
+    ax = fig.add_subplot(2, 3, 3)
+    # Plot the delta riders
+    ax = sb.heatmap(delta_riders[::-1][:n, -n:], robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    # Set labels and title
+    ax.set_xlabel('mu_R', size=12)
+    ax.set_ylabel('mu_D', size=12)
+    plt.tight_layout()
+    plt.title('Absolute difference between number of riders', size=15)
+
+    ax = fig.add_subplot(2, 3, 4)
+    # Plot the difference in agents for platform 1
+    ax = sb.heatmap(delta_market_share[::-1][:n, -n:], robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    # Set labels and title
+    ax.set_xlabel('mu_R', size=12)
+    ax.set_ylabel('mu_D', size=12)
+    plt.tight_layout()
+    plt.title('Absolute difference between platform market shares', size=15)
+
+    ax = fig.add_subplot(2, 3, 5)
+    # Plot the difference in agents for platform 1
+    ax = sb.heatmap(delta_inner_1[::-1][:n, -n:], robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    # Set labels and title
+    ax.set_xlabel('mu_R', size=12)
+    ax.set_ylabel('mu_D', size=12)
+    plt.tight_layout()
+    plt.title('Surplus of riders for platform 1 (riders-drivers)', size=15)
+
+    ax = fig.add_subplot(2, 3, 6)
+    # Plot the difference in agents for platform 2
+    ax = sb.heatmap(delta_inner_2[::-1][:n, -n:], robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    # Set labels and title
+    ax.set_xlabel('mu_R', size=12)
+    ax.set_ylabel('mu_D', size=12)
+    plt.tight_layout()
+    plt.title('Surplus of riders for platform 2 (riders-drivers)', size=15)
+
+    # Show entire figure
+    plt.show()
