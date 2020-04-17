@@ -153,4 +153,4 @@ def plot_heatmaps(data, n=100):
     plt.title('Surplus of riders for platform 2 (riders-drivers)', size=15)
 
     # Show entire figure
-    plt.savefig(f'../../figures/{version}/heatmap-{n}.png', dpi=600)
+    plt.savefig(f'../../figures/{version}/heatmap-{n}.png', dpi=150)
