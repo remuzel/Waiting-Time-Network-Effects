@@ -84,7 +84,7 @@ def shift(values):
 
 
 def plot_heatmaps(data, n=100):
-    version = "v6.1"
+    version = "v6.2"
     # Retrieve the data 
     delta_total = data['delta_t'][::-1][:n,-n:] if n != 100 else data['delta_t'][::-1]
     delta_drivers = data['delta_d'][::-1][:n,-n:] if n != 100 else data['delta_d'][::-1]
