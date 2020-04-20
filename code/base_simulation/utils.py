@@ -83,8 +83,8 @@ def shift(values):
 
 
 
-def plot_heatmaps(data, n=100):
-    version = "v6.2"
+def plot_heatmaps(data, n=100, u=0.95):
+    version, u = "v6.2", int(u*100)
     # Retrieve the data 
     delta_total = data['delta_t'][::-1][:n,-n:] if n != 100 else data['delta_t'][::-1]
     delta_drivers = data['delta_d'][::-1][:n,-n:] if n != 100 else data['delta_d'][::-1]
@@ -153,4 +153,4 @@ def plot_heatmaps(data, n=100):
     plt.title('Surplus of riders for platform 2 (riders-drivers)', size=15)
 
     # Show entire figure
-    plt.savefig(f'../../figures/{version}/heatmap-{n}.png', dpi=150)
+    plt.savefig(f'../../figures/{version}/heatmap-{n}-{u}r.png', dpi=150)
