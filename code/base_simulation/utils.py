@@ -1,4 +1,5 @@
 import seaborn as sb; sb.set()
+from pathlib import Path
 from matplotlib import pyplot as plt
 from matplotlib. lines import Line2D
 from numpy import linspace, std, mean, sqrt
@@ -83,7 +84,7 @@ def shift(values):
 
 
 
-def plot_heatmaps(data, n=100, u=0.95):
+def plot_heatmaps(data, n=100, u=0.95, savetxt=False):
     version, u = "v6.2", int(u*100)
     # Retrieve the data 
     delta_total = data['delta_t'][::-1][:n,-n:] if n != 100 else data['delta_t'][::-1]
@@ -153,4 +154,19 @@ def plot_heatmaps(data, n=100, u=0.95):
     plt.title('Surplus of riders for platform 2 (riders-drivers)', size=15)
 
     # Show entire figure
-    plt.savefig(f'../../figures/{version}/heatmap-{n}-{u}r.png', dpi=150)
+    path = f'../../figures/{version}'
+    Path(path).mkdir(parents=True, exist_ok=True)
+    plt.savefig(f'{path}/heatmap-{n}-{u}r.png', dpi=150)
+
+    # Save the raw data to text files
+    if savetxt:
+        # Make sure the path exists
+        path = f'../../raw/{version}/{n}-{u}r'
+        Path(path).mkdir(parents=True, exist_ok=True)
+        # Save the data
+        np.savetxt(f'{path}/total.txt', delta_total, fmt='%d')
+        np.savetxt(f'{path}/drivers.txt', delta_drivers, fmt='%d')
+        np.savetxt(f'{path}/riders.txt', delta_riders, fmt='%d')
+        np.savetxt(f'{path}/marketshare.txt', delta_market_share, fmt='%.2f')
+        np.savetxt(f'{path}/plt1.txt', delta_inner_1, fmt='%d')
+        np.savetxt(f'{path}/plt2.txt', delta_inner_2, fmt='%d')

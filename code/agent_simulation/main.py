@@ -102,6 +102,6 @@ if __name__ == "__main__":
         'delta_i1': delta_inner_1,
         'delta_i2': delta_inner_2
     }
-    plot_heatmaps(data, u=args.u)
+    plot_heatmaps(data, u=args.u, savetxt=True)
     plot_heatmaps(data, n=50, u=args.u)
     plot_heatmaps(data, n=75, u=args.u)
