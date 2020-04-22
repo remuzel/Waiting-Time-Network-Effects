@@ -11,7 +11,7 @@ def plot_market_share(data, arrival_type, filename=None, ebar_r=10):
     filename -- name of the plot once saved (default None)
     """
     # Get arguments
-    version = "v5.1"
+    version = "v6.2"
     market_shares, error = data['avg_ms'], data['std_ms']
     n_riders, r_error = data['avg_r'], data['std_r']
     n_drivers, d_error = data['avg_d'], data['std_d']
@@ -27,7 +27,7 @@ def plot_market_share(data, arrival_type, filename=None, ebar_r=10):
     plt.xlabel('Time (t)')
     plt.ylabel('Market Share')
     plt.ylim(0,1)
-    plt.title(f'Market share evaluation for {arrival_type} arrival')
+    plt.title(f'Market share evaluation for {arrival_type} growth')
     plt.legend()
     if filename is not None:
         plt.savefig(f'../../figures/{version}/{filename}', dpi=600)
@@ -57,7 +57,7 @@ def plot_market_share(data, arrival_type, filename=None, ebar_r=10):
     ]
     labels = ["Riders", "Drivers"]
     plt.legend(lines, labels)
-    plt.title(f'Agent population evolution for {arrival_type} arrival')
+    plt.title(f'Agent population evolution for {arrival_type} growth')
     if filename is not None:
         plt.savefig(f'../../figures/{version}/population_{filename}', dpi=600)
     else:
