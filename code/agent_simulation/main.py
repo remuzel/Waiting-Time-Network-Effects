@@ -29,7 +29,8 @@ if __name__ == "__main__":
         '--c': ["Alpha factor for the lorenz scaling", float, 2],
         '--u': ["Proportion of users generated in the simulation.", float, 0.95],
         '--mu_r': ["Rate at which riders leave the platform.", float, 0.5],
-        '--mu_d': ["Rate at which drivers leave the platform.", float, 0.5]
+        '--mu_d': ["Rate at which drivers leave the platform.", float, 0.5],
+        '--raw': ["Flag to save the raw heatmap data.", bool, False]
     }
 
     parser = argparse.ArgumentParser()
@@ -102,6 +103,6 @@ if __name__ == "__main__":
         'delta_i1': delta_inner_1,
         'delta_i2': delta_inner_2
     }
-    plot_heatmaps(data, u=args.u, savetxt=True)
+    plot_heatmaps(data, u=args.u, save=args.raw)
     plot_heatmaps(data, n=50, u=args.u)
     plot_heatmaps(data, n=75, u=args.u)
