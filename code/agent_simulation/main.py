@@ -39,21 +39,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     names = ['Uber', 'Black Cab', 'Bolt', 'Kapten', 'Heetch'][:args.P]
-
-    ####################################################
-    # # FOR HEATMAP GENERATION
-    # n = 100
-    # mu = np.linspace(0, 1, num=n)
-    # # Setting up the values
-    # delta_market_share = np.zeros((n, n))
-    # delta_total = np.zeros((n, n))
-    # delta_drivers = np.zeros((n, n))
-    # delta_riders = np.zeros((n, n))
-    # delta_inner_1 = np.zeros((n, n))
-    # delta_inner_2 = np.zeros((n, n))
-    # for d, mu_d in tqdm(enumerate(mu), total=n):
-    #     for r, mu_r in tqdm(enumerate(mu), total=n):
-    ####################################################
+    
     iter_ms = []
     iter_r = []
     iter_d = []
@@ -82,25 +68,6 @@ if __name__ == "__main__":
         "avg_d": avg_d,
         "std_d": std_d
     }
-    ####################################################
-            # delta_total[d, r] = np.abs((avg_r[0,-1] + avg_d[0,-1]) - (avg_r[1,-1] + avg_d[1,-1]))
-            # delta_riders[d, r] = np.abs(avg_r[0,-1] - avg_r[1,-1])
-            # delta_drivers[d, r] = np.abs(avg_d[0,-1] - avg_d[1,-1])
-            # delta_market_share[d, r] = np.abs(avg_ms[0,-1] - avg_ms[1,-1])
-            # delta_inner_1[d, r] = avg_r[0,-1] - avg_d[0,-1]
-            # delta_inner_2[d, r] = avg_r[1,-1] - avg_d[1,-1]
-    ####################################################
         
     # # Plot the results
     plot_market_share(data, "agent", filename=args.plt)
-
-    # Plot the heatmaps
-    # data = {
-    #     'delta_t': delta_total,
-    #     'delta_r': delta_riders,
-    #     'delta_d': delta_drivers,
-    #     'delta_ms': delta_market_share,
-    #     'delta_i1': delta_inner_1,
-    #     'delta_i2': delta_inner_2
-    # }
-    # plot_heatmaps(data, u=args.u, save=args.raw, it=args.it)
