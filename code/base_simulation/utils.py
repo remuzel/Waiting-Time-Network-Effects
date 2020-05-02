@@ -5,20 +5,20 @@ from matplotlib. lines import Line2D
 from numpy import linspace, std, mean, sqrt, savetxt
 
 def plot_market_share(data, arrival_type, filename=None, ebar_r=10):
-    """ Plots the different market shares w.r.t. to time. 
+    """ Plots the different market shares w.r.t. to time.
 
     Keyword arguments:
     filename -- name of the plot once saved (default None)
     """
     # Get arguments
-    version = "v6.2"
+    version = "v6.3"
     market_shares, error = data['avg_ms'], data['std_ms']
     n_riders, r_error = data['avg_r'], data['std_r']
     n_drivers, d_error = data['avg_d'], data['std_d']
-        
+
     # Define the colors to use while plotting
     c = plt.cm.RdYlGn(linspace(0, 1, len(market_shares)))
-    
+
     # Plot the market share evolution
     for i, market_share in enumerate(market_shares):
         # Plot the error bars (and the curve) in 10% opacity
@@ -50,7 +50,7 @@ def plot_market_share(data, arrival_type, filename=None, ebar_r=10):
     # Plot the driver population evolution
     for i, d in enumerate(n_drivers):
         plots.append(d_ax.errorbar(lrange(d), d, fmt='--', yerr=d_error[i], errorevery=100, c=c[i]))
-    
+
     lines = [
         Line2D([0], [0], color='black'),
         Line2D([0], [0], color='black', linestyle='--')
@@ -85,8 +85,8 @@ def shift(values):
 
 
 def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
-    version, u = "v6.2", int(u*100)
-    # Retrieve the data 
+    version, u = "v6.3", int(u*100)
+    # Retrieve the data
     delta_total = data['delta_t'][::-1][:n,-n:] if n != 100 else data['delta_t'][::-1]
     delta_drivers = data['delta_d'][::-1][:n,-n:] if n != 100 else data['delta_d'][::-1]
     delta_riders = data['delta_r'][::-1][:n,-n:] if n != 100 else data['delta_r'][::-1]
