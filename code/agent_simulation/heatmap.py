@@ -42,6 +42,7 @@ if __name__ == "__main__":
 
     n = 100
     mu = np.linspace(0, 1, num=n)
+    _mu_d = np.linspace(0, 50, num=100)
     # Setting up the values
     delta_market_share = np.zeros((n, n))
     delta_total = np.zeros((n, n))
@@ -49,7 +50,7 @@ if __name__ == "__main__":
     delta_riders = np.zeros((n, n))
     delta_inner_1 = np.zeros((n, n))
     delta_inner_2 = np.zeros((n, n))
-    for d, mu_d in tqdm(enumerate(mu), total=n):
+    for d, mu_d in tqdm(enumerate(_mu_d), total=n):
         for r, mu_r in tqdm(enumerate(mu), total=n):
             iter_ms = []
             iter_r = []
