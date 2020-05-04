@@ -30,25 +30,16 @@ class Agent():
         ms, r_ms, d_ms = data['market_shares'], data['r_market_shares'], data['d_market_shares']
         # Decision based on rider or driver agent
         if self.is_rider:
-            p = (d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d).clip(min=0)
+            p = d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d
         else:
-            p = (r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r).clip(min=0)
-        p = np.append(p, [1-p.sum()])
-        ########################
-        # Original Modelling #
-        ########################
-        # Get the distances to each platforms' riders and drivers
-        # dist_r = 1 / np.linalg.norm(self.position - pos_r, axis=1)
-        # dist_d = 1 / np.linalg.norm(self.position - pos_d, axis=1)
-        # # The agent count is weighed w.r.t. other platforms to introduce barabasi
-        # # Platform value is reduced if the agent is surrounded by same-typed agents
-        # rider_component = shift(n_r/n_r.sum() + self.r * dist_r/dist_r.sum())
-        # driver_component = shift(n_d/n_d.sum() + self.d * dist_d/dist_d.sum())
-        # p = self.lorenz(ms) * (rider_component + driver_component)
-        if not p.sum():
-            choice = np.random.choice(indices + [None])
-        else:
-            choice = np.random.choice(indices + [None], p=p/p.sum())
+            p = r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r
+        # p in [-1, 1] -> [0, 1]
+        p = (p+1)/2 
+        # Append the rate of joining no platform
+        p = np.append(p, [1-np.average(p)])
+        indices = np.append(indices, [None])
+        # Make the random choice
+        choice = np.random.choice(indices, p=p/p.sum())
         self.rhp = choice
         return choice
 
