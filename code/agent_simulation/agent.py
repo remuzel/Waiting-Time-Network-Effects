@@ -30,10 +30,9 @@ class Agent():
         ms, r_ms, d_ms = data['market_shares'], data['r_market_shares'], data['d_market_shares']
         # Decision based on rider or driver agent
         if self.is_rider:
-            p = (d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d).clip(min=0)
+            p = d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d
         else:
-            p = (r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r).clip(min=0)
-        p = np.append(p, [1-p.sum()])
+            p = r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r
         ########################
         # Original Modelling #
         ########################
@@ -45,10 +44,9 @@ class Agent():
         # rider_component = shift(n_r/n_r.sum() + self.r * dist_r/dist_r.sum())
         # driver_component = shift(n_d/n_d.sum() + self.d * dist_d/dist_d.sum())
         # p = self.lorenz(ms) * (rider_component + driver_component)
-        if not p.sum():
-            choice = np.random.choice(indices + [None])
-        else:
-            choice = np.random.choice(indices + [None], p=p/p.sum())
+        return p
+        return (p+1)/2
+        choice = np.random.choice(indices)
         self.rhp = choice
         return choice
 
