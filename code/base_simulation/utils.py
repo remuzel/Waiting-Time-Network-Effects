@@ -1,10 +1,10 @@
 import seaborn as sb; sb.set()
 from pathlib import Path
 from matplotlib import pyplot as plt
-from matplotlib. lines import Line2D
+from matplotlib.lines import Line2D
 from numpy import linspace, std, mean, sqrt, savetxt
 
-def plot_market_share(data, arrival_type, filename=None, ebar_r=10):
+def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10):
     """ Plots the different market shares w.r.t. to time.
 
     Keyword arguments:
@@ -38,25 +38,28 @@ def plot_market_share(data, arrival_type, filename=None, ebar_r=10):
     fig, r_ax = plt.subplots()
     r_ax.set_xlabel('Time (t)')
     r_ax.set_ylabel('Riders')
-    r_ax.set_yscale('log')
+    r_ax.set_ylim(0, int(N*r+sqrt(N*r*(1-r))))
+    #r_ax.set_yscale('log')
     plots = []
     # Plot the rider population evolution
-    for i, r in enumerate(n_riders):
-        plots.append(r_ax.errorbar(lrange(r), r, yerr=r_error[i], errorevery=100, c=c[i]))
-
+    for i, _r in enumerate(n_riders):
+        plots.append(r_ax.errorbar(lrange(_r), _r, fmt='^-b', markevery=100, yerr=r_error[i], errorevery=100, c=c[i]))
+    plt.grid(False)
     d_ax = r_ax.twinx()
     d_ax.set_ylabel('Drivers')
-    d_ax.set_yscale('log')
+    d_ax.set_ylim(0, int(N*(1-r)+sqrt(N*r*(1-r))))
+    #d_ax.set_yscale('log')
     # Plot the driver population evolution
-    for i, d in enumerate(n_drivers):
-        plots.append(d_ax.errorbar(lrange(d), d, fmt='--', yerr=d_error[i], errorevery=100, c=c[i]))
+    for i, _d in enumerate(n_drivers):
+        plots.append(d_ax.errorbar(lrange(_d), _d, fmt='s-k', markevery=100, yerr=d_error[i], errorevery=100, c=c[i]))
 
     lines = [
-        Line2D([0], [0], color='black'),
-        Line2D([0], [0], color='black', linestyle='--')
+        Line2D([0], [0], color='blue', linestyle='-', marker='^'),
+        Line2D([0], [0], color='black', linestyle='-', marker='s')
     ]
     labels = ["Riders", "Drivers"]
     plt.legend(lines, labels)
+    plt.grid(False)
     plt.title(f'Agent population evolution for {arrival_type} growth')
     if filename is not None:
         plt.savefig(f'../../figures/{version}/population_{filename}', dpi=600)

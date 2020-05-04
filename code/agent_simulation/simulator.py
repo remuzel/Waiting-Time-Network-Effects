@@ -111,7 +111,11 @@ class AgentSimulator():
             }
             # Make the agent chose a platform
             growing_platform = agent.decide(data)
-            # Grow them accordingly
-            self.growth([growing_platform], is_driver, position=pos)
-            self.growth(np.delete(self.platform_indices, growing_platform), is_driver, g=0, position=pos)
+            if growing_platform is None:
+                # Don't grow any platform
+                self.growth(self.platform_indices, is_driver, g=0, position=pos, t=0)
+            else:
+                # Grow them accordingly
+                self.growth([growing_platform], is_driver, position=pos)
+                self.growth(np.delete(self.platform_indices, growing_platform), is_driver, g=0, position=pos)
         return self

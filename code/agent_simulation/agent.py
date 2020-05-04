@@ -33,6 +33,7 @@ class Agent():
             p = (d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d).clip(min=0)
         else:
             p = (r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r).clip(min=0)
+        p = np.append(p, [1-p.sum()])
         ########################
         # Original Modelling #
         ########################
@@ -45,9 +46,9 @@ class Agent():
         # driver_component = shift(n_d/n_d.sum() + self.d * dist_d/dist_d.sum())
         # p = self.lorenz(ms) * (rider_component + driver_component)
         if not p.sum():
-            choice = np.random.choice(indices)            
+            choice = np.random.choice(indices + [None])
         else:
-            choice = np.random.choice(indices, p=p/p.sum())
+            choice = np.random.choice(indices + [None], p=p/p.sum())
         self.rhp = choice
         return choice
 
