@@ -31,10 +31,12 @@ class Agent():
         # Decision based on rider or driver agent
         if self.is_rider:
             p = d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d
+            # p in [-mu_R, 1] -> [0, 1]
+            p = (p+self.mu_R)/(1+self.mu_R)
         else:
             p = r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r
-        # p in [-1, 1] -> [0, 1]
-        p = (p+1)/2 
+            # p in [-mu_D, 1] -> [0, 1]
+            p = (p+self.mu_D)/(1+self.mu_D)
         # Append the rate of joining no platform
         p = np.append(p, [1-np.average(p)])
         indices = np.append(indices, [None])
