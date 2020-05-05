@@ -160,12 +160,12 @@ def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
     # Show entire figure
     path = f'../../figures/{version}'
     Path(path).mkdir(parents=True, exist_ok=True)
-    plt.savefig(f'{path}/heatmap-{n}-{u}r-{it}.png', dpi=150)
+    plt.savefig(f'{path}/heatmap{u}r-{it}.png', dpi=150)
 
     # Save the raw data to text files
     if save:
         # Make sure the path exists
-        path = f'../../raw/{version}/{n}-{u}r'
+        path = f'../../raw/{version}/{u}r'
         Path(path).mkdir(parents=True, exist_ok=True)
         # Save the data
         savetxt(f'{path}/total.txt', delta_total, fmt='%d')

@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     n = 100
     mu = np.linspace(0, 1, num=n)
-    _mu_d = np.linspace(0, 50, num=100)
+    _mu_d = np.linspace(0, 1, num=n)
     # Setting up the values
     delta_market_share = np.zeros((n, n))
     delta_total = np.zeros((n, n))
