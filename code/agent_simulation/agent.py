@@ -37,6 +37,7 @@ class Agent():
             p = r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r
             # p in [-mu_D, 1] -> [0, 1]
             p = (p+self.mu_D)/(1+self.mu_D)
+        self.rate = p
         # Append the rate of joining no platform
         p = np.append(p, [1-np.average(p)])
         indices = np.append(indices, [None])
