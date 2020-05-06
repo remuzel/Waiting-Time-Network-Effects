@@ -30,13 +30,13 @@ class Agent():
         ms, r_ms, d_ms = data['market_shares'], data['r_market_shares'], data['d_market_shares']
         # Decision based on rider or driver agent
         if self.is_rider:
-            p = d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d
+            p = (d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d).clip(min=0)
             # p in [-mu_R, 1] -> [0, 1]
-            p = (p+self.mu_R)/(1+self.mu_R)
+            # p = (p+self.mu_R)/(1+self.mu_R)
         else:
-            p = r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r
+            p = (r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r).clip(min=0)
             # p in [-mu_D, 1] -> [0, 1]
-            p = (p+self.mu_D)/(1+self.mu_D)
+            # p = (p+self.mu_D)/(1+self.mu_D)
         self.rate = p
         # Append the rate of joining no platform
         p = np.append(p, [1-np.average(p)])
