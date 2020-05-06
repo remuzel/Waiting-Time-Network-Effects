@@ -38,6 +38,8 @@ class AgentSimulator():
         # Set the death coefficients
         self.mu_R = mu_R
         self.mu_D = mu_D
+        # Create rate storage
+        self.rates = [[], []]
 
     def delay_platforms(self, delta_ts):
         """ Turns off a set of platforms until the given timestep is met """
@@ -111,6 +113,8 @@ class AgentSimulator():
             }
             # Make the agent chose a platform
             growing_platform = agent.decide(data)
+            # Keep track of the growing rates
+            self.rates[agent.is_rider].append(agent.rate)
             if growing_platform is None:
                 # Don't grow any platform
                 self.growth(self.platform_indices, is_driver, g=0, position=pos, t=0)
