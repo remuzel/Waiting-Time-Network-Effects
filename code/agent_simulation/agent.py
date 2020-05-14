@@ -28,6 +28,7 @@ class Agent():
         pos_r, pos_d = data['riders'], data['drivers']
         n_r, n_d = data['n_riders'], data['n_drivers']
         ms, r_ms, d_ms = data['market_shares'], data['r_market_shares'], data['d_market_shares']
+        n_joins = data['total_joins']
         # Decision based on rider or driver agent
         if self.is_rider:
             p = (d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d).clip(min=0)
@@ -38,13 +39,11 @@ class Agent():
             # p in [-mu_D, 1] -> [0, 1]
             # p = (p+self.mu_D)/(1+self.mu_D)
         self.rate = p
-        # Append the rate of joining no platform
-        p = np.append(p, [1-np.average(p)])
-        indices = np.append(indices, [None])
-        # Make the random choice
-        choice = np.random.choice(indices, p=p/p.sum())
-        self.rhp = choice
-        return choice
+        # Translates the rates into actual joining numbers
+        if len(p) > 1:
+            # If there are multiple platforms, normalise the joining rates
+            p = p/p.sum()
+        return p * n_joins
 
 class Rider(Agent):
     """ rider agent """
