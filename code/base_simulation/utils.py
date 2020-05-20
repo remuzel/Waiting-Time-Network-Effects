@@ -11,7 +11,7 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
     filename -- name of the plot once saved (default None)
     """
     # Get arguments
-    version = "v6.3"
+    version = "v6.4"
     market_shares, error = data['avg_ms'], data['std_ms']
     n_riders, r_error = data['avg_r'], data['std_r']
     n_drivers, d_error = data['avg_d'], data['std_d']
@@ -89,7 +89,7 @@ def shift(values):
 
 
 def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
-    version, u = "v6.3", int(u*100)
+    version, u = "v6.4", int(u*100)
     # Retrieve the data
     delta_total = data['delta_t'][::-1][:n,-n:] if n != 100 else data['delta_t'][::-1]
     delta_drivers = data['delta_d'][::-1][:n,-n:] if n != 100 else data['delta_d'][::-1]
