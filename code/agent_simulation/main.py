@@ -31,7 +31,8 @@ if __name__ == "__main__":
         '--mu_r': ["Rate at which riders leave the platform.", float, 0.5],
         '--mu_d': ["Rate at which drivers leave the platform.", float, 0.5],
         '--raw': ["Flag to save the raw heatmap data.", bool, False],
-        '--plt_type': ["1) Plot marketshares only 2) Plot population only 3) Plot both", int, 3]
+        '--plt_type': ["1) Plot marketshares only 2) Plot population only 3) Plot both", int, 3],
+        '--n_joins': ["Number of agents that are released to the market at each iteration.", int, 1]
     }
 
     parser = argparse.ArgumentParser()
@@ -48,7 +49,7 @@ if __name__ == "__main__":
     # Run the simulation it times
     for i in tqdm(range(args.it)):
         sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
-                            rider_proportion=args.r, lorenz=args.c, mu_D=args.mu_d, mu_R=args.mu_r)
+                            rider_proportion=args.r, lorenz=args.c, mu_D=args.mu_d, mu_R=args.mu_r, n_joins=args.n_joins)
         # Sort the returned shares and agent numbers (who the winner is doesn't matter)
         m_shares = sorted(sim.run().get_market_shares(), key=lambda x: x[-1])
         riders = sorted(sim.get_riders(), key=lambda x: x[-1])
@@ -71,4 +72,4 @@ if __name__ == "__main__":
     }
         
     # Plot the results
-    plot_market_share(data, "agent", N=args.N, r=args.r, filename=args.plt, _type=args.plt_type)
+    plot_market_share(data, "agent", N=args.N*args.n_joins, r=args.r, filename=args.plt, _type=args.plt_type)

@@ -16,7 +16,7 @@ class AgentSimulator():
     """
     def __init__(self, population_size, platform_names,
                 city_shape=(500,500), delta_ts=[], rider_proportion=0.8,
-                agent_vision=None, lorenz=2, mu_R=0.5, mu_D=0.5):
+                agent_vision=None, lorenz=2, mu_R=0.5, mu_D=0.5, n_joins=1):
                 
         # Set the population size
         self.N = population_size
@@ -40,6 +40,8 @@ class AgentSimulator():
         self.mu_D = mu_D
         # Create rate storage
         self.rates = [[], []]
+        # Keep track of how many agents join at each iteration
+        self.n_joins = n_joins
 
     def delay_platforms(self, delta_ts):
         """ Turns off a set of platforms until the given timestep is met """
@@ -109,17 +111,14 @@ class AgentSimulator():
                 'n_drivers': np.array([p.drivers for p in self.platforms]),
                 'market_shares': self.get_recent_market_shares(),
                 'r_market_shares': self.get_recent_r_market_shares(),
-                'd_market_shares': self.get_recent_d_market_shares()
+                'd_market_shares': self.get_recent_d_market_shares(),
+                'total_joins': self.n_joins
             }
             # Make the agent chose a platform
-            growing_platform = agent.decide(data)
-            # Keep track of the growing rates
+            growths = agent.decide(data)
+            # Keep track of the growing rates # TODO: Check the propagation of rates
             self.rates[agent.is_rider].append(agent.rate)
-            if growing_platform is None:
-                # Don't grow any platform
-                self.growth(self.platform_indices, is_driver, g=0, position=pos, t=0)
-            else:
-                # Grow them accordingly
-                self.growth([growing_platform], is_driver, position=pos)
-                self.growth(np.delete(self.platform_indices, growing_platform), is_driver, g=0, position=pos)
+            # Grow all platforms according to their values
+            for p, growth in zip(self.platform_indices, growths):
+                self.growth([p], is_driver, position=pos, g=growth, t=self.n_joins)
         return self
