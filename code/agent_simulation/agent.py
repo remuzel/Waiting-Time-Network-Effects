@@ -11,7 +11,7 @@ class Agent():
     """ 
     Overall clas for the agents
     """
-    def __init__(self, grid_shape, lorenz_coef, geograph_mode, mu_R, mu_D):
+    def __init__(self, grid_shape, lorenz_coef, geograph_mode, mu_R, mu_D, eta):
         # Randomly generate the rider in the given grid_shape with the given method
         if geograph_mode == "uniform":
             x = np.random.randint(grid_shape[1])
@@ -20,7 +20,7 @@ class Agent():
         self.lorenz = lambda ms: np.power(1 - np.power(ms, lorenz_coef), 1/lorenz_coef)
         self.mu_D = mu_D
         self.mu_R = mu_R
-        self.eta = lambda : 0
+        self.eta = lambda : eta
 
     def decide(self, data):
         # Unpack the given data
@@ -43,16 +43,16 @@ class Agent():
 
 class Rider(Agent):
     """ rider agent """
-    def __init__(self, grid_shape, lorenz_coef=2, geograph_mode="uniform", mu_R=0.5, mu_D=0.5):
-        super().__init__(grid_shape, lorenz_coef, geograph_mode, mu_R, mu_D)
+    def __init__(self, grid_shape, lorenz_coef=2, geograph_mode="uniform", mu_R=0.5, mu_D=0.5, eta=0):
+        super().__init__(grid_shape, lorenz_coef, geograph_mode, mu_R, mu_D, eta)
         self.d = 1
         self.r = -1
         self.is_rider = True
 
 class Driver(Agent):
     """ driver agent """
-    def __init__(self, grid_shape, lorenz_coef=2, geograph_mode="uniform", mu_R=0.5, mu_D=0.5):
-        super().__init__(grid_shape, lorenz_coef, geograph_mode, mu_R, mu_D)
+    def __init__(self, grid_shape, lorenz_coef=2, geograph_mode="uniform", mu_R=0.5, mu_D=0.5, eta=0):
+        super().__init__(grid_shape, lorenz_coef, geograph_mode, mu_R, mu_D, eta)
         self.d = -1
         self.r = 1
         self.is_rider = False

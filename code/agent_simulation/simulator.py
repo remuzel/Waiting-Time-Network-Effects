@@ -16,7 +16,7 @@ class AgentSimulator():
     """
     def __init__(self, population_size, platform_names,
                 city_shape=(500,500), delta_ts=[], rider_proportion=0.8,
-                agent_vision=None, lorenz=2, mu_R=0.5, mu_D=0.5, n_joins=1):
+                agent_vision=None, lorenz=2, mu_R=0.5, mu_D=0.5, eta=0, n_joins=1):
                 
         # Set the population size
         self.N = population_size
@@ -38,6 +38,8 @@ class AgentSimulator():
         # Set the death coefficients
         self.mu_R = mu_R
         self.mu_D = mu_D
+        # Set the price coefficient
+        self.eta = eta
         # Create rate storage
         self.rates = [[], []]
         # Keep track of how many agents join at each iteration
@@ -58,9 +60,9 @@ class AgentSimulator():
         """ Randomly generate either a user or a driver """
         is_driver = np.random.choice([0, 1], p=self.rider_proportion)
         if is_driver:
-            return is_driver, Driver(self.xy, lorenz_coef=self.c, mu_R=self.mu_R, mu_D=self.mu_D)
+            return is_driver, Driver(self.xy, lorenz_coef=self.c, mu_R=self.mu_R, mu_D=self.mu_D, eta=self.eta)
         else:
-            return is_driver, Rider(self.xy, lorenz_coef=self.c, mu_R=self.mu_R, mu_D=self.mu_D)
+            return is_driver, Rider(self.xy, lorenz_coef=self.c, mu_R=self.mu_R, mu_D=self.mu_D, eta=self.eta)
 
     def get_drivers(self):
         """ Returns the number of drivers of each registered platform. """
