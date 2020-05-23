@@ -20,7 +20,7 @@ class Agent():
         self.lorenz = lambda ms: np.power(1 - np.power(ms, lorenz_coef), 1/lorenz_coef)
         self.mu_D = mu_D
         self.mu_R = mu_R
-        self.eta = lambda : eta
+        self.eta = eta
 
     def decide(self, data):
         # Unpack the given data
@@ -31,9 +31,9 @@ class Agent():
         n_joins = data['total_joins']
         # Decision based on rider or driver agent
         if self.is_rider:
-            p = (d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta()*n_d).clip(min=0)
+            p = (d_ms - self.mu_R * (n_r/(n_d+n_r)) - self.eta*n_r/(n_d+n_r)).clip(min=0)
         else:
-            p = (r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta()*n_r).clip(min=0)
+            p = (r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta*n_r/(n_d+n_r)).clip(min=0)
         self.rate = p
         # Translates the rates into actual joining numbers
         if len(p) > 1:
