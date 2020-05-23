@@ -59,7 +59,7 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
             Line2D([0], [0], color='black', linestyle='-', marker='s')
         ]
         labels = ["Riders", "Drivers"]
-        plt.legend(lines, labels)
+        plt.legend(lines, labels, loc="upper left")
         plt.grid(False)
         plt.title(f'Agent population evolution for {arrival_type} growth')
         if filename is not None:
