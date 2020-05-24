@@ -102,10 +102,11 @@ def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
     fig = plt.figure(figsize=(24, 12))
     # Writing the ticks for the mu's
     ticks = [str(i/100) if i%10==0 else '' for i in range(0, n+1)]
+    yticks = [str(i//2) if i%10==0 else '' for i in range(0, n+1)]
 
     ax = fig.add_subplot(2, 3, 1)
     # Plot the delta totals
-    ax = sb.heatmap(delta_total, robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    ax = sb.heatmap(delta_total, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
     # Set labels and title
     ax.set_xlabel('mu_waiting', size=12)
     ax.set_ylabel('mu_idle', size=12)
@@ -114,7 +115,7 @@ def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
 
     ax = fig.add_subplot(2, 3, 2)
     # Plot the delta drivers
-    ax = sb.heatmap(delta_drivers, robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    ax = sb.heatmap(delta_drivers, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
     # Set labels and title
     ax.set_xlabel('mu_waiting', size=12)
     ax.set_ylabel('mu_idle', size=12)
@@ -123,7 +124,7 @@ def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
 
     ax = fig.add_subplot(2, 3, 3)
     # Plot the delta riders
-    ax = sb.heatmap(delta_riders, robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    ax = sb.heatmap(delta_riders, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
     # Set labels and title
     ax.set_xlabel('mu_waiting', size=12)
     ax.set_ylabel('mu_idle', size=12)
@@ -132,7 +133,7 @@ def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
 
     ax = fig.add_subplot(2, 3, 4)
     # Plot the difference in agents for platform 1
-    ax = sb.heatmap(delta_market_share, robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    ax = sb.heatmap(delta_market_share, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
     # Set labels and title
     ax.set_xlabel('mu_waiting', size=12)
     ax.set_ylabel('mu_idle', size=12)
@@ -141,7 +142,7 @@ def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
 
     ax = fig.add_subplot(2, 3, 5)
     # Plot the difference in agents for platform 1
-    ax = sb.heatmap(delta_inner_1, robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    ax = sb.heatmap(delta_inner_1, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
     # Set labels and title
     ax.set_xlabel('mu_waiting', size=12)
     ax.set_ylabel('mu_idle', size=12)
@@ -150,7 +151,7 @@ def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
 
     ax = fig.add_subplot(2, 3, 6)
     # Plot the difference in agents for platform 2
-    ax = sb.heatmap(delta_inner_2, robust=True, cmap='hot', xticklabels=ticks, yticklabels=ticks[::-1])
+    ax = sb.heatmap(delta_inner_2, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
     # Set labels and title
     ax.set_xlabel('mu_waiting', size=12)
     ax.set_ylabel('mu_idle', size=12)
@@ -160,12 +161,12 @@ def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
     # Show entire figure
     path = f'../../figures/{version}'
     Path(path).mkdir(parents=True, exist_ok=True)
-    plt.savefig(f'{path}/heatmap{u}r-{it}.png', dpi=150)
+    plt.savefig(f'{path}/heatmap{u}r-{it}-50d.png', dpi=150)
 
     # Save the raw data to text files
     if save:
         # Make sure the path exists
-        path = f'../../raw/{version}/{u}r'
+        path = f'../../raw/{version}/{u}r-50d'
         Path(path).mkdir(parents=True, exist_ok=True)
         # Save the data
         savetxt(f'{path}/total.txt', delta_total, fmt='%d')
