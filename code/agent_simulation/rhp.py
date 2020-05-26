@@ -6,22 +6,21 @@ class Platform:
     Will be keeping track of its specific market share and XX
     """
 
-    def __init__(self, platform_name, n_platforms):
-        """ Keyword arguments:
-        initial_size -- Number of users in the platform at creation (Default 0)
-        """
+    def __init__(self, platform_name, r_pop=1, d_pop=1):
         self.name = platform_name
-        self.r_population = n_platforms
-        self.d_population = n_platforms
-        self.population = 2 * n_platforms
-        self.users = 1
+        # Set information about market population
+        self.r_population = r_pop
+        self.d_population = d_pop
+        self.population = r_pop + d_pop
+        # Initialise with platform's base agents
+        self.riders = 1
         self.drivers = 1
+        self.users = 2
         self.rider_history = [1]
         self.driver_history = [1]
-        self.market_share = [1/n_platforms]
-        self.d_market_share = [1/n_platforms]
-        self.r_market_share = [1/n_platforms]
-        self.delta_t = None
+        self.market_share = [self.users/(d_pop+r_pop)]
+        self.d_market_share = [self.drivers/d_pop]
+        self.r_market_share = [self.riders/r_pop]
 
     def set_avg_user(self, x, y):
         """ Sets the initial position of average user """
@@ -39,26 +38,14 @@ class Platform:
         """ Returns the rider history """
         return self.rider_history
 
-    def activate(self):
-        """ Activates the ridesharing platform - allowing to receive new users """
-        self.delta_t = None
-
-    def deactivate(self, delta_t):
-        """ Turns off the ridesharing platform - blocking it from receiving new users """
-        self.delta_t = delta_t
-
-    def isActive(self):
-        """ Checks if the platform is active or currently dormant """
-        return self.delta_t is None
-
     def update_market_share(self):
-        self.market_share.append((self.users + self.drivers) / self.population)
+        self.market_share.append((self.riders + self.drivers) / self.population)
         self.d_market_share.append(self.drivers/self.d_population)
-        self.r_market_share.append(self.users/self.r_population)
+        self.r_market_share.append(self.riders/self.r_population)
 
     def update_avg_user(self, xy):
         """ Updates the location in space of the average user """
-        n = self.users
+        n = self.riders
         self.average_user = ((n-1) * self.average_user + xy) / n
 
     def update_avg_driver(self, xy):
@@ -73,20 +60,14 @@ class Platform:
             self.d_population += delta_pop
             self.update_avg_driver(position)
         else:
-            self.users += n
+            self.riders += n
             self.r_population += delta_pop
             self.update_avg_user(position)
         self.driver_history.append(self.drivers)
-        self.rider_history.append(self.users)
+        self.rider_history.append(self.riders)
         # Update the population & market shares
         self.population += delta_pop
         self.update_market_share()
-        # Decrese the remaining time until activation
-        if self.delta_t is not None:
-            self.delta_t -= 1
-        # Once delta reached - activate the platform 
-        if self.delta_t == 0:
-            self.activate()
 
     def get_market_share(self):
         return self.market_share
