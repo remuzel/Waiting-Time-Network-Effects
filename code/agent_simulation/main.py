@@ -39,7 +39,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     for arg, (_help, _type, _default) in arguments.items():
         parser.add_argument(arg, help=_help, type=_type, default=_default)
+    parser.add_argument('--delay', help="List of times at which corresponding platforms should be introduced.", nargs='+', type=int, default=None)
     args = parser.parse_args()
+
+    if args.delay is not None:
+        if len(args.delay) != args.P:
+            raise ValueError(f'--delay must have as many elements as value of --P. Found --delay {len(args.delay)} and --P {args.P}')
+        if 0 not in args.delay:
+            raise ValueError(f'--delay must contain a platform starting at time 0. Found --delay {args.delay}')
 
     names = ['Uber', 'Black Cab', 'Bolt', 'Kapten', 'Heetch'][:args.P]
     
@@ -51,7 +58,8 @@ if __name__ == "__main__":
     for i in tqdm(range(args.it)):
         sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
                             rider_proportion=args.r, lorenz=args.c,
-                            mu_D=args.mu_d, mu_R=args.mu_r, eta=args.eta, n_joins=args.n_joins)
+                            mu_D=args.mu_d, mu_R=args.mu_r, eta=args.eta,
+                            n_joins=args.n_joins, delays=args.delay)
         # Sort the returned shares and agent numbers (who the winner is doesn't matter)
         m_shares = sorted(sim.run().get_market_shares(), key=lambda x: x[-1])
         riders = sorted(sim.get_riders(), key=lambda x: x[-1])

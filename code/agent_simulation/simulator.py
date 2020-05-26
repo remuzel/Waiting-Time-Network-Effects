@@ -15,17 +15,32 @@ class AgentSimulator():
     """ Underlying class for a classical simulator
     """
     def __init__(self, population_size, platform_names,
-                city_shape=(500,500), rider_proportion=0.8,
-                agent_vision=None, lorenz=2, mu_R=0.5, mu_D=0.5, eta=0, n_joins=1):
-                
-        # Set the population size
-        self.N = population_size
-        # Create the platforms and index them
-        self.platforms = [Platform(name, len(platform_names)) for name in platform_names]
-        self.platform_indices = lrange(self.platforms)
+                city_shape=(500,500), agent_vision=None, lorenz=2,
+                rider_proportion=0.95, mu_R=0.5, mu_D=0.5, eta=0,
+                n_joins=1, delays=None):
 
+        if delays is not None:
+            # Make sure the correct platforms are being initialised at time 0, and schedule the next ones
+            self.platforms = []
+            self.next_platforms = {}
+            for i, delay in enumerate(sorted(delays)):
+                if not delay:
+                    # No delay, initialise regular platform
+                    self.platforms.append(Platform(platform_names[i]))
+                else:
+                    # Delay, schedule the addition of a platform
+                    self.next_platforms[delay] = platform_names[i]
+        else:   
+            self.platforms = [Platform(name, len(platform_names)) for name in platform_names]
+        self.platform_indices = lrange(self.platforms)
+                
+        # Set the total number of agents
+        self.N = population_size
         self.rider_proportion = [rider_proportion, 1-rider_proportion]
         # Setup the shape of the city & agents' vision range
+
+        ##########################
+        # NOT IN USE
         self.xy = city_shape
         # Set the first average user for each platform
         [p.set_avg_user(self.xy[1], self.xy[0]) for p in self.platforms]
@@ -33,6 +48,8 @@ class AgentSimulator():
         [p.set_avg_driver(self.xy[1], self.xy[0]) for p in self.platforms]
         # Set the lorenz coef
         self.c = lorenz
+        ##########################
+
         # Set the death coefficients
         self.mu_R = mu_R
         self.mu_D = mu_D
@@ -42,6 +59,13 @@ class AgentSimulator():
         self.rates = [[], []]
         # Keep track of how many agents join at each iteration
         self.n_joins = n_joins
+
+    def add_platform(self, name, r_pop, d_pop):
+        new_platform = Platform(name, r_pop=r_pop, d_pop=d_pop)
+        new_platform.set_avg_user(self.xy[1], self.xy[0])
+        new_platform.set_avg_driver(self.xy[1], self.xy[0])
+        self.platforms.append(new_platform)
+        self.platform_indices = lrange(self.platforms)
 
     def growth(self, indices, is_driver, g=1, t=1, position=None):
         """ Adds the indicated growth (g) to the flagged platforms.
@@ -93,7 +117,12 @@ class AgentSimulator():
 
     def run(self):
         """ Overwritting the simulators' run method - generating from total pop instead. """
-        for _ in range(self.N):
+        for step in range(self.N):
+            if step in self.next_platforms:
+                # Get the current agent population and create new platform with correct information
+                r_pop = sum([p.riders for p in self.platforms])
+                d_pop = sum([p.drivers for p in self.platforms])
+                self.add_platform(self.next_platforms[step], r_pop, d_pop)
             # Generate an agent
             is_driver, agent = self.sample_agent()
             pos = agent.position

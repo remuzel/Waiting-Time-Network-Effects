@@ -22,8 +22,10 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
     if _type in [1, 3]:
         # Plot the market share evolution
         for i, market_share in enumerate(market_shares):
+            # Get the correct xs plot wrt delay
+            xs = list(range(N+1))[-len(market_share):]
             # Plot the error bars (and the curve) in 10% opacity
-            plt.errorbar(lrange(market_share), market_share, yerr=error[i], errorevery=100, c=c[i], label=f"Platform {i+1}")
+            plt.errorbar(xs, market_share, yerr=error[i], errorevery=100, c=c[i], label=f"Platform {i+1}")
         # Plot description
         plt.xlabel('Time (t)')
         plt.ylabel('Market Share')
@@ -44,7 +46,10 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
         plots = []
         # Plot the rider population evolution
         for i, _r in enumerate(n_riders):
-            plots.append(r_ax.errorbar(lrange(_r), _r, fmt='^-b', markevery=100, yerr=r_error[i], errorevery=100, c=c[i]))
+            # Get the correct xs plot wrt delay
+            xs = list(range(N+1))[-len(_r):]
+            # Plot the riders
+            plots.append(r_ax.errorbar(xs, _r, fmt='^-b', markevery=100, yerr=r_error[i], errorevery=100, c=c[i]))
         plt.grid(False)
         d_ax = r_ax.twinx()
         d_ax.set_ylabel('Drivers')
@@ -52,7 +57,10 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
         #d_ax.set_yscale('log')
         # Plot the driver population evolution
         for i, _d in enumerate(n_drivers):
-            plots.append(d_ax.errorbar(lrange(_d), _d, fmt='s-k', markevery=100, yerr=d_error[i], errorevery=100, c=c[i]))
+            # Get the correct xs plot wrt delay
+            xs = list(range(N+1))[-len(_d):]
+            # Plot the drivers
+            plots.append(d_ax.errorbar(xs, _d, fmt='s-k', markevery=100, yerr=d_error[i], errorevery=100, c=c[i]))
 
         lines = [
             Line2D([0], [0], color='blue', linestyle='-', marker='^'),
