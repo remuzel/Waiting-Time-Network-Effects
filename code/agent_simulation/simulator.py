@@ -15,7 +15,7 @@ class AgentSimulator():
     """ Underlying class for a classical simulator
     """
     def __init__(self, population_size, platform_names,
-                city_shape=(500,500), delta_ts=[], rider_proportion=0.8,
+                city_shape=(500,500), rider_proportion=0.8,
                 agent_vision=None, lorenz=2, mu_R=0.5, mu_D=0.5, eta=0, n_joins=1):
                 
         # Set the population size
@@ -23,8 +23,6 @@ class AgentSimulator():
         # Create the platforms and index them
         self.platforms = [Platform(name, len(platform_names)) for name in platform_names]
         self.platform_indices = lrange(self.platforms)
-        # If a stary delay is present, apply it 
-        self.delay_platforms(delta_ts)
 
         self.rider_proportion = [rider_proportion, 1-rider_proportion]
         # Setup the shape of the city & agents' vision range
@@ -45,11 +43,6 @@ class AgentSimulator():
         # Keep track of how many agents join at each iteration
         self.n_joins = n_joins
 
-    def delay_platforms(self, delta_ts):
-        """ Turns off a set of platforms until the given timestep is met """
-        for p_index, delta_t in delta_ts:
-            self.platforms[p_index].deactivate(delta_t)
-
     def growth(self, indices, is_driver, g=1, t=1, position=None):
         """ Adds the indicated growth (g) to the flagged platforms.
         """
@@ -66,31 +59,31 @@ class AgentSimulator():
 
     def get_drivers(self):
         """ Returns the number of drivers of each registered platform. """
-        return [platform.get_driver_history() for platform in self.platforms if platform.isActive()]
+        return [platform.get_driver_history() for platform in self.platforms]
 
     def get_riders(self):
         """ Returns the number of riders of each registered platform. """
-        return [platform.get_rider_history() for platform in self.platforms if platform.isActive()]
+        return [platform.get_rider_history() for platform in self.platforms]
 
     def get_market_shares(self):
         """ Returns the market share of each registered platform. """
-        return [platform.get_market_share() for platform in self.platforms if platform.isActive()]
+        return [platform.get_market_share() for platform in self.platforms]
 
     def get_recent_market_shares(self):
         """ Returns the most recent market share of each platform """
-        return [platform.get_market_share()[-1] for platform in self.platforms if platform.isActive()]
+        return [platform.get_market_share()[-1] for platform in self.platforms]
 
     def get_recent_r_market_shares(self):
         """ Returns the most recent RIDER market share of each platform """
-        return [platform.get_r_market_share()[-1] for platform in self.platforms if platform.isActive()]
+        return [platform.get_r_market_share()[-1] for platform in self.platforms]
 
     def get_recent_d_market_shares(self):
         """ Returns the most recent DRIVER market share of each platform """
-        return [platform.get_d_market_share()[-1] for platform in self.platforms if platform.isActive()]
+        return [platform.get_d_market_share()[-1] for platform in self.platforms]
 
     def get_platform_indices(self):
         """ Returns the indices of active platforms """
-        return [i for i,p in enumerate(self.platforms) if p.isActive()]
+        return [i for i,p in enumerate(self.platforms)]
 
     def get_average_riders(self):
         return [p.average_user for p in self.platforms]
@@ -108,7 +101,7 @@ class AgentSimulator():
             data = {
                 'platform_indices': self.get_platform_indices(),
                 'riders': self.get_average_riders(),
-                'n_riders': np.array([p.users for p in self.platforms]),
+                'n_riders': np.array([p.riders for p in self.platforms]),
                 'drivers': self.get_average_drivers(),
                 'n_drivers': np.array([p.drivers for p in self.platforms]),
                 'market_shares': self.get_recent_market_shares(),
