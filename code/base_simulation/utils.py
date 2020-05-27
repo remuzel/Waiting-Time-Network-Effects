@@ -94,7 +94,14 @@ def shift(values):
         values -= 2*values.min()
     return values
 
-
+def midpoint_interpolation(data, min_length):
+    while len(data) < min_length:
+        new_data = []
+        for i,d in enumerate(data[:-1]):
+            new_data.append(d)
+            new_data.append((d+data[i+1])/2)
+        data = new_data + [data[-1]]
+    return data
 
 def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
     version, u = "v6.4", int(u*100)
