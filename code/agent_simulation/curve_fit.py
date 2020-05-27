@@ -24,7 +24,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     names = ['Uber', 'Lyft', 'Other']
-    
+
     # Extrapolate from given market-share values
     N = 1025
     data_ms = [
@@ -33,9 +33,14 @@ if __name__ == "__main__":
         midpoint_interpolation([0.06131887, 0.15614322, 0.1391805, 0.10582007], N-257)
     ]
 
-    # Define the parameters to search for 
+    # Define the parameters to search for
     mu_rs = np.linspace(0, 1, num=args.mu_waiting)
+    mu_rs[mu_rs == 0] = 0.0001
+    mu_rs[mu_rs == 1] = 0.9999
     mu_ds = np.linspace(0, 1, num=args.mu_idle)
+    mu_ds[mu_ds == 0] = 0.0001
+    mu_ds[mu_ds == 1] = 0.9999
+
     parameters = [[[a, b, c], [d, e, f]] for a in mu_rs for b in mu_rs for c in mu_rs for d in mu_ds for e in mu_ds for f in mu_ds]
     # Perform grid search
     scores = []
@@ -65,4 +70,4 @@ if __name__ == "__main__":
     np.savetxt('rmse_results.txt', scores)
 
 
-        
+
