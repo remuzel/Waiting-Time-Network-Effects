@@ -49,7 +49,7 @@ if __name__ == "__main__":
         if 0 not in args.delay:
             raise ValueError(f'--delay must contain a platform starting at time 0. Found --delay {args.delay}')
 
-    names = ['Uber', 'Black Cab', 'Bolt', 'Kapten', 'Heetch'][:args.P]
+    names = ['Uber', 'Via', 'Other', 'Juno', 'Via', 'Bolt', 'Kapten', 'Heetch'][:args.P]
     
     iter_ms = []
     iter_r = []
