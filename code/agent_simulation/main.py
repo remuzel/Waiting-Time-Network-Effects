@@ -33,13 +33,14 @@ if __name__ == "__main__":
         '--raw': ["Flag to save the raw heatmap data.", bool, False],
         '--plt_type': ["1) Plot marketshares only 2) Plot population only 3) Plot both", int, 3],
         '--n_joins': ["Number of agents that are released to the market at each iteration.", int, 1],
-        '--eta': ["The price coefficient eta", float, 0]
+        '--eta': ["The price coefficient eta", float, 0],
+        '--delay': ["List of times at which corresponding platforms should be introduced.", int, None]
     }
 
     parser = argparse.ArgumentParser()
     for arg, (_help, _type, _default) in arguments.items():
-        parser.add_argument(arg, help=_help, type=_type, default=_default)
-    parser.add_argument('--delay', help="List of times at which corresponding platforms should be introduced.", nargs='+', type=int, default=None)
+        nargs = '+' if arg in ['--mu_r', '--mu_d', '--eta', '--delay'] else '?'
+        parser.add_argument(arg, help=_help, type=_type, default=_default, nargs=nargs)
     args = parser.parse_args()
 
     if args.delay is not None:
@@ -55,19 +56,15 @@ if __name__ == "__main__":
     iter_d = []
     city = City()
     # Run the simulation it times
-    for i in tqdm(range(args.it)):
+    for _ in tqdm(range(args.it)):
         sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
                             rider_proportion=args.r, lorenz=args.c,
                             mu_D=args.mu_d, mu_R=args.mu_r, eta=args.eta,
                             n_joins=args.n_joins, delays=args.delay)
-        # Sort the returned shares and agent numbers (who the winner is doesn't matter)
-        m_shares = sorted(sim.run().get_market_shares(), key=lambda x: x[-1])
-        riders = sorted(sim.get_riders(), key=lambda x: x[-1])
-        drivers = sorted(sim.get_drivers(), key=lambda x: x[-1])
-        # Store the data
-        iter_ms.append(m_shares)
-        iter_r.append(riders)
-        iter_d.append(drivers)
+        # Store the returned data
+        iter_ms.append(sim.run().get_market_shares())
+        iter_r.append(sim.get_riders())
+        iter_d.append(sim.get_drivers())
     # Get means of winner / looser over the runs
     _format = lambda d, i: np.array([conf_interval(np.array(p), axis=0)[i] for p in zip(*d)])
     avg_ms, avg_r, avg_d = _format(iter_ms, 0), _format(iter_r, 0), _format(iter_d, 0)
@@ -80,6 +77,6 @@ if __name__ == "__main__":
         "avg_d": avg_d,
         "std_d": std_d
     }
-        
+
     # Plot the results
     plot_market_share(data, "agent", N=args.N*args.n_joins, r=args.r, filename=args.plt, _type=args.plt_type)

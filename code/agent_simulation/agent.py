@@ -18,9 +18,9 @@ class Agent():
             y = np.random.randint(grid_shape[0])
         self.position = np.array([y, x])
         self.lorenz = lambda ms: np.power(1 - np.power(ms, lorenz_coef), 1/lorenz_coef)
-        self.mu_D = mu_D
-        self.mu_R = mu_R
-        self.eta = eta
+        self.mu_D = np.array(mu_D)
+        self.mu_R = np.array(mu_R)
+        self.eta = np.array(eta)
 
     def decide(self, data):
         # Unpack the given data

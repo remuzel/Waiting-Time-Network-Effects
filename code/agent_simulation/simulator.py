@@ -23,7 +23,7 @@ class AgentSimulator():
             # Make sure the correct platforms are being initialised at time 0, and schedule the next ones
             self.platforms = []
             self.next_platforms = {}
-            for i, delay in enumerate(sorted(delays)):
+            for i, delay in enumerate(delays):
                 if not delay:
                     # No delay, initialise regular platform
                     self.platforms.append(Platform(platform_names[i]))
@@ -76,10 +76,21 @@ class AgentSimulator():
     def sample_agent(self):
         """ Randomly generate either a user or a driver """
         is_driver = np.random.choice([0, 1], p=self.rider_proportion)
+        n_plt = len(self.platforms)
         if is_driver:
-            return is_driver, Driver(self.xy, lorenz_coef=self.c, mu_R=self.mu_R, mu_D=self.mu_D, eta=self.eta)
+            return is_driver, Driver(
+                self.xy, lorenz_coef=self.c, 
+                mu_R=self.mu_R[:n_plt],
+                mu_D=self.mu_D[:n_plt],
+                eta=self.eta[:n_plt]
+            )
         else:
-            return is_driver, Rider(self.xy, lorenz_coef=self.c, mu_R=self.mu_R, mu_D=self.mu_D, eta=self.eta)
+            return is_driver, Rider(
+                self.xy, lorenz_coef=self.c, 
+                mu_R=self.mu_R[:n_plt],
+                mu_D=self.mu_D[:n_plt],
+                eta=self.eta[:n_plt]
+            )
 
     def get_drivers(self):
         """ Returns the number of drivers of each registered platform. """
