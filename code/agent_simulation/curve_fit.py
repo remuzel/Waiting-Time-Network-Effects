@@ -35,11 +35,11 @@ if __name__ == "__main__":
 
     # Define the parameters to search for 
     mu_rs = np.linspace(0, 1, num=args.mu_waiting)
-    mu_ds = np.linspace(0, 50, num=args.mu_idle)
+    mu_ds = np.linspace(0, 1, num=args.mu_idle)
     parameters = [[[a, b, c], [d, e, f]] for a in mu_rs for b in mu_rs for c in mu_rs for d in mu_ds for e in mu_ds for f in mu_ds]
-
     # Perform grid search
     scores = []
+    best = 1
     for mu_r, mu_d in tqdm(parameters):
         iter_ms = []
         city = City()
@@ -55,12 +55,14 @@ if __name__ == "__main__":
 
         # Compute RMSE
         rmse = [np.sqrt(mean_squared_error(true_ms, pred_ms)) for true_ms, pred_ms in zip(data_ms, avg_ms)]
-
         # Register score
-        scores.append([rmse, (mu_r, mu_d)])
-        with open('rmse_output.txt', 'a') as checkpoints:
-            checkpoints.write(f'mu_r {mu_r}\nmu_d {mu_d}\nRMSE {rmse}\n\n')
-    np.savetxt(scores, 'rmse_results.txt')
+        scores.append(mu_r + mu_d + rmse)
+        newBest = min(best, np.mean(rmse))
+        if newBest != best:
+            with open('rmse_output.txt', 'a') as checkpoints:
+                checkpoints.write(f'New best: mu_r: {mu_r} | mu_d: {mu_d}\nRMSE: {rmse}\n\n')
+            best = newBest
+    np.savetxt('rmse_results.txt', scores)
 
 
         
