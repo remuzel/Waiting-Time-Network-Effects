@@ -11,7 +11,7 @@ from simulator import AgentSimulator
 import sys
 sys.path.append("..")
 from base_simulation.environment import City
-from base_simulation.utils import plot_market_share, conf_interval, plot_heatmaps
+from base_simulation.utils import plot_market_share, conf_interval
 
 
 if __name__ == "__main__":

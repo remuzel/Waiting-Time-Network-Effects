@@ -29,7 +29,10 @@ class AgentSimulator():
                     self.platforms.append(Platform(platform_names[i]))
                 else:
                     # Delay, schedule the addition of a platform
-                    self.next_platforms[delay] = platform_names[i]
+                    if delay not in self.next_platforms:
+                        self.next_platforms[delay] = [platform_names[i]]
+                    else:
+                        self.next_platforms[delay].append(platform_names[i])
         else:   
             self.platforms = [Platform(name, len(platform_names)) for name in platform_names]
         self.platform_indices = lrange(self.platforms)
@@ -130,10 +133,11 @@ class AgentSimulator():
         """ Overwritting the simulators' run method - generating from total pop instead. """
         for step in range(self.N):
             if step in self.next_platforms:
-                # Get the current agent population and create new platform with correct information
-                r_pop = sum([p.riders for p in self.platforms])
-                d_pop = sum([p.drivers for p in self.platforms])
-                self.add_platform(self.next_platforms[step], r_pop, d_pop)
+                for name in self.next_platforms[step]:
+                    # Get the current agent population and create new platform with correct information
+                    r_pop = sum([p.riders for p in self.platforms])
+                    d_pop = sum([p.drivers for p in self.platforms])
+                    self.add_platform(name, r_pop, d_pop)
             # Generate an agent
             is_driver, agent = self.sample_agent()
             pos = agent.position
