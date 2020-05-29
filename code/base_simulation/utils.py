@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from matplotlib.lines import Line2D
 from numpy import linspace, std, mean, sqrt, savetxt
 
-def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=3):
+def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=3, delays=None):
     """ Plots the different market shares w.r.t. to time.
 
     Keyword arguments:
@@ -26,9 +26,9 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
         # Plot untapped market
         untapped = []
         for i in range(N+1):
-            # TODO: GENERALISE THIS
-            unt = 1 - market_shares[0][i]
-            unt -= market_shares[1][i-257] + market_shares[2][i-257] if i > 256 else 0
+            unt = 1
+            for p_index, delay in enumerate(delays):
+                unt -= market_shares[p_index][i-delay] if i >= delay else 0
             untapped.append(unt)
         plt.plot(list(range(N+1)), untapped, c='k', label="Untapped Market")
         # Plot description

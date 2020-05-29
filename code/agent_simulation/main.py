@@ -79,4 +79,4 @@ if __name__ == "__main__":
     }
 
     # Plot the results
-    plot_market_share(data, "agent", N=args.N*args.n_joins, r=args.r, filename=args.plt, _type=args.plt_type)
+    plot_market_share(data, "agent", N=args.N*args.n_joins, r=args.r, filename=args.plt, _type=args.plt_type, delays=args.delay)
