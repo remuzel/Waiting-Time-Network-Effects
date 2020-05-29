@@ -16,16 +16,13 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
     n_riders, r_error = data['avg_r'], data['std_r']
     n_drivers, d_error = data['avg_d'], data['std_d']
 
-    # Define the colors to use while plotting
-    c = plt.cm.RdYlGn(linspace(0, 1, len(market_shares)))
-
     if _type in [1, 3]:
         # Plot the market share evolution
         for i, market_share in enumerate(market_shares):
             # Get the correct xs plot wrt delay
             xs = list(range(N+1))[-len(market_share):]
             # Plot the error bars (and the curve) in 10% opacity
-            plt.errorbar(xs, market_share, yerr=error[i], errorevery=100, c=c[i], label=f"Platform {i+1}")
+            plt.errorbar(xs, market_share, yerr=error[i], errorevery=100, label=f"Platform {i+1}")
         # Plot description
         plt.xlabel('Time (t)')
         plt.ylabel('Market Share')
@@ -49,7 +46,7 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
             # Get the correct xs plot wrt delay
             xs = list(range(N+1))[-len(_r):]
             # Plot the riders
-            plots.append(r_ax.errorbar(xs, _r, fmt='^-b', markevery=100, yerr=r_error[i], errorevery=100, c=c[i]))
+            plots.append(r_ax.errorbar(xs, _r, fmt='^-b', markevery=100, yerr=r_error[i], errorevery=100))
         plt.grid(False)
         d_ax = r_ax.twinx()
         d_ax.set_ylabel('Drivers')
@@ -60,7 +57,7 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
             # Get the correct xs plot wrt delay
             xs = list(range(N+1))[-len(_d):]
             # Plot the drivers
-            plots.append(d_ax.errorbar(xs, _d, fmt='s-k', markevery=100, yerr=d_error[i], errorevery=100, c=c[i]))
+            plots.append(d_ax.errorbar(xs, _d, fmt='s-k', markevery=100, yerr=d_error[i], errorevery=100))
 
         lines = [
             Line2D([0], [0], color='blue', linestyle='-', marker='^'),
