@@ -46,27 +46,32 @@ if __name__ == "__main__":
     scores = []
     best = 1
     for mu_r, mu_d in tqdm(parameters):
-        iter_ms = []
-        city = City()
-        # Run the simulation it times
-        for _ in tqdm(range(args.it)):
-            sim = AgentSimulator(N, names, rider_proportion=0.95,
-                                mu_D=mu_d, mu_R=mu_r, eta=[0, 0, 0],
-                                n_joins=1, delays=[0, 257, 257])
-            # Store the returned data
-            iter_ms.append(sim.run().get_market_shares())
-        # Get means of winner / looser over the runs
-        avg_ms = np.array([conf_interval(np.array(p), axis=0)[0] for p in zip(*iter_ms)])
+        try:
+            iter_ms = []
+            city = City()
+            # Run the simulation it times
+            for _ in (range(args.it)):
+                sim = AgentSimulator(N, names, rider_proportion=0.95,
+                                    mu_D=mu_d, mu_R=mu_r, eta=[0, 0, 0],
+                                    n_joins=1, delays=[0, 257, 257])
+                # Store the returned data
+                iter_ms.append(sim.run().get_market_shares())
+            # Get means of winner / looser over the runs
+            avg_ms = np.array([conf_interval(np.array(p), axis=0)[0] for p in zip(*iter_ms)])
 
-        # Compute RMSE
-        rmse = [np.sqrt(mean_squared_error(true_ms, pred_ms)) for true_ms, pred_ms in zip(data_ms, avg_ms)]
-        # Register score
-        scores.append(mu_r + mu_d + rmse)
-        newBest = min(best, np.mean(rmse))
-        if newBest != best:
+            # Compute RMSE
+            rmse = [np.sqrt(mean_squared_error(true_ms, pred_ms)) for true_ms, pred_ms in zip(data_ms, avg_ms)]
+            # Register score
+            scores.append(mu_r + mu_d + rmse)
+            newBest = min(best, np.mean(rmse))
+            if newBest != best:
+                with open('rmse_output.txt', 'a') as checkpoints:
+                    checkpoints.write(f'New best: mu_r: {mu_r} | mu_d: {mu_d}\nRMSE: {rmse}\n\n')
+                best = newBest
+        except:
             with open('rmse_output.txt', 'a') as checkpoints:
-                checkpoints.write(f'New best: mu_r: {mu_r} | mu_d: {mu_d}\nRMSE: {rmse}\n\n')
-            best = newBest
+                checkpoints.write(f'Failed to run simulation with:\nmu_r: {mu_r} | mu_d: {mu_d}\n\n')
+
     np.savetxt('rmse_results.txt', scores)
 
 
