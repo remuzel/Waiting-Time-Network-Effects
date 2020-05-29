@@ -23,6 +23,8 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
             xs = list(range(N+1))[-len(market_share):]
             # Plot the error bars (and the curve) in 10% opacity
             plt.errorbar(xs, market_share, yerr=error[i], errorevery=100, label=f"Platform {i+1}")
+        # plt.plot(list(range(0, 257)), (1-market_shares[0])[:257], c='k')
+        # plt.plot(list(range(257, 1001)), (1-market_shares[0][257:]-market_shares[1]-market_shares[2]), c='k')
         # Plot description
         plt.xlabel('Time (t)')
         plt.ylabel('Market Share')

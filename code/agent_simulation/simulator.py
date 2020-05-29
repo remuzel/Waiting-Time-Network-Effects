@@ -158,6 +158,9 @@ class AgentSimulator():
             # Keep track of the growing rates # TODO: Check the propagation of rates
             self.rates[agent.is_rider].append(agent.rate)
             # Grow all platforms according to their values
+            # if len(growths) == 1:
+            #     self.growth([0], is_driver, position=pos, g=growths[0], t=growths[0])
+            #     continue
             for p, growth in zip(self.platform_indices, growths):
                 self.growth([p], is_driver, position=pos, g=growth, t=self.n_joins)
         return self
