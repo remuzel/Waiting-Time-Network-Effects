@@ -26,20 +26,19 @@ if __name__ == "__main__":
     names = ['Uber', 'Lyft', 'Other']
 
     # Extrapolate from given market-share values
-    N = 1025
+    N = 1889
+    data = np.loadtxt('../../raw/rmse/nyc_rhp_marketshare.txt')
     data_ms = [
-        midpoint_interpolation([1., 0.82982488, 0.72347467, 0.67828489, 0.67600572], N)+[0.67600572],
-        midpoint_interpolation([0.10885625, 0.1203821, 0.1825346, 0.21817421], N-257),
-        midpoint_interpolation([0.06131887, 0.15614322, 0.1391805, 0.10582007], N-257)
+        midpoint_interpolation(data[0], N) + [data[0,-1]],
+        midpoint_interpolation(data[1], N-95)[65:] + [data[1,-1]],
+        midpoint_interpolation(data[2], N-95)[65:] + [data[2,-1]]
     ]
 
     # Define the parameters to search for
     mu_rs = np.linspace(0, 1, num=args.mu_waiting)
-    mu_rs[mu_rs == 0] = 0.0001
-    mu_rs[mu_rs == 1] = 0.9999
+    mu_rs = np.delete(mu_rs, [0, args.mu_waiting-1])
     mu_ds = np.linspace(0, 1, num=args.mu_idle)
-    mu_ds[mu_ds == 0] = 0.0001
-    mu_ds[mu_ds == 1] = 0.9999
+    mu_ds = np.delete(mu_ds, [0, args.mu_idle-1])
 
     parameters = [[[a, b, c], [d, e, f]] for a in mu_rs for b in mu_rs for c in mu_rs for d in mu_ds for e in mu_ds for f in mu_ds]
     # Perform grid search
@@ -53,7 +52,7 @@ if __name__ == "__main__":
             for _ in (range(args.it)):
                 sim = AgentSimulator(N, names, rider_proportion=0.95,
                                     mu_D=mu_d, mu_R=mu_r, eta=[0, 0, 0],
-                                    n_joins=1, delays=[0, 257, 257])
+                                    n_joins=1, delays=[0, 65, 65])
                 # Store the returned data
                 iter_ms.append(sim.run().get_market_shares())
             # Get means of winner / looser over the runs
