@@ -30,7 +30,7 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
             for p_index, delay in enumerate(delays):
                 unt -= market_shares[p_index][i-delay] if i >= delay else 0
             untapped.append(unt)
-        plt.plot(list(range(N+1)), untapped, c='k', label="Untapped Market")
+        plt.plot(list(range(N+1)), untapped, c='k', ls='--', lw=1, label="Untapped Market")
         # Plot description
         plt.xlabel('Time (t)')
         plt.ylabel('Market Share')
