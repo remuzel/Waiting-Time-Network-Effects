@@ -21,6 +21,7 @@ if __name__ == "__main__":
     parser.add_argument('--it', help='Number of iterations to get average', type=int, default=100)
     parser.add_argument('--mu_waiting', help='Number of values to search for mu_r', type=int, default=50)
     parser.add_argument('--mu_idle', help='Number of values to search for mu_d', type=int, default=50)
+    parser.add_argument('--fixed', help='Which of the mu_waiting parameters to fix', type=int, default=0)
     args = parser.parse_args()
 
     names = ['Uber', 'Lyft', 'Other']
@@ -45,6 +46,8 @@ if __name__ == "__main__":
     scores = []
     best = 1
     for mu_r, mu_d in tqdm(parameters):
+        if mu_r != mu_rs[args.fixed]:
+            continue
         try:
             iter_ms = []
             city = City()
@@ -64,14 +67,14 @@ if __name__ == "__main__":
             scores.append(mu_r + mu_d + rmse)
             newBest = min(best, np.mean(rmse))
             if newBest != best:
-                with open('rmse_output.txt', 'a') as checkpoints:
+                with open(f'txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
                     checkpoints.write(f'New best: mu_r: {mu_r} | mu_d: {mu_d}\nRMSE: {rmse}\n\n')
                 best = newBest
         except:
-            with open('rmse_output.txt', 'a') as checkpoints:
+            with open(f'txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
                 checkpoints.write(f'Failed to run simulation with:\nmu_r: {mu_r} | mu_d: {mu_d}\n\n')
 
-    np.savetxt('rmse_results.txt', scores)
+    np.savetxt(f'txtoutput/rmse_results_fixed{args.fixed}.txt', scores)
 
 
 
