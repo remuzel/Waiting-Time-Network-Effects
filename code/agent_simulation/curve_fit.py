@@ -61,8 +61,8 @@ if __name__ == "__main__":
             # Get means of winner / looser over the runs
             avg_ms = np.array([conf_interval(np.array(p), axis=0)[0] for p in zip(*iter_ms)])
 
-            # Compute RMSE
-            rmse = [np.sqrt(mean_squared_error(true_ms, pred_ms)) for true_ms, pred_ms in zip(data_ms, avg_ms)]
+            # Compute RMSE for half of the data
+            rmse = [np.sqrt(mean_squared_error(true_ms[:len(true_ms)//2], pred_ms[:len(pred_ms)]//2)) for true_ms, pred_ms in zip(data_ms, avg_ms)]
             # Register score
             scores.append(mu_r + mu_d + rmse)
             newBest = min(best, np.mean(rmse))
