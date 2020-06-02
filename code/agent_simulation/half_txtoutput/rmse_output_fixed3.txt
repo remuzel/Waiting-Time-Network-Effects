@@ -1,0 +1,56 @@
+New best: mu_r: [0.4, 0.1, 0.1] | mu_d: [0.2, 0.2, 0.2]
+RMSE: [0.3172178792093608, 0.206946230748319, 0.06813870197960166]
+
+New best: mu_r: [0.4, 0.1, 0.1] | mu_d: [0.2, 0.2, 0.4]
+RMSE: [0.24366307833641962, 0.17295826987151489, 0.06552485832710399]
+
+New best: mu_r: [0.4, 0.1, 0.1] | mu_d: [0.2, 0.4, 0.2]
+RMSE: [0.21711981911349928, 0.1114012233242061, 0.051657025639179344]
+
+New best: mu_r: [0.4, 0.1, 0.1] | mu_d: [0.2, 0.8, 0.4]
+RMSE: [0.1890720132971354, 0.053285812363191486, 0.05944365000333332]
+
+ERROR
+mu_r: [0.4, 0.30000000000000004, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.4, 0.5] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.4, 0.5] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.9, 0.4] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.4, 0.9, 0.9] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
