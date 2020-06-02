@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     # Extrapolate from given market-share values
     N = 1889
-    data = np.loadtxt('../../raw/rmse/nyc_rhp_marketshare.txt')
+    data = np.loadtxt('../../raw/real/nyc_rhp_marketshare.txt')
     data_ms = [
         midpoint_interpolation(data[0], N) + [data[0,-1]],
         midpoint_interpolation(data[1], N-95)[65:] + [data[1,-1]],
@@ -62,7 +62,11 @@ if __name__ == "__main__":
             avg_ms = np.array([conf_interval(np.array(p), axis=0)[0] for p in zip(*iter_ms)])
 
             # Compute RMSE for half of the data
-            rmse = [np.sqrt(mean_squared_error(true_ms[:len(true_ms)//2], pred_ms[:len(pred_ms)]//2)) for true_ms, pred_ms in zip(data_ms, avg_ms)]
+            rmse = []
+            for true_ms, pred_ms in zip(data_ms, avg_ms):
+                true = true_ms[:len(true_ms)//2]
+                pred = pred_ms[:len(pred_ms)//2]
+                rmse.append(np.sqrt(mean_squared_error(true, pred)))
             # Register score
             scores.append(mu_r + mu_d + rmse)
             newBest = min(best, np.mean(rmse))
