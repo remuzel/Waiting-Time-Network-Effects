@@ -1,0 +1,2739 @@
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.2, 0.2]
+RMSE: [0.6217406301475216, 0.43719528868453084, 0.18119366443868964]
+
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.2, 0.4]
+RMSE: [0.5950624907717685, 0.49205775228244986, 0.10340556447398672]
+
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.2, 0.6000000000000001]
+RMSE: [0.5742932640917117, 0.509113100382842, 0.07246691954721048]
+
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.4, 0.2]
+RMSE: [0.48393895489225214, 0.32697391661665415, 0.14411905237941272]
+
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.8, 0.4]
+RMSE: [0.3513414384464296, 0.21446938507669772, 0.1047981420263214]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.1, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+New best: mu_r: [0.5, 0.2, 0.1] | mu_d: [0.2, 0.4, 0.8]
+RMSE: [0.22799374052121324, 0.07101856389554208, 0.1949527032314697]
+
+New best: mu_r: [0.5, 0.2, 0.2] | mu_d: [0.2, 0.2, 0.4]
+RMSE: [0.17932464615873014, 0.16803146580111392, 0.098899484504564]
+
+New best: mu_r: [0.5, 0.2, 0.2] | mu_d: [0.2, 0.8, 0.4]
+RMSE: [0.1744985203292303, 0.15386054957022888, 0.09626715543645416]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.2, 0.2] | mu_d: [0.8, 0.8, 0.4]
+
+New best: mu_r: [0.5, 0.2, 0.30000000000000004] | mu_d: [0.2, 0.6000000000000001, 0.2]
+RMSE: [0.15418303748112028, 0.11690417546187958, 0.10286978278924651]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.2, 0.4] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.2, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.2, 0.9] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.1] | mu_d: [0.8, 0.8, 0.8]
+
+New best: mu_r: [0.5, 0.30000000000000004, 0.2] | mu_d: [0.2, 0.2, 0.8]
+RMSE: [0.16517554266685608, 0.0831204833845958, 0.04040257678589592]
+
+New best: mu_r: [0.5, 0.30000000000000004, 0.2] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+RMSE: [0.16609924074822785, 0.07155122266851581, 0.04464901213527856]
+
+New best: mu_r: [0.5, 0.30000000000000004, 0.2] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+RMSE: [0.16083851546846079, 0.05104413035042481, 0.06550882616619833]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.4, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.4, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.4, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.8] | mu_d: [0.4, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.8] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.30000000000000004, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.2] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.4, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.4, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.4, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.4, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.4, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.4, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.4, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.4, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.4, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.2] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.4, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.4, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.4, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.4, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.4, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.4, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.4, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.2, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.4, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.4, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.4, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.4, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.4, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.4, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.4, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.4, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.2] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.4, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.4, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.4, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.4, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.4, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.4, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.2] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.2] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.4, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.4, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.4, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.4, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.4, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.2, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.2, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.4, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.4, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.4, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.2, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.4, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.4, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.4, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.4, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.4, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.4, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.4, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.4, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.4, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.4, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.4, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.4, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.1] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.2] | mu_d: [0.4, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.4, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.4, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.4, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.4, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.4, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.4, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.4, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.4, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.4, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.8, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.2, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.2, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.2, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.2, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.4, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.4, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.4, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.4, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.8]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.8, 0.2]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.8, 0.4]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+
+Failed to run simulation with:
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.8, 0.8]
+
