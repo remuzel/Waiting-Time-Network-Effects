@@ -67,14 +67,14 @@ if __name__ == "__main__":
             scores.append(mu_r + mu_d + rmse)
             newBest = min(best, np.mean(rmse))
             if newBest != best:
-                with open(f'txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
+                with open(f'half_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
                     checkpoints.write(f'New best: mu_r: {mu_r} | mu_d: {mu_d}\nRMSE: {rmse}\n\n')
                 best = newBest
-        except:
-            with open(f'txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
-                checkpoints.write(f'Failed to run simulation with:\nmu_r: {mu_r} | mu_d: {mu_d}\n\n')
+        except Exception as e:
+            with open(f'half_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
+                checkpoints.write(f'ERROR\nmu_r: {mu_r} | mu_d: {mu_d}\n{e}\n\n')
 
-    np.savetxt(f'txtoutput/rmse_results_fixed{args.fixed}.txt', scores)
+    np.savetxt(f'half_txtoutput/rmse_results_fixed{args.fixed}.txt', scores)
 
 
 
