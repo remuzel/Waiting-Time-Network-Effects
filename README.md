@@ -13,13 +13,6 @@ optimal is
 
 ---
 
-After training the simulation on 100% of the data:
-
-optimal is 
-> `python main.py --it 100 --P 3 --mu_r 0.3 0.1 0.1 --mu_d 0.6 0.2 0.2 --eta 0 0 0 --delay 0 65 65`
-
----
-
 After training the simulation on the middle 50% of the data:
 
 optimal is
@@ -27,7 +20,16 @@ optimal is
 
 --- 
 
-After training the ismulation on 70% of the data:
+After training the simulation on 70% of the data:
 
 optimal is
 > `python3 main.py --it 100 --P 3 --mu_r 0.3 0.1 0.1 --mu_d 0.2 0.2 0.2 --eta 0 0 0 --delay 0 65 65`
+
+---
+
+After training the simulation on 100% of the data:
+
+optimal is 
+> `python main.py --it 100 --P 3 --mu_r 0.3 0.1 0.1 --mu_d 0.6 0.2 0.2 --eta 0 0 0 --delay 0 65 65`
+
+---
