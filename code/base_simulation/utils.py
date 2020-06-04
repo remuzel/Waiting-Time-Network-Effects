@@ -46,6 +46,7 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
         for i, _r in enumerate(n_riders):
             xs = list(range(N+1))[-len(_r):]
             plt.plot(xs, _r, label=f'Platform {i+1}')
+        plt.legend()
         plt.xlabel('time (t)', size=12)
         plt.xscale('log')
         plt.ylabel('rider population', size=12)
@@ -59,6 +60,7 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
         for i, _d in enumerate(n_drivers):
             xs = list(range(N+1))[-len(_d):]
             plt.plot(xs, _d, label=f'Platform {i+1}')
+        plt.legend()
         plt.xlabel('time (t)', size=12)
         plt.xscale('log')
         plt.ylabel('driver population', size=12)
