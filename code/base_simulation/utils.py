@@ -43,40 +43,29 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
             plt.show()
 
     if _type in [2, 3]:
-        fig, r_ax = plt.subplots()
-        r_ax.set_xlabel('Time (t)')
-        r_ax.set_ylabel('Riders')
-        r_ax.set_ylim(0, int(N*r+sqrt(N*r*(1-r))))
-        #r_ax.set_yscale('log')
-        plots = []
-        # Plot the rider population evolution
         for i, _r in enumerate(n_riders):
-            # Get the correct xs plot wrt delay
             xs = list(range(N+1))[-len(_r):]
-            # Plot the riders
-            plots.append(r_ax.errorbar(xs, _r, fmt='^-b', markevery=100, yerr=r_error[i], errorevery=100))
-        plt.grid(False)
-        d_ax = r_ax.twinx()
-        d_ax.set_ylabel('Drivers')
-        d_ax.set_ylim(0, int(N*(1-r)+sqrt(N*r*(1-r))))
-        #d_ax.set_yscale('log')
-        # Plot the driver population evolution
-        for i, _d in enumerate(n_drivers):
-            # Get the correct xs plot wrt delay
-            xs = list(range(N+1))[-len(_d):]
-            # Plot the drivers
-            plots.append(d_ax.errorbar(xs, _d, fmt='s-k', markevery=100, yerr=d_error[i], errorevery=100))
-
-        lines = [
-            Line2D([0], [0], color='blue', linestyle='-', marker='^'),
-            Line2D([0], [0], color='black', linestyle='-', marker='s')
-        ]
-        labels = ["Riders", "Drivers"]
-        plt.legend(lines, labels, loc="upper left")
-        plt.grid(False)
-        plt.title(f'Agent population evolution for {arrival_type} growth')
+            plt.plot(xs, _r, label=f'Platform {i+1}')
+        plt.xlabel('time (t)', size=12)
+        plt.xscale('log')
+        plt.ylabel('rider population', size=12)
+        plt.yscale('log')
+        plt.title('Rider population growth')
         if filename is not None:
-            plt.savefig(f'../../figures/{version}/population_{filename}', dpi=600)
+            plt.savefig(f'../../figures/{version}/rider_{filename}', dpi=600)
+        else:
+            plt.show()
+
+        for i, _d in enumerate(n_drivers):
+            xs = list(range(N+1))[-len(_d):]
+            plt.plot(xs, _d, label=f'Platform {i+1}')
+        plt.xlabel('time (t)', size=12)
+        plt.xscale('log')
+        plt.ylabel('driver population', size=12)
+        plt.yscale('log')
+        plt.title('Driver population growth')
+        if filename is not None:
+            plt.savefig(f'../../figures/{version}/driver_{filename}', dpi=600)
         else:
             plt.show()
 
