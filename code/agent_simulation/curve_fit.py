@@ -64,7 +64,7 @@ if __name__ == "__main__":
             # Compute RMSE for half of the data
             rmse = []
             for true_ms, pred_ms in zip(data_ms, avg_ms):
-                a = len(true_ms) * 0.70
+                a = int(len(true_ms) * 0.70)
                 true = true_ms[:a]
                 pred = pred_ms[:a]
                 rmse.append(np.sqrt(mean_squared_error(true, pred)))
