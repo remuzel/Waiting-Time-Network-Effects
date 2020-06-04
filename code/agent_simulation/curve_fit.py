@@ -64,21 +64,22 @@ if __name__ == "__main__":
             # Compute RMSE for half of the data
             rmse = []
             for true_ms, pred_ms in zip(data_ms, avg_ms):
-                true = true_ms[:len(true_ms)//2]
-                pred = pred_ms[:len(pred_ms)//2]
+                a = len(true_ms) * 0.70
+                true = true_ms[:a]
+                pred = pred_ms[:a]
                 rmse.append(np.sqrt(mean_squared_error(true, pred)))
             # Register score
             scores.append(mu_r + mu_d + rmse)
             newBest = min(best, np.mean(rmse))
             if newBest != best:
-                with open(f'late_half_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
+                with open(f'70_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
                     checkpoints.write(f'New best: mu_r: {mu_r} | mu_d: {mu_d}\nRMSE: {rmse}\n\n')
                 best = newBest
         except Exception as e:
-            with open(f'late_half_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
+            with open(f'70_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
                 checkpoints.write(f'ERROR\nmu_r: {mu_r} | mu_d: {mu_d}\n{e}\n\n')
 
-    np.savetxt(f'late_half_txtoutput/rmse_results_fixed{args.fixed}.txt', scores)
+    np.savetxt(f'70_txtoutput/rmse_results_fixed{args.fixed}.txt', scores)
 
 
 
