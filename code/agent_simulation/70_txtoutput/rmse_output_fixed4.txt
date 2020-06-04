@@ -1,0 +1,3637 @@
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.2, 0.2]
+RMSE: [0.6083241498348988, 0.43247302221015665, 0.16971484832205264]
+
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.2, 0.4]
+RMSE: [0.5767673938502846, 0.47378518468152886, 0.10265490203732855]
+
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.2, 0.6000000000000001]
+RMSE: [0.5594279924537936, 0.4882152863513091, 0.07885604062051665]
+
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.4, 0.2]
+RMSE: [0.4718129010716623, 0.32284369883423225, 0.1294121422749228]
+
+New best: mu_r: [0.5, 0.1, 0.1] | mu_d: [0.2, 0.8, 0.4]
+RMSE: [0.36209413923332245, 0.2213048461017931, 0.09673289023101381]
+
+ERROR
+mu_r: [0.5, 0.1, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+New best: mu_r: [0.5, 0.2, 0.1] | mu_d: [0.2, 0.4, 0.8]
+RMSE: [0.2497745496638686, 0.053498540994313226, 0.16301712739586022]
+
+ERROR
+mu_r: [0.5, 0.2, 0.2] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+New best: mu_r: [0.5, 0.2, 0.30000000000000004] | mu_d: [0.2, 0.6000000000000001, 0.2]
+RMSE: [0.1838893265374936, 0.13007487860063513, 0.11066764485829454]
+
+ERROR
+mu_r: [0.5, 0.2, 0.4] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.2, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.2, 0.9] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.1] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+New best: mu_r: [0.5, 0.30000000000000004, 0.2] | mu_d: [0.2, 0.2, 0.2]
+RMSE: [0.1918184797072158, 0.0771290062583837, 0.09411625175417154]
+
+New best: mu_r: [0.5, 0.30000000000000004, 0.2] | mu_d: [0.2, 0.2, 0.8]
+RMSE: [0.1900652218669022, 0.06607335473540674, 0.045930142851149644]
+
+New best: mu_r: [0.5, 0.30000000000000004, 0.2] | mu_d: [0.4, 0.4, 0.8]
+RMSE: [0.1825765406584851, 0.06753108081129089, 0.04724662982244608]
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.4, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.4, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.4, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.5] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.8] | mu_d: [0.4, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.8] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.30000000000000004, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.2] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.4, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.4, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.4] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.4, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.4, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.5] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.4, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.4, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.4, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.4, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.8] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.4, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.4, 0.9] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.2] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.4, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.4, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.4, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.4, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+New best: mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.6000000000000001]
+RMSE: [0.1885103715873854, 0.058388452367286035, 0.04853988010317627]
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.4, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.4, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.4] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.4, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.5] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.2, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.4, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.4, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.4, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.4, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.4, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.4, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.8] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.4, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.4, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.5, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.2] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.4, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.4, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.4, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.4, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.4, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.4, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.6000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.2] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.2] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.4, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.4, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.4, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.4] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.4, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.4, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.5] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.2, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.2, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.4, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.4, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.4, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.7000000000000001, 0.9] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.2, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.4, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.4, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.4, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.4] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.4, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.4, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.5] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.4, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.4, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.4, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.4, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.4, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.4, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.4, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.8] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.8, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.1] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.2] | mu_d: [0.4, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.4, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.4, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.30000000000000004] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.4, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.4] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.4, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.4, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.5] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.4, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.4, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.6000000000000001] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.4, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.7000000000000001] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.4, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.4, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.6000000000000001, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.8] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.6000000000000001, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.2, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.2, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.2, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.2, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.4, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.4, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.4, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.4, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.6000000000000001, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.8, 0.2]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.8, 0.4]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.8, 0.6000000000000001]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
+ERROR
+mu_r: [0.5, 0.9, 0.9] | mu_d: [0.8, 0.8, 0.8]
+Input contains NaN, infinity or a value too large for dtype('float64').
+
