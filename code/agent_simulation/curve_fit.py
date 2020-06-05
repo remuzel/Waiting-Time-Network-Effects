@@ -48,7 +48,7 @@ if __name__ == "__main__":
     scores = []
     best = 1
     for mu_r, mu_d in tqdm(parameters):
-        if mu_r[0] != mu_rs[args.fixed]:
+        if mu_d[0] != mu_ds[args.fixed]:
             continue
         try:
             iter_ms = []
