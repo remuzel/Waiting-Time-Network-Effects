@@ -74,14 +74,14 @@ if __name__ == "__main__":
             scores.append(mu_r + mu_d + rmse)
             newBest = min(best, np.mean(rmse))
             if newBest != best:
-                with open(f'70_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
+                with open(f'70_conditional_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
                     checkpoints.write(f'New best: mu_r: {mu_r} | mu_d: {mu_d}\nRMSE: {rmse}\n\n')
                 best = newBest
         except Exception as e:
-            with open(f'70_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
+            with open(f'70_conditional_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
                 checkpoints.write(f'ERROR\nmu_r: {mu_r} | mu_d: {mu_d}\n{e}\n\n')
 
-    np.savetxt(f'70_txtoutput/rmse_results_fixed{args.fixed}.txt', scores)
+    np.savetxt(f'70_conditional_txtoutput/rmse_results_fixed{args.fixed}.txt', scores)
 
 
 
