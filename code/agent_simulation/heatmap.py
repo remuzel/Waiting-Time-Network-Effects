@@ -41,15 +41,15 @@ if __name__ == "__main__":
         for base in [0.1, 0.5, 0.9]:
             # Iterate through all possible delays
             delta_ms = np.zeros((n, n))
-            for y, delay in tqdm(enumerate(np.linspace(0, args.N//2, num=n))):
+            for y, delay in tqdm(enumerate(np.linspace(0, args.N//2, num=n)), total=n):
                 # Iterate through all possible values of mu
-                for x, mu in tqdm(enumerate(np.linspace(0, mode, num=n))):
+                for x, mu in tqdm(enumerate(np.linspace(0, mode, num=n)), total=n):
                     mu_r = [base, mu]   if mode == 1 else [base, base]
                     mu_d = [base, base] if mode == 1 else [base, mu]
                     iter_ms = []
                     city = City()
                     # Run the simulation it times
-                    for _ in tqdm(range(args.it)):
+                    for _ in range(args.it):
                         sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
                                             rider_proportion=args.r, lorenz=args.c,
                                             mu_D=mu_d, mu_R=mu_r, eta=[0, 0],
@@ -59,5 +59,5 @@ if __name__ == "__main__":
                     # Get means of winner / looser over the runs
                     _format = lambda d, i: np.array([conf_interval(np.array(p), axis=0)[i] for p in zip(*d)])
                     avg_ms = _format(iter_ms, 0)
-                    delta_ms[-(y+1), x] = np.abs(avg_ms[0] - avg_ms[1])
+                    delta_ms[-(y+1), x] = np.abs(avg_ms[0,-1] - avg_ms[1,-1])
             np.savetxt(f'heatmap_data/mu_{"waiting" if mode == 1 else "idle"}-{base}.txt', delta_ms)
