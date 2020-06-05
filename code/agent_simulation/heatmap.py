@@ -44,8 +44,8 @@ if __name__ == "__main__":
             for y, delay in tqdm(enumerate(np.linspace(0, args.N//2, num=n))):
                 # Iterate through all possible values of mu
                 for x, mu in tqdm(enumerate(np.linspace(0, mode, num=n))):
-                    mu_r = mu if mode == 1 else base
-                    mu_d = mu if mode == 50 else base
+                    mu_r = [base, mu]   if mode == 1 else [base, base]
+                    mu_d = [base, base] if mode == 1 else [base, mu]
                     iter_ms = []
                     city = City()
                     # Run the simulation it times
@@ -53,7 +53,7 @@ if __name__ == "__main__":
                         sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
                                             rider_proportion=args.r, lorenz=args.c,
                                             mu_D=mu_d, mu_R=mu_r, eta=[0, 0],
-                                            n_joins=args.n_joins, delays=0, delay)
+                                            n_joins=args.n_joins, delays=[0, delay])
                         # Store the returned data
                         iter_ms.append(sim.run().get_market_shares())
                     # Get means of winner / looser over the runs
