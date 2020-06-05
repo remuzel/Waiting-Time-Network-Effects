@@ -48,7 +48,7 @@ if __name__ == "__main__":
                 continue
             # Iterate through all possible delays
             delta_ms = np.zeros((n, n))
-            for y, delay in tqdm(enumerate(np.linspace(0, args.N//2, num=n)), total=n):
+            for y, delay in tqdm(enumerate(list(range(0, args.N//2, 10))), total=n):
                 # Iterate through all possible values of mu
                 for x, mu in tqdm(enumerate(np.linspace(0, mode, num=n)), total=n):
                     mu_r = [base, mu]   if mode == 1 else [base, base]
