@@ -40,8 +40,6 @@ if __name__ == "__main__":
     n = 50
     modes = [1, 50]
     bases = [0.1, 0.5, 0.9]
-    mu_rs = np.linspace(0, mode, num=n)
-    mu_ds = np.linspace(0, args.N//2, num=n)
     # Either run the simulation for mu_waiting (1) or mu_idle (50)
     for mode in modes:
         # Every time set the default value for the mu we aren't going through
@@ -50,9 +48,9 @@ if __name__ == "__main__":
                 continue
             # Iterate through all possible delays
             delta_ms = np.zeros((n, n))
-            for y, delay in tqdm(enumerate(mu_ds), total=n):
+            for y, delay in tqdm(enumerate(np.linspace(0, args.N//2, num=n)), total=n):
                 # Iterate through all possible values of mu
-                for x, mu in tqdm(enumerate(mu_rs), total=n):
+                for x, mu in tqdm(enumerate(np.linspace(0, mode, num=n)), total=n):
                     mu_r = [base, mu]   if mode == 1 else [base, base]
                     mu_d = [base, base] if mode == 1 else [base, mu]
                     iter_ms = []
