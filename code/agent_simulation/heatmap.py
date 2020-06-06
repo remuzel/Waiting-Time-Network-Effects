@@ -59,7 +59,7 @@ if __name__ == "__main__":
             _format = lambda d, i: np.array([conf_interval(np.array(p), axis=0)[i] for p in zip(*d)])
             avg_ms = _format(iter_ms, 0)
             delta_ms[-(y+1), x] = np.abs(avg_ms[0][-1] - avg_ms[1][-1])
-    if args.waiting:
+    if args.mu_waiting:
         np.savetxt(f'heatmap_data/mu_waiting-{args.base}.txt', delta_ms)
     else:
         np.savetxt(f'heatmap_data/mu_idle-{args.base}.txt', delta_ms)
