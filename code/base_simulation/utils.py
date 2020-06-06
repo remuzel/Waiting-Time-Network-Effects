@@ -51,7 +51,7 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
         plt.xscale('log')
         plt.ylabel('rider population', size=12)
         plt.yscale('log')
-        plt.title('Rider population growth')
+        plt.title('Rider population growth', size=15)
         if filename is not None:
             plt.savefig(f'../../figures/{version}/rider_{filename}', dpi=600)
         else:
@@ -65,9 +65,22 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
         plt.xscale('log')
         plt.ylabel('driver population', size=12)
         plt.yscale('log')
-        plt.title('Driver population growth')
+        plt.title('Driver population growth', size=15)
         if filename is not None:
             plt.savefig(f'../../figures/{version}/driver_{filename}', dpi=600)
+        else:
+            plt.show()
+
+        for i, (_r, _d) in enumerate(zip(n_riders, n_drivers)):
+            _t = _r + _d
+            xs = list(range(N+1))[-len(_t):]
+            plt.plot(xs, _t, label=f'Platform {i+1}')
+        plt.legend()
+        plt.xlabel('time (t)', size=12)
+        plt.ylabel('total population', size=12)
+        plt.title('RHP users population growth', size=15)
+        if filename is not None:
+            plt.savefig(f'../../figures/{version}/total_{filename}', dpi=600)
         else:
             plt.show()
 
