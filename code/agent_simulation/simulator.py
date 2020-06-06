@@ -97,11 +97,11 @@ class AgentSimulator():
 
     def get_drivers(self):
         """ Returns the number of drivers of each registered platform. """
-        return [platform.get_driver_history() for platform in self.platforms]
+        return np.array([platform.get_driver_history() for platform in self.platforms])
 
     def get_riders(self):
         """ Returns the number of riders of each registered platform. """
-        return [platform.get_rider_history() for platform in self.platforms]
+        return np.array([platform.get_rider_history() for platform in self.platforms])
 
     def get_market_shares(self):
         """ Returns the market share of each registered platform. """
