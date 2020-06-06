@@ -36,7 +36,7 @@ class Agent():
             p = (r_ms*self.c_I() - self.mu_D/(1+self.mu_A*self.c_A()) * (n_d/(n_r+n_d)) + self.eta*n_r/(n_d+n_r)).clip(min=0)
         self.rate = p
         # Translates the rates into actual joining numbers
-        if len(p) > 1:
+        if len(p) > 1 and p.sum() > 0:
             # If there are multiple platforms, normalise the joining rates
             p = p/p.sum()
         return p * n_joins
