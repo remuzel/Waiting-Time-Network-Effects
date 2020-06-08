@@ -61,6 +61,6 @@ if __name__ == "__main__":
             # See how much ahead the initially starting platform is 
             delta_ms[-(y+1), x] = avg_ms[0][-1] - avg_ms[1][-1]
     if args.mu_waiting:
-        np.savetxt(f'heatmap_data/mu_waiting-{args.base}.txt', delta_ms)
+        np.savetxt(f'../../raw/fma_analysis/mu_waiting-{args.base}.txt', delta_ms)
     else:
-        np.savetxt(f'heatmap_data/mu_idle-{args.base}.txt', delta_ms)
+        np.savetxt(f'../../raw/fma_analysis/mu_idle-{args.base}.txt', delta_ms)
