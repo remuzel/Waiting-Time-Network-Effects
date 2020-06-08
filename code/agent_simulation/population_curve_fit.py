@@ -18,13 +18,13 @@ from base_simulation.utils import midpoint_interpolation, conf_interval
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--it', help='Number of iterations to get average', type=int, default=100)
-    parser.add_argument('--mu_waiting', help='Number of values to search for mu_r', type=int, default=50)
-    parser.add_argument('--mu_idle', help='Number of values to search for mu_d', type=int, default=50)
+    parser.add_argument('--it', help='Number of iterations to get average', type=int, default=10)
+    parser.add_argument('--mu_waiting', help='Number of values to search for mu_r', type=int, default=4)
+    parser.add_argument('--mu_idle', help='Number of values to search for mu_d', type=int, default=4)
     parser.add_argument('--fixed', help='Which of the mu_waiting parameters to fix', type=int, default=0)
     args = parser.parse_args()
 
-    names = ['Lyft']
+    names = ['Uber', 'Lyft', 'Other']
 
     # Extrapolate from given market-share values
     N = 1889
