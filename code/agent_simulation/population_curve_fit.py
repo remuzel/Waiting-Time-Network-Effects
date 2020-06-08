@@ -47,14 +47,15 @@ if __name__ == "__main__":
     mu_ds = np.delete(mu_ds, [0, args.mu_idle-1])
 
     # Assert that for each platform, the average of mu_waiting and mu_idle is not 'high'
-    valid = lambda elements: all([np.mean([elements[i], elements[i+3]]) <= 0.6 for i in [0, 1, 2]])
-    parameters = [[[a, b, c], [d, e, f]] for a in mu_rs for b in mu_rs for c in mu_rs for d in mu_ds for e in mu_ds for f in mu_ds if valid([a, b, c, d, e, f])]
+    # valid = lambda elements: all([np.mean([elements[i], elements[i+3]]) <= 0.6 for i in [0, 1, 2]])
+    # parameters = [[[a, b, c], [d, e, f]] for a in mu_rs for b in mu_rs for c in mu_rs for d in mu_ds for e in mu_ds for f in mu_ds if valid([a, b, c, d, e, f])]
+    parameters = [[a], [b] for a in mu_rs for b in mu_ds if np.mean([a, b]) <= 0.6]
     # Perform grid search
     scores = []
     best = None
     for mu_r, mu_d in tqdm(parameters):
-        if mu_d[0] != mu_ds[args.fixed]:
-            continue
+        # if mu_r[0] != mu_rs[args.fixed]:
+        #     continue
         try:
             iter_riders = []
             iter_drivers = []
@@ -62,8 +63,8 @@ if __name__ == "__main__":
             # Run the simulation it times
             for _ in (range(args.it)):
                 sim = AgentSimulator(N, names, rider_proportion=0.95,
-                                    mu_D=mu_d, mu_R=mu_r, eta=[0, 0, 0],
-                                    n_joins=1, delays=[0, 65, 65])
+                                    mu_D=mu_d, mu_R=mu_r, eta=[0],
+                                    n_joins=1, delays=[0])
                 # Store the returned data
 
                 iter_riders.append(sim.run().get_riders())
