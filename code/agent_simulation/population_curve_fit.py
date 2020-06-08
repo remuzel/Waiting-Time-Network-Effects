@@ -60,8 +60,13 @@ if __name__ == "__main__":
                                     mu_D=mu_d, mu_R=mu_r, eta=[0, 0, 0],
                                     n_joins=1, delays=[0, 65, 65])
                 # Store the returned data
+                rides = []
+                riders = sim.run().get_riders()
+                drivers = sim.get_drivers()
+                for i in [0, 1, 2]:
+                    rides.append([r+d for r,d in zip(riders[i], drivers[i])])
+                iter_rides.append(rides)
 
-                iter_rides.append(sim.run().get_riders() + sim.get_drivers())
             # Get means of winner / looser over the runs
             avg_rides = np.array([conf_interval(np.array(p), axis=0)[0] for p in zip(*iter_rides)])
             
