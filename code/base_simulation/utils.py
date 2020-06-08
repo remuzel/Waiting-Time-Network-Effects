@@ -4,6 +4,10 @@ from matplotlib import pyplot as plt
 from matplotlib.lines import Line2D
 from numpy import linspace, std, mean, sqrt, savetxt
 
+
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+
 def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=3, delays=None):
     """ Plots the different market shares w.r.t. to time.
 
