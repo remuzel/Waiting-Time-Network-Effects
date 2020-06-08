@@ -49,7 +49,7 @@ if __name__ == "__main__":
     # Assert that for each platform, the average of mu_waiting and mu_idle is not 'high'
     # valid = lambda elements: all([np.mean([elements[i], elements[i+3]]) <= 0.6 for i in [0, 1, 2]])
     # parameters = [[[a, b, c], [d, e, f]] for a in mu_rs for b in mu_rs for c in mu_rs for d in mu_ds for e in mu_ds for f in mu_ds if valid([a, b, c, d, e, f])]
-    parameters = [[a], [b] for a in mu_rs for b in mu_ds if np.mean([a, b]) <= 0.6]
+    parameters = [[[a], [b]] for a in mu_rs for b in mu_ds if np.mean([a, b]) <= 0.6]
     # Perform grid search
     scores = []
     best = None
