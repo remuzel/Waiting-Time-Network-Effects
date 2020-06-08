@@ -23,7 +23,7 @@ optimal is
 After training the simulation on 70% of the data:
 
 optimal is
-> `python main.py --it 100 --P 3 --mu_r 0.3 0.1 0.1 --mu_d 0.2 0.2 0.2 --eta 0 0 0 --delay 0 65 65`
+> `python main.py --it 100 --P 3 --mu_r 0.15 0.05 0.05 --mu_d 0.8 0.1 0.2 --eta 0 0 0 --delay 0 65 65`
 
 ---
 
