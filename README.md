@@ -20,6 +20,13 @@ optimal is
 
 --- 
 
+After training the simulation on 70% of the POPULATION data:
+
+optimal is
+> `python main.py --it 100 --P 3 --mu_r 0.1 0.8 0.3 --mu_d 0.2 0.2 0.8 --eta 0 0 0 --delay 0 65 65`
+
+---
+
 After training the simulation on 70% of the data:
 
 optimal is
