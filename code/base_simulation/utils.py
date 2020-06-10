@@ -82,6 +82,7 @@ def plot_market_share(data, arrival_type, N, r, filename=None, ebar_r=10, _type=
         plt.legend()
         plt.xlabel('time (t)', size=12)
         plt.ylabel('total population', size=12)
+        plt.yscale('log')
         plt.title('RHP users population growth', size=15)
         if filename is not None:
             plt.savefig(f'../../figures/{version}/total_{filename}', dpi=600)
