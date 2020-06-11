@@ -41,4 +41,7 @@ optimal is
 > `python main.py --it 100 --P 3 --mu_r 0.15 0.05 0.05 --mu_d 0.9 0.1 0.2 --eta 0 0 0 --delay 0 65 65`
 Where the RMSE scores are 0.08978965413090538, 0.0515823122232287, 0.040303459779692886 for each platform respectively
 
+> `python main.py --it 100 --P 2 --mu_r 0.25 0.05 --mu_d 0.9 0.2 --eta 0 0 --delay 0 65`
+Where the RMSE scores are 0.0904486915979686, 0.049763603189207854 for each platform respectively
+
 ---
