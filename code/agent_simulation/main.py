@@ -49,40 +49,34 @@ if __name__ == "__main__":
         if 0 not in args.delay:
             raise ValueError(f'--delay must contain a platform starting at time 0. Found --delay {args.delay}')
 
-    names = ['Uber']#, 'Via', 'Other', 'Juno', 'Via', 'Bolt', 'Kapten', 'Heetch'][:args.P]
+    names = ['Uber', 'Via', 'Other', 'Juno', 'Via', 'Bolt', 'Kapten', 'Heetch'][:args.P]
     
-    eta_rider = []
-    eta_driver = []
-    for eta in np.linspace(0, 1):
-        iter_ms = []
-        iter_r = []
-        iter_d = []
-        city = City()
-        # Run the simulation it times
-        for _ in tqdm(range(args.it)):
-            sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
-                                rider_proportion=args.r, lorenz=args.c,
-                                mu_D=[0.5], mu_R=[0.5], eta=[eta],
-                                n_joins=args.n_joins, delays=[0]])
-            # Store the returned data
-            iter_ms.append(sim.run().get_market_shares())
-            iter_r.append(sim.get_riders())
-            iter_d.append(sim.get_drivers())
-        # Get means of winner / looser over the runs
-        _format = lambda d, i: np.array([conf_interval(np.array(p), axis=0)[i] for p in zip(*d)])
-        avg_ms, avg_r, avg_d = _format(iter_ms, 0), _format(iter_r, 0), _format(iter_d, 0)
-        std_ms, std_r, std_d = _format(iter_ms, 1), _format(iter_r, 1), _format(iter_d, 1)
-        data = {
-            "avg_ms": avg_ms,
-            "std_ms": std_ms,
-            "avg_r": avg_r,
-            "std_r": std_r,
-            "avg_d": avg_d,
-            "std_d": std_d
-        }
-        eta_rider.append(avg_r[0][-1])
-        eta_driver.append(avg_d[0][-1])
-    np.savetxt('eta_rider.txt', eta_rider)
-    np.savetxt('eta_driver.txt', eta_driver)
+    iter_ms = []
+    iter_r = []
+    iter_d = []
+    city = City()
+    # Run the simulation it times
+    for _ in tqdm(range(args.it)):
+        sim = AgentSimulator(args.N, names, city_shape=city.density.shape,
+                            rider_proportion=args.r, lorenz=args.c,
+                            mu_D=args.mu_d, mu_R=args.mu_r, eta=args.eta,
+                            n_joins=args.n_joins, delays=args.delay)
+        # Store the returned data
+        iter_ms.append(sim.run().get_market_shares())
+        iter_r.append(sim.get_riders())
+        iter_d.append(sim.get_drivers())
+    # Get means of winner / looser over the runs
+    _format = lambda d, i: np.array([conf_interval(np.array(p), axis=0)[i] for p in zip(*d)])
+    avg_ms, avg_r, avg_d = _format(iter_ms, 0), _format(iter_r, 0), _format(iter_d, 0)
+    std_ms, std_r, std_d = _format(iter_ms, 1), _format(iter_r, 1), _format(iter_d, 1)
+    data = {
+        "avg_ms": avg_ms,
+        "std_ms": std_ms,
+        "avg_r": avg_r,
+        "std_r": std_r,
+        "avg_d": avg_d,
+        "std_d": std_d
+    }
+
     # Plot the results
     plot_market_share(data, "agent", N=args.N*args.n_joins, r=args.r, filename=args.plt, _type=args.plt_type, delays=args.delay)
