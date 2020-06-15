@@ -1,8 +1,7 @@
 import numpy as np
-from tqdm import tqdm
 
-from agent import Rider, Driver
 from rhp import Platform
+from agent import Rider, Driver
 from utils import lrange
 
 class AgentSimulator():

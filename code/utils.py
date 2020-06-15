@@ -1,8 +1,5 @@
-import seaborn as sb; sb.set()
-from pathlib import Path
+from numpy import std, mean, sqrt
 from matplotlib import pyplot as plt
-from matplotlib.lines import Line2D
-from numpy import linspace, std, mean, sqrt, savetxt
 
 plt.rc('text', usetex=True)
 plt.rc('font', family='serif')

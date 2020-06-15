@@ -1,5 +1,4 @@
 import argparse
-import logging
 import numpy as np
 from tqdm import tqdm
 
@@ -9,8 +8,6 @@ from utils import conf_interval
 from simulator import AgentSimulator
 
 if __name__ == "__main__":
-
-    LOGGER = logging.getLogger(__name__)
 
     arguments = {
         '--N': ["Population size to consider during the simulation.", int, 1_000],
