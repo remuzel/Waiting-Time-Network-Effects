@@ -11,7 +11,6 @@ from simulator import AgentSimulator
 # Import some modules from the base simulator
 import sys
 sys.path.append("..")
-from base_simulation.environment import City
 from base_simulation.utils import midpoint_interpolation, conf_interval
 
 
@@ -53,7 +52,6 @@ if __name__ == "__main__":
             continue
         try:
             iter_rides = []
-            city = City()
             # Run the simulation it times
             for _ in (range(args.it)):
                 sim = AgentSimulator(N, names, rider_proportion=0.95,

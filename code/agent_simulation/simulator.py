@@ -15,7 +15,6 @@ class AgentSimulator():
     """ Underlying class for a classical simulator
     """
     def __init__(self, population_size, platform_names,
-                city_shape=(500,500), agent_vision=None, lorenz=2,
                 rider_proportion=0.95, mu_R=0.5, mu_D=0.5, eta=0,
                 n_joins=1, delays=None):
 
@@ -40,18 +39,6 @@ class AgentSimulator():
         # Set the total number of agents
         self.N = population_size
         self.rider_proportion = [rider_proportion, 1-rider_proportion]
-        # Setup the shape of the city & agents' vision range
-
-        ##########################
-        # NOT IN USE
-        self.xy = city_shape
-        # Set the first average user for each platform
-        [p.set_avg_user(self.xy[1], self.xy[0]) for p in self.platforms]
-        # Set the first average driver for each platform
-        [p.set_avg_driver(self.xy[1], self.xy[0]) for p in self.platforms]
-        # Set the lorenz coef
-        self.c = lorenz
-        ##########################
 
         # Set the death coefficients
         self.mu_R = mu_R
@@ -65,16 +52,14 @@ class AgentSimulator():
 
     def add_platform(self, name, r_pop, d_pop):
         new_platform = Platform(name, r_pop=r_pop, d_pop=d_pop)
-        new_platform.set_avg_user(self.xy[1], self.xy[0])
-        new_platform.set_avg_driver(self.xy[1], self.xy[0])
         self.platforms.append(new_platform)
         self.platform_indices = lrange(self.platforms)
 
-    def growth(self, indices, is_driver, g=1, t=1, position=None):
+    def growth(self, indices, is_driver, n=1, total=1):
         """ Adds the indicated growth (g) to the flagged platforms.
         """
         for i in indices:
-            self.platforms[i].add_user(position, n=g, delta_pop=t, driver=is_driver)
+            self.platforms[i].add_user(n=n, delta_pop=total, driver=is_driver)
 
     def sample_agent(self):
         """ Randomly generate either a user or a driver """
@@ -82,14 +67,12 @@ class AgentSimulator():
         n_plt = len(self.platforms)
         if is_driver:
             return is_driver, Driver(
-                self.xy, lorenz_coef=self.c, 
                 mu_R=self.mu_R[:n_plt],
                 mu_D=self.mu_D[:n_plt],
                 eta=self.eta[:n_plt]
             )
         else:
             return is_driver, Rider(
-                self.xy, lorenz_coef=self.c, 
                 mu_R=self.mu_R[:n_plt],
                 mu_D=self.mu_D[:n_plt],
                 eta=self.eta[:n_plt]
@@ -123,12 +106,6 @@ class AgentSimulator():
         """ Returns the indices of active platforms """
         return [i for i,p in enumerate(self.platforms)]
 
-    def get_average_riders(self):
-        return [p.average_user for p in self.platforms]
-
-    def get_average_drivers(self):
-        return [p.average_driver for p in self.platforms]
-
     def run(self):
         """ Overwritting the simulators' run method - generating from total pop instead. """
         for step in range(self.N):
@@ -140,13 +117,10 @@ class AgentSimulator():
                     self.add_platform(name, r_pop, d_pop)
             # Generate an agent
             is_driver, agent = self.sample_agent()
-            pos = agent.position
             # Gather data about the simulation to pass onto the agent
             data = {
                 'platform_indices': self.get_platform_indices(),
-                'riders': self.get_average_riders(),
                 'n_riders': np.array([p.riders for p in self.platforms]),
-                'drivers': self.get_average_drivers(),
                 'n_drivers': np.array([p.drivers for p in self.platforms]),
                 'market_shares': self.get_recent_market_shares(),
                 'r_market_shares': self.get_recent_r_market_shares(),
@@ -159,5 +133,5 @@ class AgentSimulator():
             self.rates[agent.is_rider].append(agent.rate)
             # Grow all platforms according to their value
             for p, growth in zip(self.platform_indices, growths):
-                self.growth([p], is_driver, position=pos, g=growth, t=self.n_joins)
+                self.growth([p], is_driver, n=growth, total=self.n_joins)
         return self

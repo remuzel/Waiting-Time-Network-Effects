@@ -22,14 +22,6 @@ class Platform:
         self.d_market_share = [self.drivers/d_pop]
         self.r_market_share = [self.riders/r_pop]
 
-    def set_avg_user(self, x, y):
-        """ Sets the initial position of average user """
-        self.average_user = np.array([np.random.randint(y), np.random.randint(x)])
-
-    def set_avg_driver(self, x, y):
-        """ Sets the initial position of average user """
-        self.average_driver = np.array([np.random.randint(y), np.random.randint(x)])
-
     def get_driver_history(self):
         """ Returns the driver history """
         return self.driver_history
@@ -43,26 +35,14 @@ class Platform:
         self.d_market_share.append(self.drivers/self.d_population)
         self.r_market_share.append(self.riders/self.r_population)
 
-    def update_avg_user(self, xy):
-        """ Updates the location in space of the average user """
-        n = self.riders
-        self.average_user = ((n-1) * self.average_user + xy) / n
-
-    def update_avg_driver(self, xy):
-        """ Updates the location in space of the average driver """
-        n = self.drivers
-        self.average_driver = ((n-1) * self.average_driver + xy) / n
-
-    def add_user(self, position, n=1, delta_pop=1, driver=True):
+    def add_user(self, n=1, delta_pop=1, driver=True):
         # Increment the corresponding user/driver count 
         if driver:
             self.drivers += n
             self.d_population += delta_pop
-            self.update_avg_driver(position)
         else:
             self.riders += n
             self.r_population += delta_pop
-            self.update_avg_user(position)
         self.driver_history.append(self.drivers)
         self.rider_history.append(self.riders)
         # Update the population & market shares
