@@ -2,8 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
-code/agent_simulation/plot.py
-code/agent_simulation/clean_plot.py
+code/plot.py
+code/clean_plot.py
 
 # C extensions
 *.so

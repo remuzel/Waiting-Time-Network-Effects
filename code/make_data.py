@@ -1,21 +1,13 @@
 import argparse
-import logging
 import numpy as np
 from tqdm import tqdm
 
 np.random.seed(1_218_042)
 
 from simulator import AgentSimulator
-
-# Import some modules from the base simulator
-import sys
-sys.path.append("..")
-from base_simulation.utils import conf_interval
-
+from utils import conf_interval
 
 if __name__ == "__main__":
-
-    LOGGER = logging.getLogger(__name__)
 
     arguments = {
         '--N': ["Population size to consider during the simulation.", int, 1_000],
@@ -76,5 +68,5 @@ if __name__ == "__main__":
         eta_rider.append(np.mean(rider_stuff))
         eta_driver.append(np.mean(driver_stuff))
         
-    np.savetxt('eta_rider.txt', eta_rider)
-    np.savetxt('eta_driver.txt', eta_driver)
+    np.savetxt('txt_out/eta_rider.txt', eta_rider)
+    np.savetxt('txt_out/eta_driver.txt', eta_driver)

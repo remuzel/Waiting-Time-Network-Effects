@@ -1,15 +1,9 @@
-import logging
 import numpy as np
 from tqdm import tqdm
 
 from agent import Rider, Driver
 from rhp import Platform
-
-import sys
-sys.path.append("..")
-from base_simulation.utils import lrange
-
-LOGGER = logging.getLogger(__name__)
+from utils import lrange
 
 class AgentSimulator():
     """ Underlying class for a classical simulator

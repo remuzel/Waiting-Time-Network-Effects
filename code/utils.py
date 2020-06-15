@@ -4,7 +4,6 @@ from matplotlib import pyplot as plt
 from matplotlib.lines import Line2D
 from numpy import linspace, std, mean, sqrt, savetxt
 
-
 plt.rc('text', usetex=True)
 plt.rc('font', family='serif')
 
@@ -116,91 +115,3 @@ def midpoint_interpolation(data, min_length):
             new_data.append((d+data[i+1])/2)
         data = new_data + [data[-1]]
     return data
-
-def plot_heatmaps(data, n=100, u=0.95, it='', save=False):
-    version, u = "v6.4", int(u*100)
-    # Retrieve the data
-    delta_total = data['delta_t'][::-1][:n,-n:] if n != 100 else data['delta_t'][::-1]
-    delta_drivers = data['delta_d'][::-1][:n,-n:] if n != 100 else data['delta_d'][::-1]
-    delta_riders = data['delta_r'][::-1][:n,-n:] if n != 100 else data['delta_r'][::-1]
-    delta_market_share = data['delta_ms'][::-1][:n,-n:] if n != 100 else data['delta_ms'][::-1]
-    delta_inner_1 = data['delta_i1'][::-1][:n,-n:] if n != 100 else data['delta_i1'][::-1]
-    delta_inner_2 = data['delta_i2'][::-1][:n,-n:] if n != 100 else data['delta_i2'][::-1]
-
-    # Setting up the figure size
-    fig = plt.figure(figsize=(24, 12))
-    # Writing the ticks for the mu's
-    ticks = [str(i/100) if i%10==0 else '' for i in range(0, n+1)]
-    yticks = [str(i//2) if i%10==0 else '' for i in range(0, n+1)]
-
-    ax = fig.add_subplot(2, 3, 1)
-    # Plot the delta totals
-    ax = sb.heatmap(delta_total, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
-    # Set labels and title
-    ax.set_xlabel('mu_waiting', size=12)
-    ax.set_ylabel('mu_idle', size=12)
-    plt.tight_layout()
-    plt.title('Absolute difference between platform sizes (N=2)', size=15)
-
-    ax = fig.add_subplot(2, 3, 2)
-    # Plot the delta drivers
-    ax = sb.heatmap(delta_drivers, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
-    # Set labels and title
-    ax.set_xlabel('mu_waiting', size=12)
-    ax.set_ylabel('mu_idle', size=12)
-    plt.tight_layout()
-    plt.title('Absolute difference between number of drivers', size=15)
-
-    ax = fig.add_subplot(2, 3, 3)
-    # Plot the delta riders
-    ax = sb.heatmap(delta_riders, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
-    # Set labels and title
-    ax.set_xlabel('mu_waiting', size=12)
-    ax.set_ylabel('mu_idle', size=12)
-    plt.tight_layout()
-    plt.title('Absolute difference between number of riders', size=15)
-
-    ax = fig.add_subplot(2, 3, 4)
-    # Plot the difference in agents for platform 1
-    ax = sb.heatmap(delta_market_share, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
-    # Set labels and title
-    ax.set_xlabel('mu_waiting', size=12)
-    ax.set_ylabel('mu_idle', size=12)
-    plt.tight_layout()
-    plt.title('Absolute difference between platform market shares', size=15)
-
-    ax = fig.add_subplot(2, 3, 5)
-    # Plot the difference in agents for platform 1
-    ax = sb.heatmap(delta_inner_1, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
-    # Set labels and title
-    ax.set_xlabel('mu_waiting', size=12)
-    ax.set_ylabel('mu_idle', size=12)
-    plt.tight_layout()
-    plt.title('Surplus of riders for platform 1 (riders-drivers)', size=15)
-
-    ax = fig.add_subplot(2, 3, 6)
-    # Plot the difference in agents for platform 2
-    ax = sb.heatmap(delta_inner_2, robust=True, cmap='hot', xticklabels=ticks, yticklabels=yticks[::-1])
-    # Set labels and title
-    ax.set_xlabel('mu_waiting', size=12)
-    ax.set_ylabel('mu_idle', size=12)
-    plt.tight_layout()
-    plt.title('Surplus of riders for platform 2 (riders-drivers)', size=15)
-
-    # Show entire figure
-    path = f'../../figures/{version}'
-    Path(path).mkdir(parents=True, exist_ok=True)
-    plt.savefig(f'{path}/heatmap{u}r-{it}-50d.png', dpi=150)
-
-    # Save the raw data to text files
-    if save:
-        # Make sure the path exists
-        path = f'../../raw/{version}/{u}r-50d'
-        Path(path).mkdir(parents=True, exist_ok=True)
-        # Save the data
-        savetxt(f'{path}/total.txt', delta_total, fmt='%d')
-        savetxt(f'{path}/drivers.txt', delta_drivers, fmt='%d')
-        savetxt(f'{path}/riders.txt', delta_riders, fmt='%d')
-        savetxt(f'{path}/marketshare.txt', delta_market_share, fmt='%.2f')
-        savetxt(f'{path}/plt1.txt', delta_inner_1, fmt='%d')
-        savetxt(f'{path}/plt2.txt', delta_inner_2, fmt='%d')

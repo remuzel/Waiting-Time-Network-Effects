@@ -1,21 +1,13 @@
 import argparse
-import logging
 import numpy as np
 from tqdm import tqdm
 
 np.random.seed(1_218_042)
 
 from simulator import AgentSimulator
-
-# Import some modules from the base simulator
-import sys
-sys.path.append("..")
-from base_simulation.utils import plot_market_share, conf_interval
-
+from utils import plot_market_share, conf_interval
 
 if __name__ == "__main__":
-
-    LOGGER = logging.getLogger(__name__)
 
     arguments = {
         '--N': ["Population size to consider during the simulation.", int, 1_000],

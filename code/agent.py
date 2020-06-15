@@ -1,11 +1,4 @@
-import logging
 import numpy as np
-
-import sys
-sys.path.append("..")
-from base_simulation.utils import shift
-
-LOGGER = logging.getLogger(__name__)
 
 class Agent():
     """ 

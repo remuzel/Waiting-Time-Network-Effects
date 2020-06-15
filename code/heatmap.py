@@ -5,14 +5,8 @@ from tqdm import tqdm
 
 np.random.seed(1_218_042)
 
+from utils import conf_interval
 from simulator import AgentSimulator
-
-# Import some modules from the base simulator
-import sys
-sys.path.append("..")
-from base_simulation.environment import City
-from base_simulation.utils import conf_interval
-
 
 if __name__ == "__main__":
 
@@ -57,6 +51,6 @@ if __name__ == "__main__":
             # See how much ahead the initially starting platform is 
             delta_ms[-(y+1), x] = avg_ms[0][-1] - avg_ms[1][-1]
     if args.mu_waiting:
-        np.savetxt(f'../../raw/fma_analysis/mu_waiting-{args.base}.txt', delta_ms)
+        np.savetxt(f'../raw/fma_analysis/mu_waiting-{args.base}.txt', delta_ms)
     else:
-        np.savetxt(f'../../raw/fma_analysis/mu_idle-{args.base}.txt', delta_ms)
+        np.savetxt(f'../raw/fma_analysis/mu_idle-{args.base}.txt', delta_ms)

@@ -1,5 +1,4 @@
 import argparse
-import logging
 import numpy as np
 from tqdm import tqdm
 from sklearn.metrics import mean_squared_error
@@ -7,13 +6,7 @@ from sklearn.metrics import mean_squared_error
 np.random.seed(1_218_042)
 
 from simulator import AgentSimulator
-
-# Import some modules from the base simulator
-import sys
-sys.path.append("..")
-from base_simulation.environment import City
-from base_simulation.utils import midpoint_interpolation, conf_interval
-
+from utils import midpoint_interpolation, conf_interval
 
 if __name__ == "__main__":
 
@@ -28,7 +21,7 @@ if __name__ == "__main__":
 
     # Extrapolate from given market-share values
     N = 1889
-    data = np.loadtxt('../../raw/real/nyc_rhp_marketshare.txt')
+    data = np.loadtxt('../raw/real/nyc_rhp_marketshare.txt')
     data_ms = [
         midpoint_interpolation(data[0], N) + [data[0,-1]],
         midpoint_interpolation(data[1], N-95)[65:] + [data[1,-1]],
@@ -81,14 +74,14 @@ if __name__ == "__main__":
             scores.append(mu_r + mu_d + rmse)
             newBest = min(best, np.mean(rmse))
             if newBest != best:
-                with open(f'dual_full_conditional_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
+                with open(f'txt_out/dual_full_conditional_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
                     checkpoints.write(f'New best: mu_r: {mu_r} | mu_d: {mu_d}\nRMSE: {rmse}\n\n')
                 best = newBest
         except Exception as e:
-            with open(f'dual_full_conditional_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
+            with open(f'txt_out/dual_full_conditional_txtoutput/rmse_output_fixed{args.fixed}.txt', 'a') as checkpoints:
                 checkpoints.write(f'ERROR\nmu_r: {mu_r} | mu_d: {mu_d}\n{e}\n\n')
 
-    np.savetxt(f'dual_full_conditional_txtoutput/rmse_results_fixed{args.fixed}.txt', scores)
+    np.savetxt(f'txt_out/dual_full_conditional_txtoutput/rmse_results_fixed{args.fixed}.txt', scores)
 
 
 
